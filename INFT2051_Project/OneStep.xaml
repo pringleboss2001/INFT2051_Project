@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INFT2051_Project.OneStep"
+             Title="OneStep">
+	
+	<ScrollView>
+            <VerticalStackLayout
+				Padding="30,0"
+				Spacing="25">
+				
+				<Label
+					x:Name ="PageTitle"
+                    Text="One Step Equations Help!"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+				<Label
+					x:Name ="IntA_Label"
+                    Text="a = "
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+
+				<Label
+					x:Name ="IntB_Label"
+                    Text="b = "
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+
+				<Label
+					x:Name ="IntC_Label"
+                    Text="c = "
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+
+				<Label
+					x:Name ="Question_Label"
+                    Text=""
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+
+				<Label
+					x:Name ="Answer_Label"
+                    Text=""
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+				
+				<Button
+                    x:Name="NextQuestion"
+                    Text="Next Question"
+                    SemanticProperties.Hint="NextQuestion"
+                    Clicked="OnButtonClicked"/>
+
+				<Button
+                    x:Name="ShowAnswer"
+                    Text="Show Answer"
+                    SemanticProperties.Hint="Show Answer"
+                    Clicked="OnButtonClicked"/>
+		
+		        <Button
+                    x:Name="OneStepBack"
+                    Text="Back"
+                    SemanticProperties.Hint="Navigates back to main menu"
+                    Clicked="OnButtonClicked"/>
+	
+            </VerticalStackLayout>
+	</ScrollView>
+</ContentPage>

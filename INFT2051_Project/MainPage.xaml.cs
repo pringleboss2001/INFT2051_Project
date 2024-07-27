@@ -8,11 +8,11 @@
             InitializeComponent();
         }
 
-        private void OnButtonClicked(object sender, EventArgs e)
+        private async void OnButtonClicked(object sender, EventArgs e)
         {
             Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
-            if (btn.Text == "Year 7 Questions")
-                btn.Text = "year 7";
+            if (btn.Text == "One Step Equations")
+                await Navigation.PushAsync(new OneStep());
             else if (btn.Text == "Year 8 Questions")
                 btn.Text = "year 8";
             else if (btn.Text == "Year 9 Questions")

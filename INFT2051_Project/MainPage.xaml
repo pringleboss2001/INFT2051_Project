@@ -22,8 +22,8 @@
 
             <Button
                 Grid.Column="1"
-                x:Name="Year7"
-                Text="Year 7 Questions" 
+                x:Name="OneStep"
+                Text="One Step Equations" 
                 SemanticProperties.Hint="Navigates to the year 7 topic selection page"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
