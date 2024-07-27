@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "INFT2051_Project\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml.cs",
+              "RelativeToolTip": "INFT2051_Project\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T05:54:26.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml",
+              "RelativeDocumentMoniker": "INFT2051_Project\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml",
+              "RelativeToolTip": "INFT2051_Project\\MainPage.xaml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-27T05:37:44.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\App.xaml",
               "RelativeDocumentMoniker": "INFT2051_Project\\App.xaml",
@@ -56,20 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml",
-              "RelativeDocumentMoniker": "INFT2051_Project\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml",
-              "RelativeToolTip": "INFT2051_Project\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-27T05:37:44.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MauiProgram.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\MauiProgram.cs",

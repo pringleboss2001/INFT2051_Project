@@ -2,23 +2,23 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnButtonClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
+            if (btn.Text == "Year 7 Questions")
+                btn.Text = "year 7";
+            else if (btn.Text == "Year 8 Questions")
+                btn.Text = "year 8";
+            else if (btn.Text == "Year 9 Questions")
+                btn.Text = "year 9";
+            else if (btn.Text == "Year 10 Questions")
+                btn.Text = "year 10";
         }
     }
 
