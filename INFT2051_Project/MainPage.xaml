@@ -24,14 +24,14 @@
                 Grid.Column="1"
                 x:Name="OneStep"
                 Text="One Step Equations" 
-                SemanticProperties.Hint="Navigates to the year 7 topic selection page"
+                SemanticProperties.Hint="Navigates to the one step equations page"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
                 
             <Button
-                x:Name="Year8"
-                Text="Year 8 Questions" 
-                SemanticProperties.Hint="Navigates to the year 8 topic selection page"
+                x:Name="TwoStep"
+                Text="Two Step Equations" 
+                SemanticProperties.Hint="Navigates to the two step equations page"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 
