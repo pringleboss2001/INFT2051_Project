@@ -36,18 +36,25 @@
                 HorizontalOptions="Fill" />
 
             <Button
-                x:Name="Year9"
-                Text="Year 9 Questions" 
-                SemanticProperties.Hint="Navigates to the year 9 topic selection page"
+                x:Name="MultiStepEq"
+                Text="Harder Multi-Step Equations" 
+                SemanticProperties.Hint="Navigates to the harder multi stage equations"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 
             <Button
-                x:Name="Year10"
-                Text="Year 10 Questions" 
-                SemanticProperties.Hint="Navigates to the year 9 topic selection page"
+                x:Name="QuadraticEquations"
+                Text="Quadratic Equations" 
+                SemanticProperties.Hint="Navigates to the quadratic equations"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Area"
+                Text="Area" 
+                SemanticProperties.Hint="Area"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" /> 
 
 
         </VerticalStackLayout>

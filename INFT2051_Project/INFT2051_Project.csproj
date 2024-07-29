@@ -78,6 +78,9 @@
 	  <MauiXaml Update="NewPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="OneStep.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="TwoStep.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

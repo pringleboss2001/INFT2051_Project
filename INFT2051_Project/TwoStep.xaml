@@ -27,6 +27,27 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center" />
 				
+				<Grid>
+					
+					<Grid.RowDefinitions>
+						<RowDefinition Height="50"/>
+						<RowDefinition Height="25"/>
+						<RowDefinition Height="50"/>
+					</Grid.RowDefinitions>
+					
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="150"/>
+						<ColumnDefinition Width="30"/>
+						<ColumnDefinition Width="150"/>
+					</Grid.ColumnDefinitions>
+					
+					<Button x:Name="Test1" Grid.Row="0" Grid.Column="0" Text="Test1"/>
+					<Button x:Name="Test2" Grid.Row="0" Grid.Column="2" Text="Test2"/>
+					<Button x:Name="Test3" Grid.Row="2" Grid.Column="0" Text="Test3"/>
+					<Button x:Name="Test4" Grid.Row="2" Grid.Column="2" Text="Test4"/>
+
+				</Grid>
+				
 				<Button
                     x:Name="NextQuestion"
                     Text="Generate Question"

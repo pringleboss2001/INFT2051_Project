@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INFT2051_Project.OneStep"
+             Title="OneStep">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Label 
+                x:Name="QuestionLabel"
+                Text="Question Label"
+                FontFamily="CambriaMath"
+                FontSize="24"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label 
+                x:Name="AnswerLabel"
+                Text="Answer Label"
+                FontFamily="CambriaMath"
+                FontSize="20"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            
+            <Button
+                x:Name="NextQuestion"
+                Text="Next Question"
+                TextColor="Black"
+                SemanticProperties.Hint="Next Question"
+                Clicked="OnButtonClicked"/>
+
+            <Button
+                x:Name="ShowAnswer"
+                Text="Show Answer"
+                TextColor="Black"
+                SemanticProperties.Hint="Show Question"
+                Clicked="OnButtonClicked"/>
+
+            <Button
+                x:Name="Back"
+                Text="Back"
+                TextColor="Black"
+                SemanticProperties.Hint="Back"
+                Clicked="OnButtonClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

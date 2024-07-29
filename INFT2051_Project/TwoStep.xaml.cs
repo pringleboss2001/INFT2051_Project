@@ -11,7 +11,6 @@ public partial class TwoStep : ContentPage
     public TwoStep()
 	{
 		InitializeComponent();
-
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)

@@ -4,12 +4,30 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:INFT2051_Project"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.TabBarIsVisible="False"
     Title="INFT2051_Project">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem
+        Title="Home Page"
+        FlyoutDisplayOptions="AsMultipleItems">
+        
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" 
+            Icon="flyout_home_image.PNG"/>
+
+        <ShellContent
+            Title="One Step Equations"
+            ContentTemplate="{DataTemplate local:OneStep}"
+            Route="OneStep"/>
+
+        <ShellContent
+            Title="Two Step Equations"
+            ContentTemplate="{DataTemplate local:TwoStep}"
+            Route="TwoStep"/>
+
+    </FlyoutItem>
 
 </Shell>
