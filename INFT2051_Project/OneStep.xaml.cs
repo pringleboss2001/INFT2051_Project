@@ -49,6 +49,11 @@ public partial class OneStep : ContentPage
         {
             getAnswer(a, b, op);
         }
+
+        if (btn == SubmitAnswer)
+        {
+            //Do something please. This currently does not work for some reason (maybe because its in a grid)
+        }
     }
 
     public int getOperator()

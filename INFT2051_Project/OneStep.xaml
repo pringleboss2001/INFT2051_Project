@@ -7,7 +7,7 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            
+
             <Label 
                 x:Name="QuestionLabel"
                 Text="Question Label"
@@ -23,6 +23,28 @@
                 FontSize="20"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <Entry
+                    x:Name="AnswerInput"
+                    Keyboard="Numeric"
+                    Placeholder="Enter the answer"
+                    HorizontalTextAlignment="Center"
+                    WidthRequest="200"
+                    Grid.Column="0"/>
+
+                <Button 
+                    x:Name="SubmitAnswer"
+                    Text="Submit"
+                    Grid.Column="2"/>
+
+            </Grid>
             
             <Button
                 x:Name="NextQuestion"

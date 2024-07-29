@@ -22,28 +22,28 @@
 
             <Button
                 Grid.Column="1"
-                x:Name="OneStep"
+                x:Name="OneStepButton"
                 Text="One Step Equations" 
                 SemanticProperties.Hint="Navigates to the one step equations page"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
                 
             <Button
-                x:Name="TwoStep"
+                x:Name="TwoStepButton"
                 Text="Two Step Equations" 
                 SemanticProperties.Hint="Navigates to the two step equations page"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 
             <Button
-                x:Name="MultiStepEq"
+                x:Name="MultiStepEqButton"
                 Text="Harder Multi-Step Equations" 
                 SemanticProperties.Hint="Navigates to the harder multi stage equations"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 
             <Button
-                x:Name="QuadraticEquations"
+                x:Name="QuadraticEquationsButton"
                 Text="Quadratic Equations" 
                 SemanticProperties.Hint="Navigates to the quadratic equations"
                 Clicked="OnButtonClicked"
