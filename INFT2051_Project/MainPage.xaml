@@ -9,7 +9,7 @@
             Spacing="25">
 
             <Label
-                Text="NSW Math Tutor"
+                Text="MathMaster NSW"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
             
@@ -54,7 +54,14 @@
                 Text="Area" 
                 SemanticProperties.Hint="Area"
                 Clicked="OnButtonClicked"
-                HorizontalOptions="Fill" /> 
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Volume"
+                Text="Volume" 
+                SemanticProperties.Hint="Volume"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" />
 
 
         </VerticalStackLayout>

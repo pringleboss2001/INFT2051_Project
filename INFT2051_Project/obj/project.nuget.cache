@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SzqcgCnMSm8=",
+  "dgSpecHash": "vamL/6KmzbI=",
   "success": true,
   "projectFilePath": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,7 @@
     "C:\\Users\\Ethan Pringle\\.nuget\\packages\\microsoft.maui.graphics\\8.0.61\\microsoft.maui.graphics.8.0.61.nupkg.sha512",
     "C:\\Users\\Ethan Pringle\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\8.0.61\\microsoft.maui.graphics.win2d.winui.desktop.8.0.61.nupkg.sha512",
     "C:\\Users\\Ethan Pringle\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.61\\microsoft.maui.resizetizer.8.0.61.nupkg.sha512",
-    "C:\\Users\\Ethan Pringle\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.5\\microsoft.net.illink.tasks.8.0.5.nupkg.sha512",
+    "C:\\Users\\Ethan Pringle\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.7\\microsoft.net.illink.tasks.8.0.7.nupkg.sha512",
     "C:\\Users\\Ethan Pringle\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Ethan Pringle\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240311000\\microsoft.windowsappsdk.1.5.240311000.nupkg.sha512",
     "C:\\Users\\Ethan Pringle\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",

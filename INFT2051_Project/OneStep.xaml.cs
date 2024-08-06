@@ -20,8 +20,8 @@ public partial class OneStep : ContentPage
         if (btn == NextQuestion)
         {
             NextQuestion.Text = "Next Question";
-            a = getIntegerA();
-            b = getIntegerB();
+            a = getInteger();
+            b = getInteger();
             op = getOperator();
 
             if (op == 1)
@@ -64,20 +64,15 @@ public partial class OneStep : ContentPage
         return operatorSelect;
     }
 
-    public int getIntegerA()
+    public int getInteger()
     {
         int a;
         Random numberGenerator = new Random();
         a = numberGenerator.Next(1, 30);
         return a;
     }
-    public int getIntegerB()
-    {
-        int b;
-        Random numberGenerator = new Random();
-        b = numberGenerator.Next(1, 30);
-        return b;
-    }
+
+    
 
     public void getAnswer(int a, int b, int operatorSelect)
     {
