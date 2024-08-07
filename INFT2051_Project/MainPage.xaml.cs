@@ -15,10 +15,10 @@
                 await Navigation.PushAsync(new OneStep());
             else if (btn == TwoStepButton)
                 await Navigation.PushAsync(new TwoStep());
-            else if (btn.Text == "Year 9 Questions")
-                btn.Text = "year 9";
-            else if (btn.Text == "Year 10 Questions")
-                btn.Text = "year 10";
+            else if (btn == Area)
+                await Navigation.PushAsync(new AreaPage());
+            else if (btn == Perimeter)
+                await Navigation.PushAsync(new PerimeterPage());
         }
     }
 

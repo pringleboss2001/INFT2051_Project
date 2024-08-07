@@ -42,7 +42,8 @@
                 <Button 
                     x:Name="SubmitAnswer"
                     Text="Submit"
-                    Grid.Column="2"/>
+                    Grid.Column="2"
+                    Clicked="OnButtonClicked"/>
 
             </Grid>
             

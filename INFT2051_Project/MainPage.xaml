@@ -50,6 +50,13 @@
                 HorizontalOptions="Fill" />
 
             <Button
+                x:Name="Perimeter"
+                Text="Perimeter" 
+                SemanticProperties.Hint="Perimeter"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" />
+            
+            <Button
                 x:Name="Area"
                 Text="Area" 
                 SemanticProperties.Hint="Area"
@@ -63,6 +70,12 @@
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 
+            <Button
+                x:Name="HowToUse"
+                Text="How To Use" 
+                SemanticProperties.Hint="HowToUse"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" />
 
         </VerticalStackLayout>
     </ScrollView>

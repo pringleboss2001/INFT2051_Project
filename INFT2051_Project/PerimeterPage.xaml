@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INFT2051_Project.PerimeterPage"
+             Title="PerimeterPage">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+        <Label 
+            Text="Perimeter Page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="QuestionLabel"
+            Text="QuestionLabel"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry
+                x:Name="AnswerInput"
+                Keyboard="Numeric"
+                Placeholder="Enter the answer"
+                HorizontalTextAlignment="Center"
+                WidthRequest="200"
+                Grid.Column="0"/>
+
+            <Button 
+                x:Name="SubmitAnswer"
+                Text="Submit"
+                Grid.Column="2"
+                Clicked="OnButtonClicked"/>
+
+        </Grid>
+
+        <Button
+            x:Name="Back"
+            Text="Back"
+            TextColor="Black"
+            SemanticProperties.Hint="Back"
+            Clicked="OnButtonClicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
