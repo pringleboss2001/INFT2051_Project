@@ -1,3 +1,5 @@
+using Mehroz;
+
 namespace INFT2051_Project;
 
 public partial class OneStep : ContentPage
@@ -5,6 +7,7 @@ public partial class OneStep : ContentPage
     int a;
     int b;
     int op;
+    
     public OneStep()
 	{
         InitializeComponent();
@@ -45,14 +48,24 @@ public partial class OneStep : ContentPage
             }
         }
 
-        if (btn == ShowAnswer)
-        {
-            getAnswer(a, b, op);
-        }
-
         if (btn == SubmitAnswer)
         {
-            //Do something please. This currently does not work for some reason (maybe because its in a grid)
+            var input = float.Parse(AnswerInput.Text);
+            var answer = getAnswer(a, b, op);
+            if (input == answer)
+            {
+                Vibration.Default.Vibrate(2);
+                Vibration.Default.Vibrate(2);
+                Vibration.Default.Vibrate(2);
+                Vibration.Default.Vibrate(2);
+                AnswerLabel.Text = "something else";
+            }
+            else
+            {
+                Vibration.Default.Vibrate(10);
+                AnswerLabel.Text = "somenthing";
+            }
+                
         }
     }
 
@@ -74,37 +87,37 @@ public partial class OneStep : ContentPage
 
     
 
-    public void getAnswer(int a, int b, int operatorSelect)
+    public float getAnswer(int a, int b, int operatorSelect)
     {
+        Fraction frac = new Fraction(b, a); //making a fraction with numerator a, denominator b
         int answer=0;
         if (operatorSelect == 1)    //if the equation is of the from x + a = b
         {
             answer = (b - a);
             AnswerLabel.Text = answer.ToString();
+            return answer;
         }
 
         else if (operatorSelect == 2)    //if the equation is of the from x - a = b
         {
             answer = (b + a);
             AnswerLabel.Text = answer.ToString();
+            return answer;
         }
 
         else if (operatorSelect == 3)    //if the equation is of the from ax = b
         {
-            if ((b % a) == 0)       //Need to check if the division b/a is a whole number.
-            {
-                answer = (b / a);
-                AnswerLabel.Text = answer.ToString();
-            }
-                
-            else
-                AnswerLabel.Text = $"{b}/{a}";
+           //Need to check if the division b/a is a whole number.
+           answer = (b / a);
+           AnswerLabel.Text = answer.ToString();
+           return answer;
         }
 
         else        //If the equation is of the form x/a = b
         {
             answer = (b * a);
             AnswerLabel.Text = answer.ToString();
+            return answer;
         }
     }
 }

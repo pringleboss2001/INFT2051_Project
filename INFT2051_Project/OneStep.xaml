@@ -24,15 +24,14 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"/>
-                    <ColumnDefinition Width="30"/>
-                    <ColumnDefinition Width="100"/>
-                </Grid.ColumnDefinitions>
+            <HorizontalStackLayout
+                Padding="5,0"
+                Spacing="25">
+                
 
                 <Entry
                     x:Name="AnswerInput"
+                    Text=""
                     Keyboard="Numeric"
                     Placeholder="Enter the answer"
                     HorizontalTextAlignment="Center"
@@ -45,26 +44,23 @@
                     Grid.Column="2"
                     Clicked="OnButtonClicked"/>
 
-            </Grid>
+            </HorizontalStackLayout>
             
             <Button
                 x:Name="NextQuestion"
                 Text="Next Question"
-                TextColor="Black"
                 SemanticProperties.Hint="Next Question"
                 Clicked="OnButtonClicked"/>
 
             <Button
-                x:Name="ShowAnswer"
-                Text="Show Answer"
-                TextColor="Black"
-                SemanticProperties.Hint="Show Question"
+                x:Name="ShowWorking"
+                Text="Show Working"
+                SemanticProperties.Hint="Show Working"
                 Clicked="OnButtonClicked"/>
 
             <Button
                 x:Name="Back"
                 Text="Back"
-                TextColor="Black"
                 SemanticProperties.Hint="Back"
                 Clicked="OnButtonClicked"/>
         </VerticalStackLayout>
