@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="INFT2051_Project.QuadraticsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="QuadraticsPage">
+
+    <VerticalStackLayout Padding="30,0" Spacing="10">
+
+        <StackLayout>
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Label 
+                    Text="Solve for x when, " 
+                    FontFamily="CambriaMath"
+                    FontSize="20"/>
+
+                <Label
+                    x:Name="QuestionLabel"
+                    FontFamily="CambriaMath"
+                    FontSize="20"
+                    Text=""/>
+            </HorizontalStackLayout>
+        </StackLayout>
+
+        <ScrollView>
+            <StackLayout x:Name="WorkingArea" IsVisible="False" Spacing="10">
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 1 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working1"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 2 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working2"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 3 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working3"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 4 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working4"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 5 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working5"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+
+            </StackLayout>
+        </ScrollView>
+        <Label
+            x:Name="AnswerLabel"
+            FontFamily="CambriaMath"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="" />
+        <Label
+            x:Name="AnswerLabel2"
+            FontFamily="CambriaMath"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="" />
+
+        <HorizontalStackLayout Padding="10,0" Spacing="25">
+            <Entry
+                x:Name="AnswerInput1"
+                HorizontalTextAlignment="Center"
+                Keyboard="Default"
+                Placeholder="Enter the first answer"
+                Text=""
+                WidthRequest="200" />
+
+            <Button
+                x:Name="SubmitAnswer1"
+                Grid.Column="2"
+                Clicked="OnButtonClicked"
+                Text="Submit" />
+
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Padding="10,0" Spacing="25">
+            <Entry
+                x:Name="AnswerInput2"
+                HorizontalTextAlignment="Center"
+                Keyboard="Default"
+                Placeholder="Enter the second answer"
+                Text=""
+                WidthRequest="200" />
+
+
+        </HorizontalStackLayout>
+
+        <Button
+            x:Name="NextQuestion"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Next Question"
+            Text="Next Question" />
+
+        <Button
+            x:Name="ShowWorking"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Show Working"
+            Text="Show Working" />
+
+        <Button
+            x:Name="Back"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Back"
+            Text="Back" />
+    </VerticalStackLayout>
+
+</ContentPage>

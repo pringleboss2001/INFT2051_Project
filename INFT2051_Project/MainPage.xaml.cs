@@ -19,6 +19,8 @@
                 await Navigation.PushAsync(new AreaPage());
             else if (btn == Perimeter)
                 await Navigation.PushAsync(new PerimeterPage());
+            else if (btn == QuadraticEquationsButton)
+                await Navigation.PushAsync(new QuadraticsPage());
         }
     }
 

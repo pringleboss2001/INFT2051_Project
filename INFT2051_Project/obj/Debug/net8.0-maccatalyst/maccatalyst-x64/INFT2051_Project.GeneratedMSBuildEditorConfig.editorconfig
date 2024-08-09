@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.Perimeter
 build_metadata.AdditionalFiles.TargetPath = PerimeterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = PerimeterPage.xaml
 
+[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/QuadraticsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.QuadraticsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = QuadraticsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = QuadraticsPage.xaml
+
 [C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.Resources.Styles.Colors.xaml
