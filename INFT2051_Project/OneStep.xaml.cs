@@ -20,9 +20,10 @@ public partial class OneStep : ContentPage
         if (btn == Back)
             await Navigation.PushAsync(new MainPage());
 
-        if (btn == NextQuestion)
+        else if (btn == NextQuestion)
         {
             NextQuestion.Text = "Next Question";
+            WorkingGrid.IsVisible = false;
             a = getInteger();
             b = getInteger();
             op = getOperator();
@@ -48,9 +49,9 @@ public partial class OneStep : ContentPage
             }
         }
 
-        if (btn == SubmitAnswer)
+        else if (btn == SubmitAnswer)
         {
-            var input = float.Parse(AnswerInput.Text);
+            string input = AnswerInput.Text;
             var answer = getAnswer(a, b, op);
             if (input == answer)
             {
@@ -58,14 +59,20 @@ public partial class OneStep : ContentPage
                 Vibration.Default.Vibrate(2);
                 Vibration.Default.Vibrate(2);
                 Vibration.Default.Vibrate(2);
-                AnswerLabel.Text = "something else";
+                AnswerLabel.Text = "Correct";
             }
             else
             {
                 Vibration.Default.Vibrate(10);
-                AnswerLabel.Text = "somenthing";
+                AnswerLabel.Text = "Wrong";
             }
                 
+        }
+
+        else if (btn == ShowWorking)
+        {
+            WorkingGrid.IsVisible = true;
+            showWorking(a, b, op);
         }
     }
 
@@ -73,7 +80,7 @@ public partial class OneStep : ContentPage
     {
         int operatorSelect=0;   //initialise operatorSelect
         Random numberGenerator = new Random();
-        operatorSelect = numberGenerator.Next(1, 5);    //generators a number from 1 to 4. 1=Add, 2=Sub, 3=Multiply, 4=Div
+        operatorSelect = numberGenerator.Next(1, 5);    //generators a number from 1 to 4. 1=Addition, 2=Subtraction, 3=Multiplication, 4=Division
         return operatorSelect;
     }
 
@@ -85,39 +92,72 @@ public partial class OneStep : ContentPage
         return a;
     }
 
-    
-
-    public float getAnswer(int a, int b, int operatorSelect)
+    public string getAnswer(int a, int b, int operatorSelect)
     {
-        Fraction frac = new Fraction(b, a); //making a fraction with numerator a, denominator b
-        int answer=0;
+        Fraction frac = new Fraction(b, a); //making a fraction with numerator b, denominator a
+        float answer = 0;
         if (operatorSelect == 1)    //if the equation is of the from x + a = b
         {
             answer = (b - a);
-            AnswerLabel.Text = answer.ToString();
-            return answer;
+            return answer.ToString();
         }
 
         else if (operatorSelect == 2)    //if the equation is of the from x - a = b
         {
             answer = (b + a);
-            AnswerLabel.Text = answer.ToString();
-            return answer;
+            return answer.ToString();
         }
 
         else if (operatorSelect == 3)    //if the equation is of the from ax = b
         {
            //Need to check if the division b/a is a whole number.
            answer = (b / a);
-           AnswerLabel.Text = answer.ToString();
-           return answer;
+           return frac.ToString();
         }
 
         else        //If the equation is of the form x/a = b
         {
             answer = (b * a);
-            AnswerLabel.Text = answer.ToString();
-            return answer;
+            return answer.ToString();
+        }
+    }
+
+    public void showWorking(int a, int b, int op)
+    {
+        Fraction frac = new Fraction(b, a); //making a fraction with numerator b, denominator a
+        float answer = 0;
+        if (op == 1)    //if the equation is of the from x + a = b
+        {
+            answer = (b - a);
+            Working1.Text = $"x + {a} = {b}";
+            Working2.Text = $"x + {a} - {a} = {b} - {a}";
+            Working3.Text = $"x = {answer}";
+        }
+
+        else if (op == 2)    //if the equation is of the from x - a = b
+        {
+            answer = (b + a);
+            Working1.Text = $"x - {a} = {b}";
+            Working2.Text = $"x - {a} + {a} = {b} + {a}";
+            Working3.Text = $"x = {answer}";
+        }
+
+        else if (op == 3)    //if the equation is of the from ax = b
+        {
+            //Need to check if the division b/a is a whole number.
+            answer = (b / a);
+            Working1.Text = $"{a}x = {b}";
+            Working2.Text = $"{a}x / {a} = {b} / {a}";
+            Working3.Text = $"x = {frac}";
+
+        }
+
+        else        //If the equation is of the form x/a = b
+        {
+            answer = (b * a);
+            Working1.Text = $"x/{a} = {b}";
+            Working2.Text = $"x/{a} * {a} = {b} * {a}";
+            Working3.Text = $"x = {answer}";
         }
     }
 }

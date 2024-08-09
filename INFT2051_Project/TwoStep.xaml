@@ -1,71 +1,125 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="INFT2051_Project.TwoStep"
-             Title="TwoStep">
-	
-	<ScrollView>
-            <VerticalStackLayout
-				Padding="30,0"
-				Spacing="25">
-				
-				<Label
-					x:Name ="PageTitle"
-                    Text="Two Step Equations Help!"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" />
+<ContentPage
+    x:Class="INFT2051_Project.TwoStep"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="TwoStep">
 
-				<Label
-					x:Name ="Question_Label"
-                    Text=""
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center" />
+    <VerticalStackLayout Padding="30,0" Spacing="10">
 
-				<Label
-					x:Name ="Answer_Label"
-                    Text=""
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center" />
-				
-				<Grid>
-					
-					<Grid.RowDefinitions>
-						<RowDefinition Height="50"/>
-						<RowDefinition Height="25"/>
-						<RowDefinition Height="50"/>
-					</Grid.RowDefinitions>
-					
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="150"/>
-						<ColumnDefinition Width="30"/>
-						<ColumnDefinition Width="150"/>
-					</Grid.ColumnDefinitions>
-					
-					<Button x:Name="Test1" Grid.Row="0" Grid.Column="0" Text="Test1"/>
-					<Button x:Name="Test2" Grid.Row="0" Grid.Column="2" Text="Test2"/>
-					<Button x:Name="Test3" Grid.Row="2" Grid.Column="0" Text="Test3"/>
-					<Button x:Name="Test4" Grid.Row="2" Grid.Column="2" Text="Test4"/>
+        <StackLayout>
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Label 
+                    Text="Solve for x when, " 
+                    FontFamily="CambriaMath"
+                    FontSize="20"/>
 
-				</Grid>
-				
-				<Button
-                    x:Name="NextQuestion"
-                    Text="Generate Question"
-                    SemanticProperties.Hint="NextQuestion"
-                    Clicked="OnButtonClicked"/>
+                <Label
+                    x:Name="QuestionLabel"
+                    FontFamily="CambriaMath"
+                    FontSize="20"
+                    Text=""/>
+            </HorizontalStackLayout>
+        </StackLayout>
+        
+        <ScrollView>
+            <StackLayout x:Name="WorkingArea" IsVisible="False" Spacing="10">
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 1 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working1"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 2 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working2"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 3 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working3"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 4 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working4"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        Text="Step 5 : ">
+                    </Label>
+                    <Label
+                        x:Name="Working5"
+                        Text="Line of Working">
+                    </Label>
+                </HorizontalStackLayout>
 
-				<Button
-                    x:Name="ShowAnswer"
-                    Text="Show Answer"
-                    SemanticProperties.Hint="Show Answer"
-                    Clicked="OnButtonClicked"/>
-		
-		        <Button
-                    x:Name="TwoStepBack"
-                    Text="Back"
-                    SemanticProperties.Hint="Navigates back to main menu"
-                    Clicked="OnButtonClicked"/>
-	
-            </VerticalStackLayout>
-	</ScrollView>
+            </StackLayout>
+        </ScrollView>
+        <Label
+            x:Name="AnswerLabel"
+            FontFamily="CambriaMath"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="" />
+
+        <HorizontalStackLayout Padding="10,0" Spacing="25">
+            <Entry
+                x:Name="AnswerInput"
+                Grid.Column="0"
+                HorizontalTextAlignment="Center"
+                Keyboard="Default"
+                Placeholder="Enter the answer"
+                Text=""
+                WidthRequest="200" />
+
+            <Button
+                x:Name="SubmitAnswer"
+                Grid.Column="2"
+                Clicked="OnButtonClicked"
+                Text="Submit" />
+
+        </HorizontalStackLayout>
+
+        <Button
+            x:Name="NextQuestion"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Next Question"
+            Text="Next Question" />
+
+        <Button
+            x:Name="ShowWorking"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Show Working"
+            Text="Show Working" />
+
+        <Button
+            x:Name="Back"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Back"
+            Text="Back" />
+    </VerticalStackLayout>
+
 </ContentPage>
