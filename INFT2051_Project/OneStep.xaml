@@ -12,12 +12,12 @@
                 HorizontalOptions="Center">
                 <Label 
                     Text="Solve for x when, " 
-                    FontFamily="CambriaMath"
+                    FontFamily="RomanMath"
                     FontSize="20"/>
 
                 <Label
                     x:Name="QuestionLabel"
-                    FontFamily="CambriaMath"
+                    FontFamily="RomanMath"
                     FontSize="20"
                     Text=""/>
             </HorizontalStackLayout>

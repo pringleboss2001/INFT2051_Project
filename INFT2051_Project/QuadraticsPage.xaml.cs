@@ -10,7 +10,6 @@ public partial class QuadraticsPage : ContentPage
     public QuadraticsPage()
     {
         InitializeComponent();
-
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)
@@ -156,12 +155,12 @@ public partial class QuadraticsPage : ContentPage
         //then check for the nature of the middle term (a + b)x
         if (a < 0 && b < 0) //if a and b are negative. i.e (x+a)(x+b)=0. 
         {
-            QuestionLabel.Text = $"x^2 + {-1* (a + b)}x + {a * b}";
+            QuestionLabel.Text = $" + {-1* (a + b)}x + {a * b}";
         }
 
         else if (a < 0 && b == 0)    //if a is negative and b is 0. x(x + a)
         {
-            QuestionLabel.Text = $"x^2 + {-1*a}x";
+            QuestionLabel.Text = $" + {-1*a}x";
         }
 
         else if (a < 0 && b > 0) //if a is negative and b is positive. (x+a)(x-b). x^2 + (a - b)x - ab
@@ -169,68 +168,68 @@ public partial class QuadraticsPage : ContentPage
             //Need to check if question_a is more/less positive/negative than question_b
             if (question_a > Math.Abs(question_b))  // should be positive x coefficient
             {
-                QuestionLabel.Text = $"x^2 + {question_a + question_b}x - {-1*a * b}";
+                QuestionLabel.Text = $" + {question_a + question_b}x - {-1*a * b}";
             }
 
             else if (question_a < Math.Abs(question_b))  // should be positive x coefficient
             {
-                QuestionLabel.Text = $"x^2 - {-1*(question_a + question_b)}x - {-1*a * b}";
+                QuestionLabel.Text = $" - {-1*(question_a + question_b)}x - {-1*a * b}";
             }
         }
 
         else if (a == 0 && b < 0)    //x(x+b)
         {
-            QuestionLabel.Text = $"x^2 + {-1 * b}x";
+            QuestionLabel.Text = $" + {-1 * b}x";
         }
 
         else if (a == 0 && b == 0)   //x^2
         {
-            QuestionLabel.Text = $"x^2";
+            QuestionLabel.Text = $"";
         }
 
         else if (a == 0 && b > 0)    //x(x-b)
         {
-            QuestionLabel.Text = $"x^2 + {b}x";
+            QuestionLabel.Text = $" + {b}x";
         }
 
         else if (a > 0 && b < 0) //(x-a)(x+b). x^2 + (b-a)x - ab
         {
             if (question_b > Math.Abs(question_a))
             {
-                QuestionLabel.Text = $"x^2 + {(question_b + question_a)}x - {-1 * a * b}";
+                QuestionLabel.Text = $" + {(question_b + question_a)}x - {-1 * a * b}";
             }
             else if (question_b < Math.Abs(question_a))
             {
-                QuestionLabel.Text = $"x^2 - {(question_b - question_a)}x - {-1 * a * b}";
+                QuestionLabel.Text = $" - {(question_b - question_a)}x - {-1 * a * b}";
             }
                 
         }
 
         else if (a > 0 && b == 0)    //x(x-a)
         {
-            QuestionLabel.Text = $"x^2 - {a}x";
+            QuestionLabel.Text = $" - {a}x";
         }
 
         else if (a > 0 && b > 0) //(x-a)(x-b). x^2 - (a + b)x + ab
         {
-            QuestionLabel.Text = $"x^2 - {a + b}x + {a*b}";
+            QuestionLabel.Text = $" - {a + b}x + {a*b}";
         }
 
         else if (a == b) // checking if it is a repeated root, i.e (x + a)^2 if a is -/ve. and (x - a)^2 if a is positive.
         {
             if (a < 0)  //(x+a)^2
             {
-                QuestionLabel.Text = $"x^2 + {-2 * a}x + {a*a}";
+                QuestionLabel.Text = $" + {-2 * a}x + {a*a}";
             }
             else    //(x-a)^2
             {
-                QuestionLabel.Text = $"x^2 - {2 * a}x + {a * a}";
+                QuestionLabel.Text = $" - {2 * a}x + {a * a}";
             }
         }
 
         else if (b == -1 * a)    //checking for difference of two squares. (x+a)(x-a)
         {
-            QuestionLabel.Text = $"x^2 - {a * a}";
+            QuestionLabel.Text = $" - {a * a}";
         }
     }
 }

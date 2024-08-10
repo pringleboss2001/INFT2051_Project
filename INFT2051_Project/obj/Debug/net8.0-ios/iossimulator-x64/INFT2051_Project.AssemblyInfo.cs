@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("INFT2051_Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+84236132022b309e33d40760ceac469d6f2f8ff0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5f9ce533d78a0712b8a50ab9c66242e1ae81840d")]
 [assembly: System.Reflection.AssemblyProductAttribute("INFT2051_Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("INFT2051_Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

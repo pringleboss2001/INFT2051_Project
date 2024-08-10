@@ -5,6 +5,7 @@
   <key>UIAppFonts</key>
   <array>
 	<string>Cambria-Math.ttf</string>
+	<string>lmroman10-italic.otf</string>
 	<string>OpenSans-Regular.ttf</string>
 	<string>OpenSans-Semibold.ttf</string>
   </array>

@@ -9,16 +9,22 @@
 
         <StackLayout>
             <HorizontalStackLayout
-                HorizontalOptions="Center">
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+                
                 <Label 
-                    Text="Solve for x when, " 
-                    FontFamily="CambriaMath"
-                    FontSize="20"/>
+                    Text="solve for x when, x&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;"
+                    TextType="Html"
+                    FontFamily="RomanMath"
+                    FontSize="24"/>
 
                 <Label
+                    HorizontalOptions="Fill"
                     x:Name="QuestionLabel"
-                    FontFamily="CambriaMath"
-                    FontSize="20"
+                    TextType="Html"
+                    Padding="4"
+                    FontFamily="RomanMath"
+                    FontSize="24"
                     Text=""/>
             </HorizontalStackLayout>
         </StackLayout>

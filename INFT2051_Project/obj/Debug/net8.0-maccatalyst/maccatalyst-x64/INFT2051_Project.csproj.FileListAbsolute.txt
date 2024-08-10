@@ -279,6 +279,7 @@ C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Projec
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.stamp
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\Cambria-Math.ttf
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\lmroman10-italic.otf
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
