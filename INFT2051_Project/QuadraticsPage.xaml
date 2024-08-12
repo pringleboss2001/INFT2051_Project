@@ -16,7 +16,7 @@
                     Text="solve for x when, x&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;"
                     TextType="Html"
                     FontFamily="RomanMath"
-                    FontSize="24"/>
+                    FontSize="20"/>
 
                 <Label
                     HorizontalOptions="Fill"
@@ -24,7 +24,7 @@
                     TextType="Html"
                     Padding="4"
                     FontFamily="RomanMath"
-                    FontSize="24"
+                    FontSize="20"
                     Text=""/>
             </HorizontalStackLayout>
         </StackLayout>
