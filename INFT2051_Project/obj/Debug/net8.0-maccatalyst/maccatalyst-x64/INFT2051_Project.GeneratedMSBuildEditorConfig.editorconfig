@@ -12,65 +12,65 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = INFT2051_Project
-build_property.ProjectDir = C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\
+build_property.ProjectDir = C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/App.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/AppShell.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/AreaPage.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/AreaPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.AreaPage.xaml
 build_metadata.AdditionalFiles.TargetPath = AreaPage.xaml
 build_metadata.AdditionalFiles.RelativePath = AreaPage.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/MainPage.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/OneStep.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/OneStep.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.OneStep.xaml
 build_metadata.AdditionalFiles.TargetPath = OneStep.xaml
 build_metadata.AdditionalFiles.RelativePath = OneStep.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/PerimeterPage.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/PerimeterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.PerimeterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = PerimeterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = PerimeterPage.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/QuadraticsPage.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/QuadraticsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.QuadraticsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = QuadraticsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = QuadraticsPage.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/Resources/Styles/Colors.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/Resources/Styles/Styles.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/TwoStep.xaml]
+[C:/Users/eprin/Documents/GitHub/INFT2051_Project/INFT2051_Project/TwoStep.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.TwoStep.xaml
 build_metadata.AdditionalFiles.TargetPath = TwoStep.xaml

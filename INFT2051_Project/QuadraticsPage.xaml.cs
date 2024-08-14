@@ -101,21 +101,50 @@ public partial class QuadraticsPage : ContentPage
         int question_b = -1 * b;
 
 
-        if (a == b) // checking if it is a repeated root, i.e (x + a)^2 if a is -/ve. and (x - a)^2 if a is positive.
+        if (a == b && a != 0) // checking if it is a repeated root, i.e (x + a)^2 if a is -/ve. and (x - a)^2 if a is positive.
         {
             if (a < 0)  //(x+a)^2
             {
+                Working1.IsVisible = true;
+                Working2.IsVisible = true;
+                Working3.IsVisible = true;
+                Working4.IsVisible = true;
+                Working5.IsVisible = true;
                 Working1.Text = $" + {-2 * a}x + {a * a}  = 0";
+                Working2.Text = $"a + b = {2 * question_a} and a x b = {a * a}";
+                Working3.Text = $"{question_a} + {question_a} = {2 * question_a} and {question_a} x {question_a} = {a * a}";
+                Working4.Text = $"FACTORISE ->> (x + {question_a})^2 = 0";
+                Working5.Text = $"Therefore, x = {a}. (Repeated Roots)";
             }
             else    //(x-a)^2
             {
+                Working1.IsVisible = true;
+                Working2.IsVisible = true;
+                Working3.IsVisible = true;
+                Working4.IsVisible = true;
+                Working5.IsVisible = true;
                 Working1.Text = $" - {2 * a}x + {a * a} = 0";
+                Working2.Text = $"a + b = {2 * question_a} and a x b = {a * a}";
+                Working3.Text = $"{question_a} + {question_a} = {2 * question_a} and {question_a} x {question_a} = {a * a}";
+                Working4.Text = $"FACTORISE ->> (x - {a})^2 = 0";
+                Working5.Text = $"Therefore, x = {a}. (Repeated Roots)";
             }
         }
 
         else if (b == -1 * a)    //checking for difference of two squares. (x+a)(x-a)
         {
             Working1.Text = $" - {a * a} = 0";
+            Working2.Text = $"a + b = 0 and a x b = {a * b}";
+            Working3.Text = $"{question_a} + {question_b} = 0 and {question_a} x {question_b} = {a * b}";
+            if (a < 0)
+            {
+                Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {question_b}) = 0";
+            }
+            else 
+            {
+                Working4.Text = $"FACTORISE ->> (x - {a})(x + {question_b}) = 0";
+            }
+            Working5.Text = $"Therefore, x = {a} or x = {b}";
         }
 
         else if (a < 0 && b < 0) //if a and b are negative. i.e (x+a)(x+b)=0. 
@@ -128,7 +157,7 @@ public partial class QuadraticsPage : ContentPage
             Working1.Text = $" + {-1 * (a + b)}x + {a * b}  = 0";
             Working2.Text = $"a + b = {-1 * (a + b)} and a x b = {a * b}";
             Working3.Text = $"{question_a} + {question_b} = {-1 * (a + b)} and {question_a} x {question_b} = {a * b}";
-            Working4.Text = $"FACTORISE ->> (x + {question_a})(x + {question_b})";
+            Working4.Text = $"FACTORISE ->> (x + {question_a})(x + {question_b}) = 0";
             Working5.Text = $"Therefore, x = {a} or x = {b}";
         }
 
@@ -140,7 +169,7 @@ public partial class QuadraticsPage : ContentPage
             Working4.IsVisible = false;
             Working5.IsVisible = false;
             Working1.Text = $" + {-1 * a}x = 0";
-            Working2.Text = $"FACTORISE ->> x(x + {question_a})";
+            Working2.Text = $"FACTORISE ->> x(x + {question_a}) = 0";
             Working3.Text = $"Therefore, x = {a} or x = 0";
         }
 
@@ -157,7 +186,7 @@ public partial class QuadraticsPage : ContentPage
                 Working1.Text = $" + {question_a + question_b}x - {-1 * a * b} = 0";
                 Working2.Text = $"a + b = {question_a + question_b} and a x b = {a * b}";
                 Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} x {question_b} = {a * b}";
-                Working4.Text = $"FACTORISE ->> (x + {question_a})(x + {question_b})";
+                Working4.Text = $"FACTORISE ->> (x + {question_a})(x + {question_b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
 
@@ -171,7 +200,7 @@ public partial class QuadraticsPage : ContentPage
                 Working1.Text = $" - {-1 * (question_a + question_b)}x - {-1 * a * b}  = 0";
                 Working2.Text = $"a + b = {question_a + question_b} and a x b = {a * b}";
                 Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} x {question_b} = {a * b}";
-                Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {-1 * question_b})";
+                Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {-1 * question_b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
         }
@@ -184,42 +213,89 @@ public partial class QuadraticsPage : ContentPage
             Working4.IsVisible = false;
             Working5.IsVisible = false;
             Working1.Text = $" + {-1 * b}x = 0";
-            Working2.Text = $"FACTORISE ->> x(x + {question_b})";
+            Working2.Text = $"FACTORISE ->> x(x + {question_b}) = 0";
             Working3.Text = $"Therefore, x = {b} or x = 0";
             
         }
 
         else if (a == 0 && b == 0)   //x^2
         {
+            Working1.IsVisible = true;
+            Working2.IsVisible = true;
+            Working3.IsVisible = false;
+            Working4.IsVisible = false;
+            Working5.IsVisible = false;
             Working1.Text = $" = 0";
+            Working2.Text = $"x = 0 (repeated root)";
         }
 
         else if (a == 0 && b > 0)    //x(x-b)
         {
-            Working1.Text = $" + {b}x = 0";
+            Working1.IsVisible = true;
+            Working2.IsVisible = true;
+            Working3.IsVisible = true;
+            Working4.IsVisible = false;
+            Working5.IsVisible = false;
+            Working1.Text = $" - {b}x = 0";
+            Working2.Text = $"FACTORISE ->> x(x - {b}) = 0";
+            Working3.Text = $"Therefore, x = 0 or x = {b}";
         }
 
         else if (a > 0 && b < 0) //(x-a)(x+b). x^2 + (b-a)x - ab
         {
             if (question_b > Math.Abs(question_a))
             {
+                Working1.IsVisible = true;
+                Working2.IsVisible = true;
+                Working3.IsVisible = true;
+                Working4.IsVisible = true;
+                Working5.IsVisible = true;
                 Working1.Text = $" + {(question_b + question_a)}x - {-1 * a * b} = 0";
+                Working2.Text = $"a + b = {(question_b + question_a)} and a x b = {question_b * question_a}";
+                Working3.Text = $"{question_a} + {question_b} = {(question_b + question_a)} and {question_a} x {question_b} = {question_b * question_a}";
+                Working4.Text = $"FACTORISE ->> (x - {a})(x + {question_b}) = 0";
+                Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
             else if (question_b < Math.Abs(question_a))
             {
+                Working1.IsVisible = true;
+                Working2.IsVisible = true;
+                Working3.IsVisible = true;
+                Working4.IsVisible = true;
+                Working5.IsVisible = true;
                 Working1.Text = $" - {(question_b - question_a)}x - {-1 * a * b} = 0";
+                Working2.Text = $"a + b = {-1 * (question_b - question_a)} and a x b = {question_a * question_b}";
+                Working3.Text = $"{question_a} + {question_b} = {-1 * (question_b - question_a)} and {question_a} x {question_b} = {question_a * question_b}";
+                Working4.Text = $"FACTORISE ->> (x - {a})(x + {question_b}) = 0";
+                Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
 
         }
 
         else if (a > 0 && b == 0)    //x(x-a)
         {
+            Working1.IsVisible = true;
+            Working2.IsVisible = true;
+            Working3.IsVisible = true;
+            Working4.IsVisible = false;
+            Working5.IsVisible = false;
             Working1.Text = $" - {a}x = 0";
+            Working2.Text = $"FACTORISE ->> x(x - {a}) = 0";
+            Working3.Text = $"Therefore, x = 0 or x = {a}";
         }
 
         else if (a > 0 && b > 0) //(x-a)(x-b). x^2 - (a + b)x + ab
         {
+            Working1.IsVisible = true;
+            Working2.IsVisible = true;
+            Working3.IsVisible = true;
+            Working4.IsVisible = true;
+            Working5.IsVisible = true;
             Working1.Text = $" - {a + b}x + {a * b} = 0";
+            Working2.Text = $"a + b = {question_a + question_b} and a x b = {question_a * question_b}";
+            Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} x {question_b} = {question_a * question_b}";
+            Working4.Text = $"FACTORISE ->> (x - {a})(x - {b}) = 0";
+            Working5.Text = $"Therefore, x = {a} or x = {b}";
         }
 
 
