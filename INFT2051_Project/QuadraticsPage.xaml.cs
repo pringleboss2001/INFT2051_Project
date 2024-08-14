@@ -93,60 +93,6 @@ public partial class QuadraticsPage : ContentPage
 
     }
 
-    public void showQuestion(int a, int b, int operator1, int operator2)
-    {
-        if (operator1 == 1 && operator2 == 1)
-        {
-            //Quadratic of the form (x + a)(x + b) = 0
-            QuestionLabel.Text = $"x^2 + {a + b}x + {a * b}";
-        }
-
-        else if (operator1 == 1 && operator2 == 2)
-        {
-            //Quadratic of the form (x + a)(x - b) = 0 OR x^2 + (a-b)x - ab = 0
-            if (a - b < 0)
-            {
-                QuestionLabel.Text = $"x^2 - {b - a}x - {a * b}";
-            }
-
-            else if (a-b == 0)
-            {
-                QuestionLabel.Text = $"x^2  - {a * b}";
-            }
-
-            else
-            {
-                QuestionLabel.Text = $"x^2 + {a - b}x - {a * b}";
-            }
-            
-        }
-
-        else if (operator1 == 2 && operator2 == 1)
-        {
-            //Quadratic of the form (x - a)(x + b) = 0 OR x^2 + (b-a)x - ab = 0
-            if (b - a < 0)
-            {
-                QuestionLabel.Text = $"x^2 - {a - b}x - {a * b}";
-            }
-
-            else if (b - a == 0)
-            {
-                QuestionLabel.Text = $"x^2  - {a * b}";
-            }
-
-            else
-            {
-                QuestionLabel.Text = $"x^2 + {b - a}x - {a * b}";
-            }
-        }
-
-        else
-        {
-            //Quadratic of the form (x - a)(x - b) = 0 OR x^2 - (a + b)x + ab
-            QuestionLabel.Text = $"x^2 - {a + b}x + {a * b}";
-        }
-    }
-
     public void createQuestion(int a, int b)
     {
         int question_a = -1 * a;
