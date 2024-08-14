@@ -11,7 +11,7 @@
             <HorizontalStackLayout
                 HorizontalOptions="Center"
                 VerticalOptions="Center">
-                
+
                 <Label 
                     Text="solve for x when, x&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;"
                     TextType="Html"
@@ -31,21 +31,25 @@
 
         <ScrollView>
             <StackLayout x:Name="WorkingArea" IsVisible="False" Spacing="10">
-                <HorizontalStackLayout>
+                <HorizontalStackLayout
+                    VerticalOptions="Center">
                     <Label
                         FontAttributes="Bold"
-                        Text="Step 1 : ">
-                    </Label>
+                        Text="Step 1 : x&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;"
+                        TextType = "Html"/>
+
                     <Label
                         x:Name="Working1"
-                        Text="Line of Working">
+                        Text="Line of Working"
+                        Padding="2">
                     </Label>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label
                         FontAttributes="Bold"
-                        Text="Step 2 : ">
-                    </Label>
+                        Text="Step 2 : "
+                        TextType="Html"/>
+
                     <Label
                         x:Name="Working2"
                         Text="Line of Working">
@@ -90,41 +94,29 @@
             FontSize="20"
             HorizontalOptions="Center"
             Text="" />
-        <Label
-            x:Name="AnswerLabel2"
-            FontFamily="CambriaMath"
-            FontSize="20"
-            HorizontalOptions="Center"
-            Text="" />
 
-        <HorizontalStackLayout Padding="10,0" Spacing="25">
+        <HorizontalStackLayout Padding="10,0" Spacing="10">
             <Entry
                 x:Name="AnswerInput1"
                 HorizontalTextAlignment="Center"
                 Keyboard="Default"
                 Placeholder="Enter the first answer"
                 Text=""
-                WidthRequest="200" />
-
-            <Button
-                x:Name="SubmitAnswer1"
-                Grid.Column="2"
-                Clicked="OnButtonClicked"
-                Text="Submit" />
-
-        </HorizontalStackLayout>
-        <HorizontalStackLayout Padding="10,0" Spacing="25">
+                WidthRequest="125" />
             <Entry
                 x:Name="AnswerInput2"
                 HorizontalTextAlignment="Center"
                 Keyboard="Default"
                 Placeholder="Enter the second answer"
                 Text=""
-                WidthRequest="200" />
-
+                WidthRequest="100" />
+            <Button
+                x:Name="SubmitAnswer"
+                Grid.Column="2"
+                Clicked="OnButtonClicked"
+                Text="Submit" />
 
         </HorizontalStackLayout>
-
         <Button
             x:Name="NextQuestion"
             Clicked="OnButtonClicked"
