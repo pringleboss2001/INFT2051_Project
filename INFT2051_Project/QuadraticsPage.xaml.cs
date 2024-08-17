@@ -307,7 +307,30 @@ public partial class QuadraticsPage : ContentPage
         int question_b = -1 * b;
         //Gotta checkl for all combinations of roots a and b. REMEMBER, A AND B ARE SELECTED SUCH THAT WHEN X=A OR X=B, THE EQUATION = 0
         //then check for the nature of the middle term (a + b)x
-        if (a < 0 && b < 0) //if a and b are negative. i.e (x+a)(x+b)=0. 
+
+        if (a == 0 && b == 0)   //x^2
+        {
+            QuestionLabel.Text = $" = 0";
+        }
+
+        else if (a == b) // checking if it is a repeated root, i.e (x + a)^2 if a is -/ve. and (x - a)^2 if a is positive.
+        {
+            if (a < 0)  //(x+a)^2
+            {
+                QuestionLabel.Text = $" + {-2 * a}x + {a * a}  = 0";
+            }
+            else    //(x-a)^2
+            {
+                QuestionLabel.Text = $" - {2 * a}x + {a * a} = 0";
+            }
+        }
+
+        else if (b == -1 * a)    //checking for difference of two squares. (x+a)(x-a)
+        {
+            QuestionLabel.Text = $" - {a * a} = 0";
+        }
+
+        else if (a < 0 && b < 0) //if a and b are negative. i.e (x+a)(x+b)=0. 
         {
             QuestionLabel.Text = $" + {-1* (a + b)}x + {a * b}  = 0";
         }
@@ -336,11 +359,6 @@ public partial class QuadraticsPage : ContentPage
             QuestionLabel.Text = $" + {-1 * b}x = 0";
         }
 
-        else if (a == 0 && b == 0)   //x^2
-        {
-            QuestionLabel.Text = $" = 0";
-        }
-
         else if (a == 0 && b > 0)    //x(x-b)
         {
             QuestionLabel.Text = $" + {b}x = 0";
@@ -367,23 +385,6 @@ public partial class QuadraticsPage : ContentPage
         else if (a > 0 && b > 0) //(x-a)(x-b). x^2 - (a + b)x + ab
         {
             QuestionLabel.Text = $" - {a + b}x + {a*b} = 0";
-        }
-
-        else if (a == b) // checking if it is a repeated root, i.e (x + a)^2 if a is -/ve. and (x - a)^2 if a is positive.
-        {
-            if (a < 0)  //(x+a)^2
-            {
-                QuestionLabel.Text = $" + {-2 * a}x + {a*a}  = 0";
-            }
-            else    //(x-a)^2
-            {
-                QuestionLabel.Text = $" - {2 * a}x + {a * a} = 0";
-            }
-        }
-
-        else if (b == -1 * a)    //checking for difference of two squares. (x+a)(x-a)
-        {
-            QuestionLabel.Text = $" - {a * a} = 0";
-        }
+        }       
     }
 }
