@@ -186,7 +186,7 @@ public partial class QuadraticsPage : ContentPage
                 Working1.Text = $" + {question_a + question_b}x - {-1 * a * b} = 0";
                 Working2.Text = $"a + b = {question_a + question_b} and a x b = {a * b}";
                 Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} x {question_b} = {a * b}";
-                Working4.Text = $"FACTORISE ->> (x + {question_a})(x + {question_b}) = 0";
+                Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
 
