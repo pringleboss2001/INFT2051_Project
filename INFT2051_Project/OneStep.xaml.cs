@@ -147,7 +147,7 @@ public partial class OneStep : ContentPage
             //Need to check if the division b/a is a whole number.
             answer = (b / a);
             Working1.Text = $"{a}x = {b}";
-            Working2.Text = $"{a}x / {a} = {b} / {a}";
+            Working2.Text = $"{a}x \u00F7 {a} = {b} \u00F7 {a}";
             Working3.Text = $"x = {frac}";
 
         }
@@ -156,7 +156,7 @@ public partial class OneStep : ContentPage
         {
             answer = (b * a);
             Working1.Text = $"x/{a} = {b}";
-            Working2.Text = $"x/{a} * {a} = {b} * {a}";
+            Working2.Text = $"x/{a} \u00D7 {a} = {b} \u00d7 {a}";
             Working3.Text = $"x = {answer}";
         }
     }

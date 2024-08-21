@@ -169,7 +169,7 @@ public partial class TwoStep : ContentPage
             Working1.Text = $"{a}x + {b} = {c}";
             Working2.Text = $"{a}x + {b} - {b} = {c} - {b}";
             Working3.Text = $"{a}x = {c - b}";
-            Working4.Text = $"{a}x / {a} = {c - b} / {a}";
+            Working4.Text = $"{a}x \u00F7 {a} = {c - b} \u00F7 {a}";
             Working5.Text = $"x = {frac}";
         }
 
@@ -180,7 +180,7 @@ public partial class TwoStep : ContentPage
             Working1.Text = $"{a}x - {b} = {c}";
             Working2.Text = $"{a}x - {b} + {b} = {c} + {b}";
             Working3.Text = $"{a}x = {c + b}";
-            Working4.Text = $"{a}x / {a} = {c + b} / {a}";
+            Working4.Text = $"{a}x \u00F7 {a} = {c + b} \u00F7 {a}";
             Working5.Text = $"x = {frac}";
         }
 
@@ -190,7 +190,7 @@ public partial class TwoStep : ContentPage
             Working1.Text = $"x/{a} + {b} = {c}";
             Working2.Text = $"x/{a} + {b} - {b} = {c} - {b}";
             Working3.Text = $"x/{a} = {c - b}";
-            Working4.Text = $"x/{a} * {a} = {c - b} * {a}";
+            Working4.Text = $"x/{a} \u00D7 {a} = {c - b} \u00D7 {a}";
             Working5.Text = $"x = {(c-b)*a}";
         }
         else if (MulDiv == 2 && AddSub == 2)
@@ -199,7 +199,7 @@ public partial class TwoStep : ContentPage
             Working1.Text = $"x/{a} - {b} = {c}";
             Working2.Text = $"x/{a} - {b} + {b} = {c} + {b}";
             Working3.Text = $"x/{a} = {c + b}";
-            Working4.Text = $"x/{a} * {a} = {c + b} * {a}";
+            Working4.Text = $"x/{a} \u00D7 {a} = {c + b} \u00D7 {a}";
             Working5.Text = $"x = {(c + b) * a}";
         }
     }

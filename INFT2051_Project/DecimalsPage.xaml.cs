@@ -62,12 +62,12 @@ public partial class DecimalsPage : ContentPage
         {
 
             decimal answer = Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)) * 100, 1);
-            decimal working = Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 2);
+            decimal working = Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 3);
             if ((int)answer == answer)
             {
                 answer = Math.Round(answer, 0);
             }
-            Working1.Text = $"{numerator} \u00F7 {denominator} = {Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 2)}";
+            Working1.Text = $"{numerator} \u00F7 {denominator} = {Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 3)}";
             Working2.Text = $"{numerator}/{denominator} = {working}";
             Working3.Text = $"{numerator}/{denominator} = {answer}";
         }
@@ -82,7 +82,7 @@ public partial class DecimalsPage : ContentPage
 
     public void checkAnswer(int numerator, int denominator, float percentageAnswer, int FracPerc, string answerInput)
     {
-        decimal fractionAnswer = Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 2);
+        decimal fractionAnswer = Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 3);
 
         if (FracPerc == 1)
         {
