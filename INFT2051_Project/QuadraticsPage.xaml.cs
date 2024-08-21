@@ -4,8 +4,6 @@ public partial class QuadraticsPage : ContentPage
 {
     int a = 0;
     int b = 0;
-    int op_1 = 0;
-    int op_2 = 0;
 
     public QuadraticsPage()
     {

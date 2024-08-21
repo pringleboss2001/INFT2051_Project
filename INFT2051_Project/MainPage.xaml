@@ -14,7 +14,7 @@
                 SemanticProperties.HeadingLevel="Level1" />
             
             <Label
-                Text="Please select the desired year level"
+                Text="Please select the desired Focus Area"
                 Style="{StaticResource Headline}"
                 FontSize="18"
                 SemanticProperties.HeadingLevel="Level2" />
@@ -67,6 +67,27 @@
                 x:Name="Volume"
                 Text="Volume" 
                 SemanticProperties.Hint="Volume"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Fractions"
+                Text="Fractions" 
+                SemanticProperties.Hint="Fraction"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Decimals"
+                Text="Decimals" 
+                SemanticProperties.Hint="Decimals"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Percentages"
+                Text="Percentages" 
+                SemanticProperties.Hint="Percentages"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 

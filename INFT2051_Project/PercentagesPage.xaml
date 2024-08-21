@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INFT2051_Project.PercentagesPage"
+             Title="PercentagesPage">
+    <VerticalStackLayout 
+        Padding="30,0" Spacing="10">
+
+        <StackLayout>
+            <HorizontalStackLayout
+            HorizontalOptions="Center">
+                <Label 
+                Text="Convert " 
+                FontFamily="RomanMath"
+                FontSize="20"/>
+
+                <Label
+                x:Name="QuestionLabel"
+                FontFamily="RomanMath"
+                FontSize="20"
+                Text=""/>
+            </HorizontalStackLayout>
+        </StackLayout>
+
+        <ScrollView>
+            <Grid
+            x:Name="WorkingGrid"
+            ColumnSpacing="2"
+            IsVisible="False"
+            RowSpacing="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Step 1:" />
+
+                <Label
+                x:Name="Working1"
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Line of Working" />
+
+                <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="Step 2:" />
+
+                <Label
+                x:Name="Working2"
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="Line of working" />
+
+                <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Step 3:" />
+
+                <Label
+                x:Name="Working3"
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="Line of Working" />
+
+            </Grid>
+        </ScrollView>
+        <Label
+            x:Name="AnswerLabel"
+            FontFamily="CambriaMath"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="Answer Label"
+            VerticalOptions="Center" />
+
+        <HorizontalStackLayout Padding="5,0" Spacing="25">
+
+
+            <Entry
+                x:Name="AnswerInput"
+                Grid.Column="0"
+                HorizontalTextAlignment="Center"
+                Keyboard="Default"
+                Placeholder="Enter the answer"
+                Text=""
+                WidthRequest="200" />
+
+            <Button
+                x:Name="SubmitAnswer"
+                Grid.Column="2"
+                Clicked="OnButtonClicked"
+                Text="Submit" />
+
+        </HorizontalStackLayout>
+
+        <Button
+            x:Name="NextQuestion"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Next Question"
+            Text="Next Question" />
+
+        <Button
+            x:Name="ShowWorking"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Show Working"
+            Text="Show Working" />
+
+        <Button
+            x:Name="Back"
+            Clicked="OnButtonClicked"
+            SemanticProperties.Hint="Back"
+            Text="Back" />
+    </VerticalStackLayout>
+</ContentPage>

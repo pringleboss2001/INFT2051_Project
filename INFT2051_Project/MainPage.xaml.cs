@@ -15,12 +15,19 @@
                 await Navigation.PushAsync(new OneStep());
             else if (btn == TwoStepButton)
                 await Navigation.PushAsync(new TwoStep());
-            else if (btn == Area)
-                await Navigation.PushAsync(new AreaPage());
-            else if (btn == Perimeter)
-                await Navigation.PushAsync(new PerimeterPage());
             else if (btn == QuadraticEquationsButton)
                 await Navigation.PushAsync(new QuadraticsPage());
+            else if (btn == Perimeter)
+                await Navigation.PushAsync(new PerimeterPage());
+            else if (btn == Area)
+                await Navigation.PushAsync(new AreaPage());
+            else if (btn == Fractions)
+                await Navigation.PushAsync(new FractionsPage());
+            else if (btn == Decimals)
+                await Navigation.PushAsync(new DecimalsPage());
+            else if (btn == Percentages)
+                await Navigation.PushAsync(new PercentagesPage());
+
         }
     }
 

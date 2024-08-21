@@ -104,8 +104,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="DecimalsPage.xaml.cs">
+	    <DependentUpon>DecimalsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="FractionsPage.xaml.cs">
+	    <DependentUpon>FractionsPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="MainPage - Copy.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
+	  </Compile>
+	  <Compile Update="PercentagesPage.xaml.cs">
+	    <DependentUpon>PercentagesPage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="TwoStep.xaml.cs">
 	    <DependentUpon>TwoStep.xaml</DependentUpon>
@@ -116,6 +125,12 @@
 	  <MauiXaml Update="AreaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="DecimalsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="FractionsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MainPage - Copy.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -123,6 +138,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="OneStep.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PercentagesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PerimeterPage.xaml">
