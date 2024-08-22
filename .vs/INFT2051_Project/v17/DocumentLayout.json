@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\fractionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\fractionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\platforms\\windows\\windowsizehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\platforms\\windows\\windowsizehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\services\\partialmethods\\windowsizehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\services\\partialmethods\\windowsizehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\onestep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\onestep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\onestep.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\onestep.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\fractionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\fractionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\percentagespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\percentagespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\percentagespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\onestep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\onestep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,24 +54,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\App.xaml.cs",
+              "RelativeDocumentMoniker": "INFT2051_Project\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\App.xaml.cs",
+              "RelativeToolTip": "INFT2051_Project\\App.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T10:27:42.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WindowSizeHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Platforms\\Windows\\WindowSizeHandler.cs",
+              "RelativeDocumentMoniker": "INFT2051_Project\\Platforms\\Windows\\WindowSizeHandler.cs",
+              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Platforms\\Windows\\WindowSizeHandler.cs",
+              "RelativeToolTip": "INFT2051_Project\\Platforms\\Windows\\WindowSizeHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T10:26:22.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WindowSizeHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Services\\PartialMethods\\WindowSizeHandler.cs",
+              "RelativeDocumentMoniker": "INFT2051_Project\\Services\\PartialMethods\\WindowSizeHandler.cs",
+              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Services\\PartialMethods\\WindowSizeHandler.cs",
+              "RelativeToolTip": "INFT2051_Project\\Services\\PartialMethods\\WindowSizeHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T10:23:23.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "OneStep.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\OneStep.xaml.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\OneStep.xaml.cs",
               "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\OneStep.xaml.cs",
               "RelativeToolTip": "INFT2051_Project\\OneStep.xaml.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAAAJkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T02:09:05.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "OneStep.xaml",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\OneStep.xaml",
               "RelativeDocumentMoniker": "INFT2051_Project\\OneStep.xaml",
@@ -72,33 +123,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FractionsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\FractionsPage.xaml.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\FractionsPage.xaml.cs",
               "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\FractionsPage.xaml.cs",
               "RelativeToolTip": "INFT2051_Project\\FractionsPage.xaml.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAQwD4AAAAxAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAQwDUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T01:36:49.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "FractionsPage.xaml",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\FractionsPage.xaml",
               "RelativeDocumentMoniker": "INFT2051_Project\\FractionsPage.xaml",
               "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\FractionsPage.xaml",
               "RelativeToolTip": "INFT2051_Project\\FractionsPage.xaml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAwAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAEBVwAwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-21T01:36:49.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "DecimalsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\DecimalsPage.xaml.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\DecimalsPage.xaml.cs",
@@ -111,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "DecimalsPage.xaml",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\DecimalsPage.xaml",
               "RelativeDocumentMoniker": "INFT2051_Project\\DecimalsPage.xaml",
@@ -124,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PercentagesPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\PercentagesPage.xaml.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\PercentagesPage.xaml.cs",
@@ -137,13 +188,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "PercentagesPage.xaml",
               "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\PercentagesPage.xaml",
               "RelativeDocumentMoniker": "INFT2051_Project\\PercentagesPage.xaml",
               "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\PercentagesPage.xaml",
               "RelativeToolTip": "INFT2051_Project\\PercentagesPage.xaml",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAAAHkAAAAaAAAA",
+              "ViewState": "AQIAAFUAAAAAAAAAAIBZwHkAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-20T22:57:54.613Z",
               "EditorCaption": ""
