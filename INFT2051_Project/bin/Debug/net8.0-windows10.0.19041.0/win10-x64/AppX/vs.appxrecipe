@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-22T22:30:19.700</Modified>
+      <Modified>2024-08-22T22:31:47.938</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-22T22:30:19.523</Modified>
+      <Modified>2024-08-22T22:31:47.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\INFT2051_Project.runtimeconfig.json">
       <PackagePath>INFT2051_Project.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\INFT2051_Project.dll">
       <PackagePath>INFT2051_Project.dll</PackagePath>
-      <Modified>2024-08-22T22:30:18.127</Modified>
+      <Modified>2024-08-22T22:31:46.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>INFT2051_Project.exe</PackagePath>
-      <Modified>2024-08-22T22:30:18.140</Modified>
+      <Modified>2024-08-22T22:31:46.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -300,7 +300,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\INFT2051_Project.deps.json">
       <PackagePath>INFT2051_Project.deps.json</PackagePath>
-      <Modified>2024-08-22T22:30:19.198</Modified>
+      <Modified>2024-08-22T22:31:47.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ethan Pringle\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

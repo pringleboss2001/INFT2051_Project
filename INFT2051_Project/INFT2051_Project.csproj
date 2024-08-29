@@ -90,11 +90,17 @@
 
 	<ItemGroup>
 	  <AndroidResource Remove="NewFolder1\**" />
+	  <AndroidResource Remove="Pages\**" />
 	  <Compile Remove="NewFolder1\**" />
+	  <Compile Remove="Pages\**" />
 	  <EmbeddedResource Remove="NewFolder1\**" />
+	  <EmbeddedResource Remove="Pages\**" />
 	  <MauiCss Remove="NewFolder1\**" />
+	  <MauiCss Remove="Pages\**" />
 	  <MauiXaml Remove="NewFolder1\**" />
+	  <MauiXaml Remove="Pages\**" />
 	  <None Remove="NewFolder1\**" />
+	  <None Remove="Pages\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -153,11 +159,6 @@
 	  <MauiXaml Update="TwoStep.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Pages\Equations\" />
-	  <Folder Include="Pages\Geometry\" />
 	</ItemGroup>
 
 </Project>
