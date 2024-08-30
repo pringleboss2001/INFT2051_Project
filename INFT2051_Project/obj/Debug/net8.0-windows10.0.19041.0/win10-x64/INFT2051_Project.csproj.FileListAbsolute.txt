@@ -96,7 +96,6 @@ C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.stamp
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Cambria-Math.ttf
-C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\lmroman10-italic.otf
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\lmroman10-italic.ttf
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
@@ -368,3 +367,8 @@ C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Projec
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
+C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll

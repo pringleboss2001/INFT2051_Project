@@ -90,17 +90,11 @@
 
 	<ItemGroup>
 	  <AndroidResource Remove="NewFolder1\**" />
-	  <AndroidResource Remove="Pages\**" />
 	  <Compile Remove="NewFolder1\**" />
-	  <Compile Remove="Pages\**" />
 	  <EmbeddedResource Remove="NewFolder1\**" />
-	  <EmbeddedResource Remove="Pages\**" />
 	  <MauiCss Remove="NewFolder1\**" />
-	  <MauiCss Remove="Pages\**" />
 	  <MauiXaml Remove="NewFolder1\**" />
-	  <MauiXaml Remove="Pages\**" />
 	  <None Remove="NewFolder1\**" />
-	  <None Remove="Pages\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -111,31 +105,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="DecimalsPage.xaml.cs">
+	  <Compile Update="Pages\DecimalsPage.xaml.cs">
 	    <DependentUpon>DecimalsPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="FractionsPage.xaml.cs">
+	  <Compile Update="Pages\FractionsPage.xaml.cs">
 	    <DependentUpon>FractionsPage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="MainPage - Copy.xaml.cs">
 	    <DependentUpon>%(Filename)</DependentUpon>
 	  </Compile>
-	  <Compile Update="PercentagesPage.xaml.cs">
+	  <Compile Update="Pages\PercentagesPage.xaml.cs">
 	    <DependentUpon>PercentagesPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="TwoStep.xaml.cs">
+	  <Compile Update="Pages\TwoStep.xaml.cs">
 	    <DependentUpon>TwoStep.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AreaPage.xaml">
+	  <MauiXaml Update="Pages\AreaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DecimalsPage.xaml">
+	  <MauiXaml Update="Pages\DecimalsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FractionsPage.xaml">
+	  <MauiXaml Update="Pages\FractionsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MainPage - Copy.xaml">
@@ -144,19 +138,19 @@
 	  <MauiXaml Update="NewPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="OneStep.xaml">
+	  <MauiXaml Update="Pages\OneStep.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PercentagesPage.xaml">
+	  <MauiXaml Update="Pages\PercentagesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PerimeterPage.xaml">
+	  <MauiXaml Update="Pages\PerimeterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="QuadraticsPage.xaml">
+	  <MauiXaml Update="Pages\QuadraticsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="TwoStep.xaml">
+	  <MauiXaml Update="Pages\TwoStep.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

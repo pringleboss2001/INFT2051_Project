@@ -11,25 +11,25 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="AreaPage.xaml">
+    <MauiXaml Update="Pages\AreaPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="DecimalsPage.xaml">
+    <MauiXaml Update="Pages\DecimalsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="FractionsPage.xaml">
+    <MauiXaml Update="Pages\FractionsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="OneStep.xaml">
+    <MauiXaml Update="Pages\OneStep.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="PercentagesPage.xaml">
+    <MauiXaml Update="Pages\PercentagesPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="PerimeterPage.xaml">
+    <MauiXaml Update="Pages\PerimeterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="QuadraticsPage.xaml">
+    <MauiXaml Update="Pages\QuadraticsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
