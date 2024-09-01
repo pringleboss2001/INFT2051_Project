@@ -9,12 +9,13 @@ using SQLite;
 namespace INFT2051_Project.Models
 {
     [Table("TopicsData")]
-    public class TopicData
+    public class TopicData : ObservableObject
     {
         //I need to keep the name of the topic and its associated attempted and correct questions.
         ///This is used for a percentage of correct answer
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+        [MaxLength(260)]
         public string TopicName { get; set; }
 
         public int TotalQuestionsAttempted { get; set; }

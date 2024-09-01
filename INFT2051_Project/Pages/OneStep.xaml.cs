@@ -1,4 +1,6 @@
+using INFT2051_Project.Services;
 using Mehroz;
+using SQLite;
 
 namespace INFT2051_Project;
 
@@ -55,15 +57,15 @@ public partial class OneStep : ContentPage
             var answer = getAnswer(a, b, op);
             if (input == answer)
             {
-                Vibration.Default.Vibrate(2);
-                Vibration.Default.Vibrate(2);
-                Vibration.Default.Vibrate(2);
-                Vibration.Default.Vibrate(2);
+                //Vibration.Default.Vibrate(2);
+                //Vibration.Default.Vibrate(2);
+                //Vibration.Default.Vibrate(2);
+                //Vibration.Default.Vibrate(2);
                 AnswerLabel.Text = "Correct";
             }
             else
             {
-                Vibration.Default.Vibrate(10);
+                //Vibration.Default.Vibrate(10);
                 AnswerLabel.Text = "Wrong";
             }
                 

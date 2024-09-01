@@ -1,4 +1,6 @@
-﻿namespace INFT2051_Project
+﻿using INFT2051_Project.Pages;
+
+namespace INFT2051_Project
 {
     public partial class MainPage : ContentPage
     {
@@ -27,6 +29,8 @@
                 await Navigation.PushAsync(new DecimalsPage());
             else if (btn == Percentages)
                 await Navigation.PushAsync(new PercentagesPage());
+            else if (btn == UserData)
+                await Navigation.PushAsync(new ViewData());
 
         }
     }

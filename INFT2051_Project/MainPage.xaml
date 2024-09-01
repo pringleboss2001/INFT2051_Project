@@ -98,6 +98,13 @@
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 
+            <Button
+                x:Name="UserData"
+                Text="User Data" 
+                SemanticProperties.Hint="UserData"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
     </ScrollView>
 

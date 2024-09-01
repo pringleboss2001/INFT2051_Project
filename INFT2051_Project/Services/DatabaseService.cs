@@ -47,7 +47,5 @@ namespace INFT2051_Project.Services
             else
                 DatabaseService.Connection.Insert(model);
         }
-    }
-
-    
+    }  
 }
