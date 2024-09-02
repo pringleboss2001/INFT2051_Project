@@ -14,6 +14,8 @@ public partial class OneStep : ContentPage
     int a;
     int b;
     int op;
+    bool questionAttempted;
+    bool questionCorrect;
 
     readonly DataViewModel viewModel;   //reads in a dataViewModel
     SQLiteConnection connection = DatabaseService.Connection;
@@ -49,6 +51,8 @@ public partial class OneStep : ContentPage
 
         else if (btn == NextQuestion)
         {
+            questionAttempted = false;
+            questionCorrect = false;
             NextQuestion.Text = "Next Question";
             WorkingGrid.IsVisible = false;
             a = getInteger();
@@ -82,19 +86,68 @@ public partial class OneStep : ContentPage
             var answer = getAnswer(a, b, op);
             if (input == answer)
             {
-                oneStepData.TotalQuestionsAttempted++;
-
-                //Vibration.Default.Vibrate(2);
-                //Vibration.Default.Vibrate(2);
-                //Vibration.Default.Vibrate(2);
-                //Vibration.Default.Vibrate(2);
-                AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted}";
-                DataViewModel.Current.SaveData(oneStepData);
+                if (questionAttempted==false)
+                {
+                    if (questionCorrect == false)
+                    {
+                        oneStepData.TotalQuestionsAttempted++;
+                        oneStepData.TotalQuestionsCorrect++;
+                        questionAttempted = true;
+                        questionCorrect=true;
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.SaveData(oneStepData);
+                    }
+                    else
+                    {
+                        AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.SaveData(oneStepData);
+                    }
+                }
+                else
+                {
+                    if (questionCorrect == false)
+                    {
+                        oneStepData.TotalQuestionsCorrect++;
+                        questionAttempted = true;
+                        questionCorrect = true;
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.SaveData(oneStepData);
+                    }
+                    else
+                    {
+                        AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.SaveData(oneStepData);
+                    }
+                }
+                
+                
             }
             else
             {
-                //Vibration.Default.Vibrate(10);
-                AnswerLabel.Text = "Wrong";
+                if (questionAttempted==false)   //checking if they have already attempted the question to maintain consistent data
+
+                {
+                    //Vibration.Default.Vibrate(10);
+                    questionAttempted = true;
+                    oneStepData.TotalQuestionsAttempted++;
+                    AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
+                    DataViewModel.Current.SaveData(oneStepData);
+                }
+                else
+                {
+                    //Vibration.Default.Vibrate(10);
+                    AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
+                    DataViewModel.Current.SaveData(oneStepData);
+                }
+                
             }
                 
         }
