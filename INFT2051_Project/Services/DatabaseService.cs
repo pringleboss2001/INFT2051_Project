@@ -9,7 +9,7 @@ using SQLite;
 namespace INFT2051_Project.Services
 {
     
-    internal static class DatabaseService
+    public class DatabaseService
     {
         private static string _databaseFile;
         private static string DatabaseFile
@@ -18,9 +18,9 @@ namespace INFT2051_Project.Services
             {
                 if (_databaseFile == null)
                 {
-                    string databaseDir = System.IO.Path.Combine(FileSystem.Current.AppDataDirectory, "data");
+                    string databaseDir = System.IO.Path.Combine(FileSystem.Current.AppDataDirectory, "TopicData.db");
                     System.IO.Directory.CreateDirectory(databaseDir);
-                    _databaseFile = Path.Combine(databaseDir, "topic_data.sqlite");
+                    _databaseFile = Path.Combine(databaseDir, "TopicData.db");
                 }
                 return _databaseFile;
             }
@@ -46,6 +46,13 @@ namespace INFT2051_Project.Services
                 DatabaseService.Connection.Update(model);
             else
                 DatabaseService.Connection.Insert(model);
+        }
+
+        public ISQLiteAsyncConnection CreateConnection()
+        {
+            return new SQLiteAsyncConnection(
+                Path.Combine(FileSystem.AppDataDirectory, "TopicData.db3"),
+                SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create | SQLiteOpenFlags.SharedCache);
         }
     }  
 }

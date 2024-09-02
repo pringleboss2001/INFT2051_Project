@@ -10,8 +10,9 @@ using INFT_2051.Models;
 
 namespace INFT2051_Project.ViewModels
 {
-    internal class TopicViewModel : ObservableObject
+    public partial class TopicViewModel : ObservableObject
     {
+        
         public static TopicViewModel Current { get; set; }
         SQLiteConnection connection;
 
@@ -19,14 +20,6 @@ namespace INFT2051_Project.ViewModels
         {
             Current = this;
             connection = DatabaseService.Connection;
-        }
-
-        public List<TopicData> Topics
-        {
-            get
-            {
-                return connection.Table<TopicData>().ToList();
-            }
         }
 
         public void SaveData(TopicData data)
