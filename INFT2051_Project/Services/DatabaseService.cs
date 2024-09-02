@@ -18,9 +18,9 @@ namespace INFT2051_Project.Services
             {
                 if (_databaseFile == null)
                 {
-                    string databaseDir = System.IO.Path.Combine(FileSystem.Current.AppDataDirectory, "TopicData.db");
+                    string databaseDir = System.IO.Path.Combine(FileSystem.Current.AppDataDirectory, "TopicData.db3");
                     System.IO.Directory.CreateDirectory(databaseDir);
-                    _databaseFile = Path.Combine(databaseDir, "TopicData.db");
+                    _databaseFile = Path.Combine(databaseDir, "TopicData.db3");
                 }
                 return _databaseFile;
             }
