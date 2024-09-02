@@ -1,18 +1,40 @@
+using INFT2051_Project.Models;
 using INFT2051_Project.Services;
+using INFT2051_Project.ViewModels;
 using Mehroz;
 using SQLite;
+using System.Data;
 
 namespace INFT2051_Project;
 
 public partial class OneStep : ContentPage
 {
+
     int a;
     int b;
     int op;
+
+    readonly DataViewModel viewModel;   //reads in a dataViewModel
+    
+    TopicData oneStepData = new TopicData() //creating a new TopicData object to pass to dataViewModel. I need to read in the data base values to this entity
+    {
+        Id = 0,
+        TopicName = "One Step Equations",
+        TotalQuestionsAttempted = 0,
+        TotalQuestionsCorrect = 0
+    };
     
     public OneStep()
 	{
         InitializeComponent();
+        BindingContext = viewModel = new DataViewModel();
+
+        List<TopicData> data = new List<TopicData>();
+    }
+
+    protected override void OnAppearing()
+    {
+        viewModel.OnPropertyChanged("Topics");
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)
@@ -57,11 +79,14 @@ public partial class OneStep : ContentPage
             var answer = getAnswer(a, b, op);
             if (input == answer)
             {
+                oneStepData.TotalQuestionsAttempted++;
+
                 //Vibration.Default.Vibrate(2);
                 //Vibration.Default.Vibrate(2);
                 //Vibration.Default.Vibrate(2);
                 //Vibration.Default.Vibrate(2);
-                AnswerLabel.Text = "Correct";
+                AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted}";
+                DataViewModel.Current.SaveData(oneStepData);
             }
             else
             {

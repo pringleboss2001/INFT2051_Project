@@ -1,13 +1,15 @@
 ﻿using INFT2051_Project.Pages;
+using INFT2051_Project.Services;
+using INFT2051_Project.Models;
 
 namespace INFT2051_Project
 {
     public partial class MainPage : ContentPage
     {
-
         public MainPage()
         {
             InitializeComponent();
+
         }
 
         public async void OnButtonClicked(object sender, EventArgs e)
@@ -30,7 +32,7 @@ namespace INFT2051_Project
             else if (btn == Percentages)
                 await Navigation.PushAsync(new PercentagesPage());
             else if (btn == UserData)
-                await Navigation.PushAsync(new ViewData());
+                await Navigation.PushAsync(new ViewDataPage());
 
         }
     }

@@ -1,4 +1,5 @@
-﻿using INFT2051_Project.Services;
+﻿using INFT2051_Project.Models;
+using INFT2051_Project.Services;
 using Microsoft.Extensions.Logging;
 using SQLite;
 
@@ -21,9 +22,6 @@ namespace INFT2051_Project
 
 #if DEBUG
             
-
-            builder.Services.AddSingleton<DatabaseService>();
-
             builder.Logging.AddDebug();
 #endif
 

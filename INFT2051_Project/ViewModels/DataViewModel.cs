@@ -1,4 +1,5 @@
-﻿using System;
+﻿using INFT_2051.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,20 +7,27 @@ using System.Threading.Tasks;
 using SQLite;
 using INFT2051_Project.Services;
 using INFT2051_Project.Models;
-using INFT_2051.Models;
 
 namespace INFT2051_Project.ViewModels
 {
-    public partial class TopicViewModel : ObservableObject
+    internal class DataViewModel : ObservableObject
     {
-        
-        public static TopicViewModel Current { get; set; }
+        public static DataViewModel Current { get; set; }
+
         SQLiteConnection connection;
 
-        public TopicViewModel()
+        public DataViewModel()
         {
             Current = this;
             connection = DatabaseService.Connection;
+        }
+
+        public List<TopicData> Data
+        {
+            get
+            {
+                return connection.Table<TopicData>().ToList();
+            }
         }
 
         public void SaveData(TopicData data)
@@ -36,7 +44,10 @@ namespace INFT2051_Project.ViewModels
 
         public void DeleteData(TopicData data)
         {
-            connection.Delete(data);
+            if (data.Id > 0)
+            {
+                connection.Delete(data);
+            }
         }
     }
 }

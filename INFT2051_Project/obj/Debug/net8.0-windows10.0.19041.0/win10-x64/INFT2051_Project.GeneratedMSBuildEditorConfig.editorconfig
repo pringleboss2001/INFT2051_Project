@@ -78,11 +78,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.Pages.Two
 build_metadata.AdditionalFiles.TargetPath = Pages\TwoStep.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\TwoStep.xaml
 
-[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/Pages/ViewData.xaml]
+[C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/Pages/ViewDataPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.Pages.ViewData.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\ViewData.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\ViewData.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = INFT2051_Project.Pages.ViewDataPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ViewDataPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ViewDataPage.xaml
 
 [C:/Users/Ethan Pringle/Desktop/INFT2051_Project/INFT2051_Project/INFT2051_Project/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

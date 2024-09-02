@@ -35916,6 +35916,7 @@
       "Microsoft.Maui.Controls >= 8.0.61",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.61",
       "Microsoft.NET.ILLink.Tasks >= 8.0.7",
+      "SQLitePCLRaw.bundle_green >= 2.1.2",
       "sqlite-net-pcl >= 1.9.172"
     ],
     "net8.0-ios17.2": [
@@ -35923,6 +35924,7 @@
       "Microsoft.Maui.Controls >= 8.0.61",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.61",
       "Microsoft.NET.ILLink.Tasks >= 8.0.7",
+      "SQLitePCLRaw.bundle_green >= 2.1.2",
       "sqlite-net-pcl >= 1.9.172"
     ],
     "net8.0-maccatalyst17.2": [
@@ -35930,12 +35932,14 @@
       "Microsoft.Maui.Controls >= 8.0.61",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.61",
       "Microsoft.NET.ILLink.Tasks >= 8.0.7",
+      "SQLitePCLRaw.bundle_green >= 2.1.2",
       "sqlite-net-pcl >= 1.9.172"
     ],
     "net8.0-windows10.0.19041": [
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.61",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.61",
+      "SQLitePCLRaw.bundle_green >= 2.1.2",
       "sqlite-net-pcl >= 1.9.172"
     ]
   },
@@ -36023,6 +36027,10 @@
             "version": "[8.0.7, )",
             "autoReferenced": true
           },
+          "SQLitePCLRaw.bundle_green": {
+            "target": "Package",
+            "version": "[2.1.2, )"
+          },
           "sqlite-net-pcl": {
             "target": "Package",
             "version": "[1.9.172, )"
@@ -36069,6 +36077,10 @@
             "target": "Package",
             "version": "[8.0.7, )",
             "autoReferenced": true
+          },
+          "SQLitePCLRaw.bundle_green": {
+            "target": "Package",
+            "version": "[2.1.2, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
@@ -36117,6 +36129,10 @@
             "version": "[8.0.7, )",
             "autoReferenced": true
           },
+          "SQLitePCLRaw.bundle_green": {
+            "target": "Package",
+            "version": "[2.1.2, )"
+          },
           "sqlite-net-pcl": {
             "target": "Package",
             "version": "[1.9.172, )"
@@ -36158,6 +36174,10 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[8.0.61, )"
+          },
+          "SQLitePCLRaw.bundle_green": {
+            "target": "Package",
+            "version": "[2.1.2, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

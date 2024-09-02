@@ -12,6 +12,7 @@
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.61",
           "Microsoft.Maui.Controls.Compatibility": "8.0.61",
+          "SQLitePCLRaw.bundle_green": "2.1.2",
           "sqlite-net-pcl": "1.9.172",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
         },

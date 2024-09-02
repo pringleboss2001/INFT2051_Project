@@ -7,10 +7,7 @@ namespace INFT2051_Project
 {
     public partial class App : Application
     {
-
-        private readonly DatabaseService _connection;
-
-        public App(DatabaseService connection)
+        public App()
         {
             InitializeComponent();
 
@@ -18,16 +15,7 @@ namespace INFT2051_Project
 
             MainPage = new AppShell();
 
-            _connection = connection;
         }
 
-        protected override async void OnStart()
-        {
-            ISQLiteAsyncConnection database = _connection.CreateConnection();
-
-            CreateTableResult createTableResult = await database.CreateTableAsync<TopicData>();
-
-            base.OnStart();
-        }
     }
 }

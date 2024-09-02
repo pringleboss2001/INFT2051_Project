@@ -9,10 +9,10 @@ using SQLite;
 namespace INFT2051_Project.Services
 {
     
-    public class DatabaseService
+    internal static class DatabaseService
     {
         private static string _databaseFile;
-        private static string DatabaseFile
+        public static string DatabaseFile
         {
             get 
             {
@@ -38,21 +38,6 @@ namespace INFT2051_Project.Services
                 }
                 return _connection;
             }
-        }
-
-        public static void SaveData(TopicData model)
-        {
-            if (model.Id > 0)
-                DatabaseService.Connection.Update(model);
-            else
-                DatabaseService.Connection.Insert(model);
-        }
-
-        public ISQLiteAsyncConnection CreateConnection()
-        {
-            return new SQLiteAsyncConnection(
-                Path.Combine(FileSystem.AppDataDirectory, "TopicData.db3"),
-                SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create | SQLiteOpenFlags.SharedCache);
-        }
+        }       
     }  
 }

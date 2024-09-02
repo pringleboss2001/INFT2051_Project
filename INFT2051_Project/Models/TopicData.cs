@@ -15,19 +15,12 @@ namespace INFT2051_Project.Models
         ///This is used for a percentage of correct answer
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        [MaxLength(260)]
+        [MaxLength(100), Unique]
         public string TopicName { get; set; }
 
         public int TotalQuestionsAttempted { get; set; }
 
         public int TotalQuestionsCorrect { get; set; }
 
-        public double CorrectPercent
-        {
-            get
-            { 
-                return (double)TotalQuestionsCorrect / TotalQuestionsAttempted;
-            }
-        }
     }
 }
