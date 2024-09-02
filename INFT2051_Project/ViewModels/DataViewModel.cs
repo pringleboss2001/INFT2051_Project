@@ -12,6 +12,15 @@ namespace INFT2051_Project.ViewModels
 {
     internal class DataViewModel : ObservableObject
     {
+        public List<string> topics = new List<string> 
+        { 
+            "One Step Equations",
+            "Two Step Equations",
+            "Quadratic Equations",
+            "Fractions",
+            "Decimals",
+            "Percentages"
+        };
         public static DataViewModel Current { get; set; }
 
         SQLiteConnection connection;

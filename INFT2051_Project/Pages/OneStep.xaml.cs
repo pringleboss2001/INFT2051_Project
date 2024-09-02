@@ -21,26 +21,25 @@ public partial class OneStep : ContentPage
 
     TopicData oneStepData = new TopicData() //creating a new TopicData object to pass to dataViewModel. I need to read in the data base values to this entity
     {
-        Id = 0,
+        //Id = 0,
         TopicName = "One Step Equations",
         TotalQuestionsAttempted = 0,
         TotalQuestionsCorrect = 0
     };
 
-    
-    
-
     public OneStep()
 	{
         InitializeComponent();
         BindingContext = viewModel = new DataViewModel();
+
     }
+
+
 
     protected override void OnAppearing()
     {
         viewModel.OnPropertyChanged("Topics");
         List<TopicData> data = connection.Table<TopicData>().ToList();
-        
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)

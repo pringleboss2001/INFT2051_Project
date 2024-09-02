@@ -2,14 +2,12 @@
 using SQLite;
 using INFT2051_Project.Services;
 using INFT2051_Project.Models;
+using INFT2051_Project.ViewModels;
 
 namespace INFT2051_Project
 {
     public partial class App : Application
     {
-
-        private readonly SQLiteConnection _connection;
-
         public App()
         {
             InitializeComponent();
@@ -17,7 +15,6 @@ namespace INFT2051_Project
             WindowSizeHandler.CallSetWindowSize();
 
             MainPage = new AppShell();
-
         }
     }
 }
