@@ -4,7 +4,6 @@ using INFT2051_Project.ViewModels;
 using Mehroz;
 using SQLite;
 using System.Data;
-using System.Data.SqlClient;
 
 namespace INFT2051_Project;
 
@@ -17,7 +16,7 @@ public partial class OneStep : ContentPage
     bool questionAttempted;
     bool questionCorrect;
 
-    readonly DataViewModel viewModel;   //reads in a dataViewModel
+    DataViewModel viewModel;   //reads in a dataViewModel
     SQLiteConnection connection = DatabaseService.Connection;
 
     TopicData oneStepData = new TopicData() //creating a new TopicData object to pass to dataViewModel. I need to read in the data base values to this entity
@@ -27,19 +26,21 @@ public partial class OneStep : ContentPage
         TotalQuestionsAttempted = 0,
         TotalQuestionsCorrect = 0
     };
+
+    
+    
+
     public OneStep()
 	{
         InitializeComponent();
         BindingContext = viewModel = new DataViewModel();
-
-        List<TopicData> data = connection.Table<TopicData>().ToList();
-        oneStepData = data.First();
-        
     }
 
     protected override void OnAppearing()
     {
         viewModel.OnPropertyChanged("Topics");
+        List<TopicData> data = connection.Table<TopicData>().ToList();
+        
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)

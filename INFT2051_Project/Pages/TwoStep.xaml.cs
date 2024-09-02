@@ -1,4 +1,8 @@
+using INFT2051_Project.Services;
+using INFT2051_Project.ViewModels;
 using Mehroz;
+using SQLite;
+using INFT2051_Project.Models;
 namespace INFT2051_Project;
 
 public partial class TwoStep : ContentPage
@@ -8,6 +12,19 @@ public partial class TwoStep : ContentPage
     int c = 0;
     int AddSub = 0;
     int MulDiv = 0;
+    bool questionAttempted;
+    bool questionCorrect;
+
+    DataViewModel viewModel;   //reads in a dataViewModel
+    SQLiteConnection connection = DatabaseService.Connection;
+
+    TopicData twoStepData = new TopicData() //creating a new TopicData object to pass to dataViewModel. I need to read in the data base values to this entity
+    {
+        //Id = 0,
+        TopicName = "Two Step Equations",
+        TotalQuestionsAttempted = 0,
+        TotalQuestionsCorrect = 0
+    };
 
     public TwoStep()
 	{
@@ -20,6 +37,8 @@ public partial class TwoStep : ContentPage
          
         if (btn == NextQuestion)
         {
+            questionAttempted = false;
+            questionCorrect = false;
             WorkingArea.IsVisible = false;
             NextQuestion.Text = "Next Question";
             a = getInteger();
@@ -63,18 +82,70 @@ public partial class TwoStep : ContentPage
             var answer = getAnswer(a, b, c, MulDiv, AddSub); ;
             if (input == answer)
             {
-                Vibration.Default.Vibrate(2);
-                Vibration.Default.Vibrate(2);
-                Vibration.Default.Vibrate(2);
-                Vibration.Default.Vibrate(2);
-                AnswerLabel.Text = "Correct";
+                if (questionAttempted == false)
+                {
+                    if (questionCorrect == false)
+                    {
+                        twoStepData.TotalQuestionsAttempted++;
+                        twoStepData.TotalQuestionsCorrect++;
+                        questionAttempted = true;
+                        questionCorrect = true;
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.SaveData(twoStepData);
+                    }
+                    else
+                    {
+                        AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.SaveData(twoStepData);
+                    }
+                }
+                else
+                {
+                    if (questionCorrect == false)
+                    {
+                        twoStepData.TotalQuestionsCorrect++;
+                        questionAttempted = true;
+                        questionCorrect = true;
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        //Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.SaveData(twoStepData);
+                    }
+                    else
+                    {
+                        AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.SaveData(twoStepData);
+                    }
+                }
+
+
             }
             else
             {
-                Vibration.Default.Vibrate(10);
-                AnswerLabel.Text = "Wrong";
+                if (questionAttempted == false)   //checking if they have already attempted the question to maintain consistent data
+
+                {
+                    //Vibration.Default.Vibrate(10);
+                    questionAttempted = true;
+                    twoStepData.TotalQuestionsAttempted++;
+                    AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                    DataViewModel.Current.SaveData(twoStepData);
+                }
+                else
+                {
+                    //Vibration.Default.Vibrate(10);
+                    AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                    DataViewModel.Current.SaveData(twoStepData);
+                }
+
             }
-            
+
         }
 
         if (btn == ShowWorking)

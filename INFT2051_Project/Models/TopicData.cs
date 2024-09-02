@@ -13,7 +13,7 @@ namespace INFT2051_Project.Models
     {
         //I need to keep the name of the topic and its associated attempted and correct questions.
         ///This is used for a percentage of correct answer
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int Id { get; set; }
         [MaxLength(100), Unique]
         public string TopicName { get; set; }
