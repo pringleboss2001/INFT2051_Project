@@ -15,26 +15,9 @@ public partial class OneStep : ContentPage
     bool questionAttempted;
     bool questionCorrect;
 
-    DataViewModel viewModel;
-    SQLiteConnection connection = DatabaseService.Connection;
-
-    TopicData oneStepData = new TopicData()     //creating a blank TopicData
-    {
-        Id = 1,
-        TopicName = "One Step Equations",
-        TotalQuestionsAttempted = 0,
-        TotalQuestionsCorrect = 2
-    };
-
     public OneStep()
 	{
-        BindingContext = viewModel = new DataViewModel();
         InitializeComponent();
-    }
-
-    protected override void OnAppearing()
-    {
-        viewModel.OnPropertyChanged("Topics");
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)
@@ -85,8 +68,8 @@ public partial class OneStep : ContentPage
                 {
                     if (questionCorrect == false)
                     {
-                        oneStepData.TotalQuestionsAttempted++;
-                        oneStepData.TotalQuestionsCorrect++;
+                        //oneStepData.TotalQuestionsAttempted++;
+                        //oneStepData.TotalQuestionsCorrect++;
                         questionAttempted = true;
                         questionCorrect=true;
                         //Vibration.Default.Vibrate(2);
@@ -94,19 +77,19 @@ public partial class OneStep : ContentPage
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                        DataViewModel.Current.SaveData(oneStepData);
+                        AnswerLabel.Text = $"correct";
                     }
                     else
                     {
                         //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                        DataViewModel.Current.SaveData(oneStepData);
+                        AnswerLabel.Text = $"correct";
                     }
                 }
                 else
                 {
                     if (questionCorrect == false)
                     {
-                        oneStepData.TotalQuestionsCorrect++;
+                        //oneStepData.TotalQuestionsCorrect++;
                         questionAttempted = true;
                         questionCorrect = true;
                         //Vibration.Default.Vibrate(2);
@@ -114,12 +97,12 @@ public partial class OneStep : ContentPage
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                        DataViewModel.Current.SaveData(oneStepData);
+                        AnswerLabel.Text = $"correct";
                     }
                     else
                     {
                         //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                        DataViewModel.Current.SaveData(oneStepData);
+                        AnswerLabel.Text = $"correct";
                     }
                 }
                 
@@ -132,15 +115,15 @@ public partial class OneStep : ContentPage
                 {
                     //Vibration.Default.Vibrate(10);
                     questionAttempted = true;
-                    oneStepData.TotalQuestionsAttempted++;
+                    //oneStepData.TotalQuestionsAttempted++;
                     //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                    DataViewModel.Current.SaveData(oneStepData);
+                    AnswerLabel.Text = $"wrong";
                 }
                 else
                 {
                     //Vibration.Default.Vibrate(10);
                     //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                    DataViewModel.Current.SaveData(oneStepData);
+                    AnswerLabel.Text = $"wrong";
                 }
                 
             }
