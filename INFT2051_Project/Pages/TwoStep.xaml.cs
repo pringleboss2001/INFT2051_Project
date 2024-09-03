@@ -14,18 +14,6 @@ public partial class TwoStep : ContentPage
     int MulDiv = 0;
     bool questionAttempted;
     bool questionCorrect;
-
-    DataViewModel viewModel;   //reads in a dataViewModel
-    SQLiteConnection connection = DatabaseService.Connection;
-
-    TopicData twoStepData = new TopicData() //creating a new TopicData object to pass to dataViewModel. I need to read in the data base values to this entity
-    {
-        //Id = 0,
-        TopicName = "Two Step Equations",
-        TotalQuestionsAttempted = 0,
-        TotalQuestionsCorrect = 0
-    };
-
     public TwoStep()
 	{
 		InitializeComponent();
@@ -86,41 +74,41 @@ public partial class TwoStep : ContentPage
                 {
                     if (questionCorrect == false)
                     {
-                        twoStepData.TotalQuestionsAttempted++;
-                        twoStepData.TotalQuestionsCorrect++;
+                        //twoStepData.TotalQuestionsAttempted++;
+                        //twoStepData.TotalQuestionsCorrect++;
                         questionAttempted = true;
                         questionCorrect = true;
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
-                        AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
-                        DataViewModel.Current.SaveData(twoStepData);
+                        //AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                        //DataViewModel.Current.SaveData(twoStepData);
                     }
                     else
                     {
-                        AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
-                        DataViewModel.Current.SaveData(twoStepData);
+                        //AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                        //DataViewModel.Current.SaveData(twoStepData);
                     }
                 }
                 else
                 {
                     if (questionCorrect == false)
                     {
-                        twoStepData.TotalQuestionsCorrect++;
+                        //twoStepData.TotalQuestionsCorrect++;
                         questionAttempted = true;
                         questionCorrect = true;
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
-                        AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
-                        DataViewModel.Current.SaveData(twoStepData);
+                        //AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                        //DataViewModel.Current.SaveData(twoStepData);
                     }
                     else
                     {
-                        AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
-                        DataViewModel.Current.SaveData(twoStepData);
+                        //AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                        //DataViewModel.Current.SaveData(twoStepData);
                     }
                 }
 
@@ -133,15 +121,15 @@ public partial class TwoStep : ContentPage
                 {
                     //Vibration.Default.Vibrate(10);
                     questionAttempted = true;
-                    twoStepData.TotalQuestionsAttempted++;
-                    AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
-                    DataViewModel.Current.SaveData(twoStepData);
+                    //twoStepData.TotalQuestionsAttempted++;
+                    //AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                    //DataViewModel.Current.SaveData(twoStepData);
                 }
                 else
                 {
                     //Vibration.Default.Vibrate(10);
-                    AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
-                    DataViewModel.Current.SaveData(twoStepData);
+                    //AnswerLabel.Text = $"{twoStepData.TotalQuestionsAttempted} , {twoStepData.TotalQuestionsCorrect}";
+                    //DataViewModel.Current.SaveData(twoStepData);
                 }
 
             }

@@ -1,5 +1,4 @@
-﻿using INFT_2051.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,20 +6,12 @@ using System.Threading.Tasks;
 using SQLite;
 using INFT2051_Project.Services;
 using INFT2051_Project.Models;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace INFT2051_Project.ViewModels
 {
     internal class DataViewModel : ObservableObject
     {
-        public List<string> topics = new List<string> 
-        { 
-            "One Step Equations",
-            "Two Step Equations",
-            "Quadratic Equations",
-            "Fractions",
-            "Decimals",
-            "Percentages"
-        };
         public static DataViewModel Current { get; set; }
 
         SQLiteConnection connection;

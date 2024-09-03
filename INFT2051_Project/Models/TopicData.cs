@@ -1,10 +1,10 @@
-﻿using INFT_2051.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace INFT2051_Project.Models
 {
@@ -15,6 +15,7 @@ namespace INFT2051_Project.Models
         ///This is used for a percentage of correct answer
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+
         [MaxLength(100), Unique]
         public string TopicName { get; set; }
 

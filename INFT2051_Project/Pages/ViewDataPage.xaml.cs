@@ -12,12 +12,6 @@ public partial class ViewDataPage : ContentPage
     public ViewDataPage()
 	{
 		InitializeComponent();
-        BindingContext = viewModel = new DataViewModel();
         
-    }
-
-    protected override void OnAppearing()
-    {
-		viewModel.OnPropertyChanged("Topics");
     }
 }
