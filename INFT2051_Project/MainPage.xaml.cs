@@ -1,6 +1,8 @@
 ﻿using INFT2051_Project.Pages;
 using INFT2051_Project.Services;
 using INFT2051_Project.Models;
+using INFT2051_Project.ViewModels;
+using SQLite;
 
 namespace INFT2051_Project
 {
@@ -9,7 +11,6 @@ namespace INFT2051_Project
         public MainPage()
         {
             InitializeComponent();
-
         }
 
         public async void OnButtonClicked(object sender, EventArgs e)

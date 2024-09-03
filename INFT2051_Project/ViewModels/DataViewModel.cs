@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using SQLite;
 using INFT2051_Project.Services;
 using INFT2051_Project.Models;
-using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace INFT2051_Project.ViewModels
 {
@@ -48,6 +47,16 @@ namespace INFT2051_Project.ViewModels
             {
                 connection.Delete(data);
             }
+        }
+
+        public void UpdateData(TopicData data)
+        {
+            connection.Update(data);
+        }
+
+        public void InsertData(TopicData data)
+        {
+            connection.Insert(data);
         }
     }
 }

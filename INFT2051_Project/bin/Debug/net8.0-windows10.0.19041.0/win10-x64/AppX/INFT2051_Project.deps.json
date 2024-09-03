@@ -9,7 +9,6 @@
     ".NETCoreApp,Version=v8.0/win10-x64": {
       "INFT2051_Project/1.0": {
         "dependencies": {
-          "CommunityToolkit.Mvvm": "8.3.0",
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.82",
           "Microsoft.Maui.Controls.Compatibility": "8.0.82",
@@ -30,14 +29,6 @@
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.4.44211"
-          }
-        }
-      },
-      "CommunityToolkit.Mvvm/8.3.0": {
-        "runtime": {
-          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
-            "assemblyVersion": "8.3.0.0",
-            "fileVersion": "8.3.0.1"
           }
         }
       },
@@ -521,13 +512,6 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
-    },
-    "CommunityToolkit.Mvvm/8.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-APWb6lZI3l8WVf5Ijp3WHHe471anU9pJ04aNJNCNJQ3kKy/mUW6irvDwyXeYTLaaNNGBAyo4/musnA/oQRKS/Q==",
-      "path": "communitytoolkit.mvvm/8.3.0",
-      "hashPath": "communitytoolkit.mvvm.8.3.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "type": "package",

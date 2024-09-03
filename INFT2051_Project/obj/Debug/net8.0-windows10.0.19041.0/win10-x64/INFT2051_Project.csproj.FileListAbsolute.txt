@@ -193,7 +193,6 @@ C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\INFT2051_Project.pdb
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml
-C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll

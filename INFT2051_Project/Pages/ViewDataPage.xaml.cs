@@ -8,7 +8,6 @@ using INFT2051_Project.ViewModels;
 
 public partial class ViewDataPage : ContentPage
 {
-    DataViewModel viewModel;
     public ViewDataPage()
 	{
 		InitializeComponent();

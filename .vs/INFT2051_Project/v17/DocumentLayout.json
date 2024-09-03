@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\pages\\onestep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\pages\\onestep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\pages\\twostep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\pages\\twostep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\pages\\viewdatapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\pages\\viewdatapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\viewmodels\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\viewmodels\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\models\\topicdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\models\\topicdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\models\\topicdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\models\\topicdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,56 +30,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewDataPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\ViewDataPage.xaml.cs",
-              "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\ViewDataPage.xaml.cs",
-              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\ViewDataPage.xaml.cs",
-              "RelativeToolTip": "INFT2051_Project\\Pages\\ViewDataPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "INFT2051_Project\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml.cs",
+              "RelativeToolTip": "INFT2051_Project\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T23:37:42.453Z",
+              "WhenOpened": "2024-09-03T02:57:54.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TwoStep.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\TwoStep.xaml.cs",
-              "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\TwoStep.xaml.cs",
-              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\TwoStep.xaml.cs",
-              "RelativeToolTip": "INFT2051_Project\\Pages\\TwoStep.xaml.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAUwFUAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T10:51:40.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "OneStep.xaml.cs",
               "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\OneStep.xaml.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\OneStep.xaml.cs",
               "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\OneStep.xaml.cs",
               "RelativeToolTip": "INFT2051_Project\\Pages\\OneStep.xaml.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAQwH8AAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T05:38:24.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DataViewModel.cs",
               "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\ViewModels\\DataViewModel.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\ViewModels\\DataViewModel.cs",
               "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\ViewModels\\DataViewModel.cs",
               "RelativeToolTip": "INFT2051_Project\\ViewModels\\DataViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwA0AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T05:25:56.528Z",
               "EditorCaption": ""
@@ -96,23 +79,21 @@
               "RelativeDocumentMoniker": "INFT2051_Project\\Models\\TopicData.cs",
               "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Models\\TopicData.cs",
               "RelativeToolTip": "INFT2051_Project\\Models\\TopicData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T05:00:28.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T05:00:28.375Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Services\\DatabaseService.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\Services\\DatabaseService.cs",
               "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Services\\DatabaseService.cs",
               "RelativeToolTip": "INFT2051_Project\\Services\\DatabaseService.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAmwCQAAAAUAAAA",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAIwH8AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T05:00:23.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T05:00:23.612Z"
             }
           ]
         }
