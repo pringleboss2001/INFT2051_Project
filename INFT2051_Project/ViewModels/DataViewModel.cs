@@ -29,7 +29,7 @@ namespace INFT2051_Project.ViewModels
             }
         }
 
-        public void SaveData(TopicData data)
+        public void SaveData(TopicData data)    //this function looks bad but works. So I am not  arguing
         {
 
             var topicData = new TopicData()
@@ -44,7 +44,7 @@ namespace INFT2051_Project.ViewModels
             {
                 if (Data.Any(x => x.TotalQuestionsAttempted == 0) && Data.Any(x => x.TotalQuestionsCorrect == 0))
                 {
-                    
+                    //do nothing. If it already exists.
                 }
             }
             else
@@ -75,11 +75,7 @@ namespace INFT2051_Project.ViewModels
             connection.Update(topicData);
         }
 
-        public void InsertData(TopicData data)
-        {
-            connection.Insert(data);
-        }
-
+        //Function to get the data from the database, based on the attributes of the passed topic data.
         public TopicData getTopicData(TopicData topicData)
         {
             var data = new TopicData()

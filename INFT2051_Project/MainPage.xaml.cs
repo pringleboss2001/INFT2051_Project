@@ -18,11 +18,20 @@ namespace INFT2051_Project
 
         protected override void OnAppearing()
         {
-            TopicData oneStepData = new TopicData() { Id = 1, TopicName = "One Step Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
-            TopicData twoStepData = new TopicData() { Id = 2, TopicName = "Two Step Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
+            //Creating the rows in the database table. So that the indexing is predetermined
+            TopicData oneStepData   = new TopicData() { Id = 1, TopicName = "One Step Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
+            TopicData twoStepData   = new TopicData() { Id = 2, TopicName = "Two Step Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
+            TopicData quadraticData = new TopicData() { Id = 3, TopicName = "Quadratic Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
+            TopicData fractionData  = new TopicData() { Id = 4, TopicName = "Converting to Fractions", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
+            TopicData decimalData   = new TopicData() { Id = 5, TopicName = "Converting to Decimals", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
+            TopicData percentageData = new TopicData() { Id = 6, TopicName = "Converting to Percentages", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
             viewModel.OnPropertyChanged("Topics");
             DataViewModel.Current.SaveData(oneStepData);
             DataViewModel.Current.SaveData(twoStepData);
+            DataViewModel.Current.SaveData(quadraticData);
+            DataViewModel.Current.SaveData(fractionData);
+            DataViewModel.Current.SaveData(decimalData);
+            DataViewModel.Current.SaveData(percentageData);
         }
 
         public async void OnButtonClicked(object sender, EventArgs e)
