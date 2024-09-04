@@ -13,18 +13,18 @@
                 VerticalOptions="Center">
 
                 <Label 
-                    Text="solve for x when, x&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;"
+                    Text="solve for x when,  x&#x00B2;"
                     TextType="Html"
                     FontFamily="RomanMath"
-                    FontSize="20"/>
+                    FontSize="24"/>
 
                 <Label
                     HorizontalOptions="Fill"
                     x:Name="QuestionLabel"
                     TextType="Html"
-                    Padding="4"
+                    Padding="2"
                     FontFamily="RomanMath"
-                    FontSize="20"
+                    FontSize="22"
                     Text=""/>
             </HorizontalStackLayout>
         </StackLayout>
@@ -34,12 +34,20 @@
                 <HorizontalStackLayout
                     VerticalOptions="Center">
                     <Label
+                        FontSize="18"
+                        FontFamily="RomanMath"
                         FontAttributes="Bold"
-                        Text="Step 1 : x&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;"
-                        TextType = "Html"/>
+                        Text="Step 1 : "/>
+                    
+                    <Label
+                        Text=" x&#x00B2;"
+                        FontSize="18"
+                        FontFamily="RomanMath"/>
 
                     <Label
                         x:Name="Working1"
+                        FontSize="18"
+                        FontFamily="RomanMath"
                         Text="Line of Working"
                         Padding="2">
                     </Label>
@@ -48,41 +56,56 @@
                     <Label
                         FontAttributes="Bold"
                         Text="Step 2 : "
-                        TextType="Html"/>
+                        FontSize="18"
+                        FontFamily="RomanMath"/>
 
                     <Label
                         x:Name="Working2"
-                        Text="Line of Working">
+                        FontFamily="RomanMath"
+                        Text="Line of Working"
+                        FontSize="18">
                     </Label>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label
                         FontAttributes="Bold"
-                        Text="Step 3 : ">
+                        Text="Step 3 : "
+                        FontSize="18"
+                        FontFamily="RomanMath">
                     </Label>
                     <Label
                         x:Name="Working3"
-                        Text="Line of Working">
+                        FontFamily="RomanMath"
+                        Text="Line of Working"
+                        FontSize="18">
                     </Label>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label
                         FontAttributes="Bold"
-                        Text="Step 4 : ">
+                        Text="Step 4 : "
+                        FontSize="18"
+                        FontFamily="RomanMath">
                     </Label>
                     <Label
                         x:Name="Working4"
-                        Text="Line of Working">
+                        Text="Line of Working"
+                        FontSize="18"
+                        FontFamily="RomanMath">
                     </Label>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label
                         FontAttributes="Bold"
-                        Text="Step 5 : ">
+                        Text="Step 5 : "
+                        FontSize="18"
+                        FontFamily="RomanMath">
                     </Label>
                     <Label
                         x:Name="Working5"
-                        Text="Line of Working">
+                        Text="Line of Working"
+                        FontSize="18"
+                        FontFamily="RomanMath">
                     </Label>
                 </HorizontalStackLayout>
 
@@ -109,7 +132,7 @@
                 Keyboard="Default"
                 Placeholder="Enter the second answer"
                 Text=""
-                WidthRequest="100" />
+                WidthRequest="125" />
             <Button
                 x:Name="SubmitAnswer"
                 Grid.Column="2"

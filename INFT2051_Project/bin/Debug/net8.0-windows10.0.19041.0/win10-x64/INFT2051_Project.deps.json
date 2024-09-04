@@ -12,6 +12,8 @@
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.82",
           "Microsoft.Maui.Controls.Compatibility": "8.0.82",
+          "Microsoft.Windows.CsWinRT": "2.1.1",
+          "Plugin.Maui.Calendar": "1.2.2",
           "SQLitePCLRaw.bundle_green": "2.1.9",
           "sqlite-net-pcl": "1.9.172",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
@@ -25,10 +27,14 @@
           "Microsoft.Windows.SDK.NET.dll": {
             "assemblyVersion": "10.0.19041.24",
             "fileVersion": "10.0.19041.31"
-          },
-          "WinRT.Runtime.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.4.44211"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.3.0": {
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.3.0.0",
+            "fileVersion": "8.3.0.1"
           }
         }
       },
@@ -374,6 +380,14 @@
         }
       },
       "Microsoft.Maui.Resizetizer/8.0.82": {},
+      "Microsoft.Windows.CsWinRT/2.1.1": {
+        "runtime": {
+          "lib/net8.0/WinRT.Runtime.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.1.47192"
+          }
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {},
       "Microsoft.WindowsAppSDK/1.5.240627000": {
         "dependencies": {
@@ -447,6 +461,19 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/1.2.2": {
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.3.0",
+          "Microsoft.Maui.Controls": "8.0.82",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.82"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "dependencies": {
           "SQLitePCLRaw.bundle_green": "2.1.9"
@@ -512,6 +539,13 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "CommunityToolkit.Mvvm/8.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-APWb6lZI3l8WVf5Ijp3WHHe471anU9pJ04aNJNCNJQ3kKy/mUW6irvDwyXeYTLaaNNGBAyo4/musnA/oQRKS/Q==",
+      "path": "communitytoolkit.mvvm/8.3.0",
+      "hashPath": "communitytoolkit.mvvm.8.3.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "type": "package",
@@ -660,6 +694,13 @@
       "path": "microsoft.maui.resizetizer/8.0.82",
       "hashPath": "microsoft.maui.resizetizer.8.0.82.nupkg.sha512"
     },
+    "Microsoft.Windows.CsWinRT/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q2CixHYFojIC1As4qUcK+yRIdDsN9UVT96TsI+3wBPab+zDKIv1PqrFOfJgB4Jkpn6iPs7nbLFRH3abVFzBPGA==",
+      "path": "microsoft.windows.cswinrt/2.1.1",
+      "hashPath": "microsoft.windows.cswinrt.2.1.1.nupkg.sha512"
+    },
     "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
       "type": "package",
       "serviceable": true,
@@ -673,6 +714,13 @@
       "sha512": "sha512-qzzWG8rxZyzKzBuUdwr4ApezMINf+NT2b8EiEE5fchczNJJmDwlHImMWxX1pHK1W8Yby99alqLyC8DB0fIrhuA==",
       "path": "microsoft.windowsappsdk/1.5.240627000",
       "hashPath": "microsoft.windowsappsdk.1.5.240627000.nupkg.sha512"
+    },
+    "Plugin.Maui.Calendar/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SyjtKgJypBstuV3XEsmilN+kadYu27MQ1gp/2tk4HG7+bYgWWDFxhW+r6wZd4o3NA4Opr3wHT1obGuM6MGClHA==",
+      "path": "plugin.maui.calendar/1.2.2",
+      "hashPath": "plugin.maui.calendar.1.2.2.nupkg.sha512"
     },
     "sqlite-net-pcl/1.9.172": {
       "type": "package",

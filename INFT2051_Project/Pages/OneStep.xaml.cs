@@ -17,6 +17,7 @@ public partial class OneStep : ContentPage
     bool questionCorrect;
 
     DataViewModel viewModel;
+    DateViewModel dateViewModel;
     
     TopicData topicData = new TopicData()
     {
@@ -26,9 +27,17 @@ public partial class OneStep : ContentPage
         TotalQuestionsCorrect = 0,
     };
 
+    UserActivity todaysDate = new UserActivity()
+    {
+        Id = 0,
+        Date = DateTime.Today.ToString(),
+        answeredQuestion = false
+    };
+
     public OneStep()
 	{
         BindingContext = viewModel = new DataViewModel();
+        BindingContext = dateViewModel = new DateViewModel();
         InitializeComponent();
         createQuestion(a=getInteger(), b=getInteger(), op=getOperator());
     }
@@ -37,6 +46,7 @@ public partial class OneStep : ContentPage
     {
         viewModel.OnPropertyChanged("Topics");
         topicData = DataViewModel.Current.getTopicData(topicData);
+        todaysDate = DateViewModel.Current.getDateData(todaysDate);
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)
@@ -69,6 +79,7 @@ public partial class OneStep : ContentPage
                     {
                         topicData.TotalQuestionsAttempted++;
                         topicData.TotalQuestionsCorrect++;
+                        todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect=true;
                         //Vibration.Default.Vibrate(2);
@@ -77,6 +88,7 @@ public partial class OneStep : ContentPage
                         //Vibration.Default.Vibrate(2);
                         AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
                         DataViewModel.Current.UpdateData(topicData);
+                        DateViewModel.Current.SaveData(todaysDate);
                     }
                     else
                     {
@@ -89,6 +101,7 @@ public partial class OneStep : ContentPage
                     if (questionCorrect == false)
                     {
                         topicData.TotalQuestionsCorrect++;
+                        todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect = true;
                         //Vibration.Default.Vibrate(2);
@@ -98,6 +111,7 @@ public partial class OneStep : ContentPage
                         AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
                         //AnswerLabel.Text = $"correct";
                         DataViewModel.Current.UpdateData(topicData);
+                        DateViewModel.Current.SaveData(todaysDate);
                     }
                     else
                     {

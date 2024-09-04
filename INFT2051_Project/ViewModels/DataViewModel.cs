@@ -18,7 +18,7 @@ namespace INFT2051_Project.ViewModels
         public DataViewModel()
         {
             Current = this;
-            connection = DatabaseService.Connection;
+            connection = DatabaseService.ConnectionTopic;
         }
 
         public List<TopicData> Data

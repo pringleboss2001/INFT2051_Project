@@ -28,6 +28,9 @@ public partial class QuadraticsPage : ContentPage
     {
         BindingContext = viewModel = new DataViewModel();
         InitializeComponent();
+        a = getInteger();
+        b = getInteger();
+        createQuestion(a, b);
     }
 
     protected override void OnAppearing()
@@ -220,8 +223,8 @@ public partial class QuadraticsPage : ContentPage
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
                 Working1.Text = $" + {-2 * a}x + {a * a}  = 0";
-                Working2.Text = $"a + b = {2 * question_a} and a x b = {a * a}";
-                Working3.Text = $"{question_a} + {question_a} = {2 * question_a} and {question_a} x {question_a} = {a * a}";
+                Working2.Text = $"a + b = {2 * question_a} and a × b = {a * a}";
+                Working3.Text = $"{question_a} + {question_a} = {2 * question_a} and {question_a} × {question_a} = {a * a}";
                 Working4.Text = $"FACTORISE ->> (x + {question_a})^2 = 0";
                 Working5.Text = $"Therefore, x = {a}. (Repeated Roots)";
             }
@@ -233,8 +236,8 @@ public partial class QuadraticsPage : ContentPage
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
                 Working1.Text = $" - {2 * a}x + {a * a} = 0";
-                Working2.Text = $"a + b = {2 * question_a} and a x b = {a * a}";
-                Working3.Text = $"{question_a} + {question_a} = {2 * question_a} and {question_a} x {question_a} = {a * a}";
+                Working2.Text = $"a + b = {2 * question_a} and a × b = {a * a}";
+                Working3.Text = $"{question_a} + {question_a} = {2 * question_a} and {question_a} × {question_a} = {a * a}";
                 Working4.Text = $"FACTORISE ->> (x - {a})^2 = 0";
                 Working5.Text = $"Therefore, x = {a}. (Repeated Roots)";
             }
@@ -248,8 +251,8 @@ public partial class QuadraticsPage : ContentPage
             Working4.IsVisible = true;
             Working5.IsVisible = true;
             Working1.Text = $" - {a * a} = 0";
-            Working2.Text = $"a + b = 0 and a x b = {a * b}";
-            Working3.Text = $"{question_a} + {question_b} = 0 and {question_a} x {question_b} = {a * b}";
+            Working2.Text = $"a + b = 0 and a × b = {a * b}";
+            Working3.Text = $"{question_a} + {question_b} = 0 and {question_a} × {question_b} = {a * b}";
             if (a < 0)
             {
                 Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {-1 * question_b}) = 0";
@@ -269,8 +272,8 @@ public partial class QuadraticsPage : ContentPage
             Working4.IsVisible = true;
             Working5.IsVisible = true;
             Working1.Text = $" + {-1 * (a + b)}x + {a * b}  = 0";
-            Working2.Text = $"a + b = {-1 * (a + b)} and a x b = {a * b}";
-            Working3.Text = $"{question_a} + {question_b} = {-1 * (a + b)} and {question_a} x {question_b} = {a * b}";
+            Working2.Text = $"a + b = {-1 * (a + b)} and a × b = {a * b}";
+            Working3.Text = $"{question_a} + {question_b} = {-1 * (a + b)} and {question_a} × {question_b} = {a * b}";
             Working4.Text = $"FACTORISE ->> (x + {question_a})(x + {question_b}) = 0";
             Working5.Text = $"Therefore, x = {a} or x = {b}";
         }
@@ -298,8 +301,8 @@ public partial class QuadraticsPage : ContentPage
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
                 Working1.Text = $" + {question_a + question_b}x - {-1 * a * b} = 0";
-                Working2.Text = $"a + b = -{question_a + question_b} and a x b = {a * b}";
-                Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} x {question_b} = {a * b}";
+                Working2.Text = $"a + b = -{question_a + question_b} and a × b = {a * b}";
+                Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} × {question_b} = {a * b}";
                 Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
@@ -312,8 +315,8 @@ public partial class QuadraticsPage : ContentPage
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
                 Working1.Text = $" - {-1 * (question_a + question_b)}x - {-1 * a * b}  = 0";
-                Working2.Text = $"a + b = {question_a + question_b} and a x b = {a * b}";
-                Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} x {question_b} = {a * b}";
+                Working2.Text = $"a + b = {question_a + question_b} and a × b = {a * b}";
+                Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} × {question_b} = {a * b}";
                 Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {-1 * question_b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
@@ -365,8 +368,8 @@ public partial class QuadraticsPage : ContentPage
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
                 Working1.Text = $" + {(question_b + question_a)}x - {-1 * a * b} = 0";
-                Working2.Text = $"a + b = {(question_b + question_a)} and a x b = {question_b * question_a}";
-                Working3.Text = $"{question_a} + {question_b} = {-1*(question_b + question_a)} and {question_a} x {question_b} = {question_b * question_a}";
+                Working2.Text = $"a + b = {(question_b + question_a)} and a × b = {question_b * question_a}";
+                Working3.Text = $"{question_a} + {question_b} = {-1*(question_b + question_a)} and {question_a} × {question_b} = {question_b * question_a}";
                 Working4.Text = $"FACTORISE ->> (x - {a})(x + {question_b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
@@ -378,8 +381,8 @@ public partial class QuadraticsPage : ContentPage
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
                 Working1.Text = $" - {-1*(question_b + question_a)}x - {-1 * a * b} = 0";
-                Working2.Text = $"a + b = {(question_b + question_a)} and a x b = {question_a * question_b}";
-                Working3.Text = $"{question_a} + {question_b} = {(question_b + question_a)} and {question_a} x {question_b} = {question_a * question_b}";
+                Working2.Text = $"a + b = {(question_b + question_a)} and a × b = {question_a * question_b}";
+                Working3.Text = $"{question_a} + {question_b} = {(question_b + question_a)} and {question_a} × {question_b} = {question_a * question_b}";
                 Working4.Text = $"FACTORISE ->> (x - {a})(x + {question_b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
@@ -406,8 +409,8 @@ public partial class QuadraticsPage : ContentPage
             Working4.IsVisible = true;
             Working5.IsVisible = true;
             Working1.Text = $" - {a + b}x + {a * b} = 0";
-            Working2.Text = $"a + b = {question_a + question_b} and a x b = {question_a * question_b}";
-            Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} x {question_b} = {question_a * question_b}";
+            Working2.Text = $"a + b = {question_a + question_b} and a × b = {question_a * question_b}";
+            Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} × {question_b} = {question_a * question_b}";
             Working4.Text = $"FACTORISE ->> (x - {a})(x - {b}) = 0";
             Working5.Text = $"Therefore, x = {a} or x = {b}";
         }
@@ -475,7 +478,7 @@ public partial class QuadraticsPage : ContentPage
 
         else if (a == 0 && b > 0)    //x(x-b)
         {
-            QuestionLabel.Text = $" + {b}x = 0";
+            QuestionLabel.Text = $" - {b}x = 0";
         }
 
         else if (a > 0 && b < 0) //(x-a)(x+b). x^2 + (b-a)x - ab

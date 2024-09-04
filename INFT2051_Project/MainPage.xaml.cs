@@ -8,10 +8,11 @@ namespace INFT2051_Project
     public partial class MainPage : ContentPage
     {
         DataViewModel viewModel;
-
+        DateViewModel dateViewModel;
         public MainPage()
         {
             BindingContext = viewModel = new DataViewModel();
+            BindingContext = dateViewModel = new DateViewModel();
             InitializeComponent();
         }
 
@@ -31,6 +32,8 @@ namespace INFT2051_Project
             DataViewModel.Current.SaveData(fractionData);
             DataViewModel.Current.SaveData(decimalData);
             DataViewModel.Current.SaveData(percentageData);
+
+            DateViewModel.Current.SaveData(new UserActivity() { Date=DateTime.Today.ToString(), answeredQuestion=false});
         }
 
         public async void OnButtonClicked(object sender, EventArgs e)
@@ -50,6 +53,8 @@ namespace INFT2051_Project
                 await Navigation.PushAsync(new PercentagesPage());
             else if (btn == UserData)
                 await Navigation.PushAsync(new ViewDataPage());
+            else if (btn == HowToUse)
+                await Navigation.PushAsync(new HowToUse());
 
         }
     }

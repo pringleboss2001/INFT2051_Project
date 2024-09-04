@@ -29,6 +29,12 @@ public partial class TwoStep : ContentPage
 	{
         BindingContext = viewModel = new DataViewModel();
         InitializeComponent();
+        a = getInteger();
+        b = getInteger();
+        c = getInteger();
+        AddSub = getOperatorAddSub();
+        MulDiv = getOperatorMulDiv();
+        createQuestion(a, b, c, AddSub, MulDiv);
     }
 
     protected override void OnAppearing()
