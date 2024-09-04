@@ -53,33 +53,7 @@ public partial class TwoStep : ContentPage
             AddSub = getOperatorAddSub();
             MulDiv = getOperatorMulDiv();
 
-            if (MulDiv == 1)
-            {
-                if (AddSub == 1)
-                {
-                    //if MulDiv and AddSub == 1, the we have an equation of the form ax + b = c
-                    QuestionLabel.Text = $"{a}x + {b} = {c}";
-                }
-                else
-                {
-                    //Equation of the form ax - b = c
-                    QuestionLabel.Text = $"{a}x - {b} = {c}";
-                }
-            }
-
-            else if (MulDiv == 2)
-            {
-                if (AddSub == 1)
-                {
-                    //Equation of the form x/a + b = x
-                    QuestionLabel.Text = $"x/{a} + {b} = {c}";
-                }
-                else
-                {
-                    //equation of the form x/a - b = c
-                    QuestionLabel.Text = $"x/{a} - {b} = {c}";
-                }
-            }
+            createQuestion(a, b, c, AddSub, MulDiv);
         }   
 
         if (btn == SubmitAnswer)
@@ -184,6 +158,37 @@ public partial class TwoStep : ContentPage
         Random numberGenerator = new Random();
         int MulDiv = numberGenerator.Next(1, 3);
         return MulDiv;
+    }
+
+    public void createQuestion(int a, int b, int c, int addsub, int muldiv)
+    {
+        if (MulDiv == 1)
+        {
+            if (AddSub == 1)
+            {
+                //if MulDiv and AddSub == 1, the we have an equation of the form ax + b = c
+                QuestionLabel.Text = $"{a}x + {b} = {c}";
+            }
+            else
+            {
+                //Equation of the form ax - b = c
+                QuestionLabel.Text = $"{a}x - {b} = {c}";
+            }
+        }
+
+        else if (MulDiv == 2)
+        {
+            if (AddSub == 1)
+            {
+                //Equation of the form x/a + b = x
+                QuestionLabel.Text = $"x/{a} + {b} = {c}";
+            }
+            else
+            {
+                //equation of the form x/a - b = c
+                QuestionLabel.Text = $"x/{a} - {b} = {c}";
+            }
+        }
     }
 
     public string getAnswer(int a, int b, int c, int MulDiv, int AddSub)

@@ -1,13 +1,39 @@
+using INFT2051_Project.Models;
+using INFT2051_Project.Services;
+using INFT2051_Project.ViewModels;
+using Mehroz;
+using SQLite;
+using System.Data;
 namespace INFT2051_Project;
 
 public partial class QuadraticsPage : ContentPage
 {
     int a = 0;
     int b = 0;
+    bool questionAttempted;
+    bool questionCorrect;
+
+    DataViewModel viewModel;
+
+    TopicData topicData = new TopicData()
+    {
+        Id = 3,
+        TopicName = "Quadratic Equations",
+        TotalQuestionsAttempted = 0,
+        TotalQuestionsCorrect = 0,
+    };
+
 
     public QuadraticsPage()
     {
+        BindingContext = viewModel = new DataViewModel();
         InitializeComponent();
+    }
+
+    protected override void OnAppearing()
+    {
+        viewModel.OnPropertyChanged("Topics");
+        topicData = DataViewModel.Current.getTopicData(topicData);
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)
@@ -18,6 +44,8 @@ public partial class QuadraticsPage : ContentPage
             await Navigation.PushAsync(new MainPage());
         else if (btn == NextQuestion)
         {
+            questionAttempted = false;
+            questionCorrect = false;
             WorkingArea.IsVisible = false;
             a = getInteger();
             b = getInteger();
@@ -59,37 +87,120 @@ public partial class QuadraticsPage : ContentPage
 
         if (string_a == input_a && string_b == input_b)
         {
-            AnswerLabel.Text = "Both are correct";
+            if (questionAttempted == false)
+            {
+                questionAttempted = true;
+                questionCorrect = true;
+                topicData.TotalQuestionsCorrect++;
+                topicData.TotalQuestionsAttempted++;
+                AnswerLabel.Text = "Both are correct";
+                DataViewModel.Current.UpdateData(topicData);
+            }
+            else
+            {
+                topicData.TotalQuestionsCorrect++;
+                questionAttempted = true;
+                questionCorrect = true;
+                AnswerLabel.Text = "Both are correct";
+                DataViewModel.Current.UpdateData(topicData);
+            }
         }
 
         else if (string_a == input_b && string_b == input_a)
         {
-            AnswerLabel.Text = "Both are correct";
+            if (questionAttempted == false)
+            {
+                questionAttempted = true;
+                questionCorrect = true;
+                topicData.TotalQuestionsCorrect++;
+                topicData.TotalQuestionsAttempted++;
+                AnswerLabel.Text = "Both are correct";
+                DataViewModel.Current.UpdateData(topicData);
+            }
+            else
+            {
+                topicData.TotalQuestionsCorrect++;
+                questionAttempted = true;
+                questionCorrect = true;
+                AnswerLabel.Text = "Both are correct";
+                DataViewModel.Current.UpdateData(topicData);
+            }
         }
 
         else if (string_a == input_a && string_b != input_b)
         {
-            AnswerLabel.Text = $"{a} is correct";
+            if (questionAttempted == false)
+            {
+                questionAttempted = true;
+                topicData.TotalQuestionsAttempted++;
+                DataViewModel.Current.UpdateData(topicData);
+                AnswerLabel.Text = $"{a} is correct";
+            }
+            else
+            {
+                AnswerLabel.Text = $"{a} is correct";
+            }
         }
 
         else if (string_a != input_a && string_b == input_b)
         {
-            AnswerLabel.Text = $"{b} is correct";
+            if (questionAttempted == false)
+            {
+                questionAttempted = true;
+                topicData.TotalQuestionsAttempted++;
+                DataViewModel.Current.UpdateData(topicData);
+                AnswerLabel.Text = $"{b} is correct";
+            }
+            else
+            {
+                AnswerLabel.Text = $"{b} is correct";
+            }
         }
 
         else if (string_a != input_b && string_b == input_a)
         {
-            AnswerLabel.Text = $"{b} is correct";
+            if (questionAttempted == false)
+            {
+                questionAttempted = true;
+                topicData.TotalQuestionsAttempted++;
+                DataViewModel.Current.UpdateData(topicData);
+                AnswerLabel.Text = $"{b} is correct";
+            }
+            else
+            {
+                AnswerLabel.Text = $"{b} is correct";
+            }
         }
 
         else if (string_a == input_b && string_b != input_a)
         {
-            AnswerLabel.Text = $"{a} is correct";
+            if (questionAttempted == false)
+            {
+                questionAttempted = true;
+                topicData.TotalQuestionsAttempted++;
+                DataViewModel.Current.UpdateData(topicData);
+                AnswerLabel.Text = $"{a} is correct";
+            }
+            else
+            {
+                AnswerLabel.Text = $"{a} is correct";
+            }
         }
 
         else
         {
-            AnswerLabel.Text = $"Neither {input_a} or {input_b} are correct";    
+            if (questionAttempted == false)
+            {
+                questionAttempted = true;
+                topicData.TotalQuestionsAttempted++;
+                AnswerLabel.Text = $"Neither {input_a} or {input_b} are correct";
+                DataViewModel.Current.UpdateData(topicData);
+            }
+            else
+            {
+                AnswerLabel.Text = $"Neither {input_a} or {input_b} are correct";
+            }
+                
         }
     }
 
@@ -131,12 +242,17 @@ public partial class QuadraticsPage : ContentPage
 
         else if (b == -1 * a)    //checking for difference of two squares. (x+a)(x-a)
         {
+            Working1.IsVisible = true;
+            Working2.IsVisible = true;
+            Working3.IsVisible = true;
+            Working4.IsVisible = true;
+            Working5.IsVisible = true;
             Working1.Text = $" - {a * a} = 0";
             Working2.Text = $"a + b = 0 and a x b = {a * b}";
             Working3.Text = $"{question_a} + {question_b} = 0 and {question_a} x {question_b} = {a * b}";
             if (a < 0)
             {
-                Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {question_b}) = 0";
+                Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {-1 * question_b}) = 0";
             }
             else 
             {
@@ -182,7 +298,7 @@ public partial class QuadraticsPage : ContentPage
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
                 Working1.Text = $" + {question_a + question_b}x - {-1 * a * b} = 0";
-                Working2.Text = $"a + b = {question_a + question_b} and a x b = {a * b}";
+                Working2.Text = $"a + b = -{question_a + question_b} and a x b = {a * b}";
                 Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} x {question_b} = {a * b}";
                 Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
@@ -250,7 +366,7 @@ public partial class QuadraticsPage : ContentPage
                 Working5.IsVisible = true;
                 Working1.Text = $" + {(question_b + question_a)}x - {-1 * a * b} = 0";
                 Working2.Text = $"a + b = {(question_b + question_a)} and a x b = {question_b * question_a}";
-                Working3.Text = $"{question_a} + {question_b} = {(question_b + question_a)} and {question_a} x {question_b} = {question_b * question_a}";
+                Working3.Text = $"{question_a} + {question_b} = {-1*(question_b + question_a)} and {question_a} x {question_b} = {question_b * question_a}";
                 Working4.Text = $"FACTORISE ->> (x - {a})(x + {question_b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
@@ -261,9 +377,9 @@ public partial class QuadraticsPage : ContentPage
                 Working3.IsVisible = true;
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
-                Working1.Text = $" - {(question_b - question_a)}x - {-1 * a * b} = 0";
-                Working2.Text = $"a + b = {-1 * (question_b - question_a)} and a x b = {question_a * question_b}";
-                Working3.Text = $"{question_a} + {question_b} = {-1 * (question_b - question_a)} and {question_a} x {question_b} = {question_a * question_b}";
+                Working1.Text = $" - {-1*(question_b + question_a)}x - {-1 * a * b} = 0";
+                Working2.Text = $"a + b = {(question_b + question_a)} and a x b = {question_a * question_b}";
+                Working3.Text = $"{question_a} + {question_b} = {(question_b + question_a)} and {question_a} x {question_b} = {question_a * question_b}";
                 Working4.Text = $"FACTORISE ->> (x - {a})(x + {question_b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }
@@ -348,7 +464,7 @@ public partial class QuadraticsPage : ContentPage
 
             else if (question_a < Math.Abs(question_b))  // should be positive x coefficient
             {
-                QuestionLabel.Text = $" - {-1*(question_a + question_b)}x - {-1*a * b}  = 0";
+                QuestionLabel.Text = $" - {-1 * (question_a + question_b)}x - {-1*a * b}  = 0";
             }
         }
 
@@ -370,7 +486,7 @@ public partial class QuadraticsPage : ContentPage
             }
             else if (question_b < Math.Abs(question_a))
             {
-                QuestionLabel.Text = $" - {(question_b - question_a)}x - {-1 * a * b} = 0";
+                QuestionLabel.Text = $" - {-1 * (question_b + question_a)}x - {-1 * a * b} = 0";
             }
                 
         }

@@ -29,7 +29,8 @@ public partial class OneStep : ContentPage
     public OneStep()
 	{
         BindingContext = viewModel = new DataViewModel();
-        InitializeComponent(); 
+        InitializeComponent();
+        createQuestion(a=getInteger(), b=getInteger(), op=getOperator());
     }
 
     protected override void OnAppearing()
@@ -48,31 +49,12 @@ public partial class OneStep : ContentPage
         {
             questionAttempted = false;
             questionCorrect = false;
-            NextQuestion.Text = "Next Question";
             WorkingGrid.IsVisible = false;
             a = getInteger();
             b = getInteger();
             op = getOperator();
 
-            if (op == 1)
-            {
-                QuestionLabel.Text = $"x + {a} = {b}";
-            }
-
-            else if (op == 2)
-            {
-                QuestionLabel.Text = $"x - {a} = {b}";
-            }
-
-            else if (op == 3)
-            {
-                QuestionLabel.Text = $"{a}x = {b}";
-            }
-
-            else
-            {
-                QuestionLabel.Text = $"x/{a} = {b}";
-            }
+            createQuestion(a, b, op);
         }
 
         else if (btn == SubmitAnswer)
@@ -170,6 +152,29 @@ public partial class OneStep : ContentPage
         Random numberGenerator = new Random();
         a = numberGenerator.Next(1, 30);
         return a;
+    }
+
+    public void createQuestion(int a, int b, int op)
+    {
+        if (op == 1)
+        {
+            QuestionLabel.Text = $"x + {a} = {b}";
+        }
+
+        else if (op == 2)
+        {
+            QuestionLabel.Text = $"x - {a} = {b}";
+        }
+
+        else if (op == 3)
+        {
+            QuestionLabel.Text = $"{a}x = {b}";
+        }
+
+        else
+        {
+            QuestionLabel.Text = $"x/{a} = {b}";
+        }
     }
 
     public string getAnswer(int a, int b, int operatorSelect)

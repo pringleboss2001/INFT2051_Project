@@ -13,7 +13,6 @@ namespace INFT2051_Project
         {
             BindingContext = viewModel = new DataViewModel();
             InitializeComponent();
-            
         }
 
         protected override void OnAppearing()
@@ -43,10 +42,6 @@ namespace INFT2051_Project
                 await Navigation.PushAsync(new TwoStep());
             else if (btn == QuadraticEquationsButton)
                 await Navigation.PushAsync(new QuadraticsPage());
-            else if (btn == Perimeter)
-                await Navigation.PushAsync(new PerimeterPage());
-            else if (btn == Area)
-                await Navigation.PushAsync(new AreaPage());
             else if (btn == Fractions)
                 await Navigation.PushAsync(new FractionsPage());
             else if (btn == Decimals)

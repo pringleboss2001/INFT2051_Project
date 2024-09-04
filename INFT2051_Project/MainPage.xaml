@@ -28,7 +28,7 @@
                 SemanticProperties.Hint="Navigates to the one step equations page"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
-                
+
             <Button
                 x:Name="TwoStepButton"
                 Text="Two Step Equations" 
@@ -37,37 +37,9 @@
                 HorizontalOptions="Fill" />
 
             <Button
-                x:Name="MultiStepEqButton"
-                Text="Harder Multi-Step Equations" 
-                SemanticProperties.Hint="Navigates to the harder multi stage equations"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Fill" />
-
-            <Button
                 x:Name="QuadraticEquationsButton"
                 Text="Quadratic Equations" 
                 SemanticProperties.Hint="Navigates to the quadratic equations"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Fill" />
-
-            <Button
-                x:Name="Perimeter"
-                Text="Perimeter" 
-                SemanticProperties.Hint="Perimeter"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Fill" />
-            
-            <Button
-                x:Name="Area"
-                Text="Area" 
-                SemanticProperties.Hint="Area"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Fill" />
-
-            <Button
-                x:Name="Volume"
-                Text="Volume" 
-                SemanticProperties.Hint="Volume"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 
