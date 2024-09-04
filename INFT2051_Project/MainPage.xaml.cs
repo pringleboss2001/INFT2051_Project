@@ -2,15 +2,27 @@
 using INFT2051_Project.Services;
 using INFT2051_Project.Models;
 using INFT2051_Project.ViewModels;
-using SQLite;
 
 namespace INFT2051_Project
 {
     public partial class MainPage : ContentPage
     {
+        DataViewModel viewModel;
+
         public MainPage()
         {
+            BindingContext = viewModel = new DataViewModel();
             InitializeComponent();
+            
+        }
+
+        protected override void OnAppearing()
+        {
+            TopicData oneStepData = new TopicData() { Id = 1, TopicName = "One Step Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
+            TopicData twoStepData = new TopicData() { Id = 2, TopicName = "Two Step Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
+            viewModel.OnPropertyChanged("Topics");
+            DataViewModel.Current.SaveData(oneStepData);
+            DataViewModel.Current.SaveData(twoStepData);
         }
 
         public async void OnButtonClicked(object sender, EventArgs e)

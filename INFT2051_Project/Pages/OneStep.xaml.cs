@@ -4,6 +4,7 @@ using INFT2051_Project.ViewModels;
 using Mehroz;
 using SQLite;
 using System.Data;
+using System.Security.Cryptography.X509Certificates;
 
 namespace INFT2051_Project;
 
@@ -15,14 +16,30 @@ public partial class OneStep : ContentPage
     bool questionAttempted;
     bool questionCorrect;
 
+    DataViewModel viewModel;
+    
+    TopicData topicData = new TopicData()
+    {
+        Id = 1,
+        TopicName = "One Step Equations",
+        TotalQuestionsAttempted = 0,
+        TotalQuestionsCorrect = 0,
+    };
+
     public OneStep()
 	{
-        InitializeComponent();
+        BindingContext = viewModel = new DataViewModel();
+        InitializeComponent(); 
+    }
+
+    protected override void OnAppearing()
+    {
+        viewModel.OnPropertyChanged("Topics");
+        topicData = DataViewModel.Current.getTopicData(topicData);
     }
 
     public async void OnButtonClicked(object sender, EventArgs e)
     {
-        
         Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
         if (btn == Back)
             await Navigation.PushAsync(new MainPage());
@@ -68,41 +85,42 @@ public partial class OneStep : ContentPage
                 {
                     if (questionCorrect == false)
                     {
-                        //oneStepData.TotalQuestionsAttempted++;
-                        //oneStepData.TotalQuestionsCorrect++;
+                        topicData.TotalQuestionsAttempted++;
+                        topicData.TotalQuestionsCorrect++;
                         questionAttempted = true;
                         questionCorrect=true;
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
-                        //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                        AnswerLabel.Text = $"correct";
+                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        DataViewModel.Current.UpdateData(topicData);
                     }
                     else
                     {
-                        //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                        AnswerLabel.Text = $"correct";
+                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        //AnswerLabel.Text = $"correct";
                     }
                 }
                 else
                 {
                     if (questionCorrect == false)
                     {
-                        //oneStepData.TotalQuestionsCorrect++;
+                        topicData.TotalQuestionsCorrect++;
                         questionAttempted = true;
                         questionCorrect = true;
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
                         //Vibration.Default.Vibrate(2);
-                        //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                        AnswerLabel.Text = $"correct";
+                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        //AnswerLabel.Text = $"correct";
+                        DataViewModel.Current.UpdateData(topicData);
                     }
                     else
                     {
-                        //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                        AnswerLabel.Text = $"correct";
+                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        //AnswerLabel.Text = $"correct";
                     }
                 }
                 
@@ -115,15 +133,16 @@ public partial class OneStep : ContentPage
                 {
                     //Vibration.Default.Vibrate(10);
                     questionAttempted = true;
-                    //oneStepData.TotalQuestionsAttempted++;
-                    //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                    AnswerLabel.Text = $"wrong";
+                    topicData.TotalQuestionsAttempted++;
+                    AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                    //AnswerLabel.Text = $"wrong";
+                    DataViewModel.Current.UpdateData(topicData);
                 }
                 else
                 {
                     //Vibration.Default.Vibrate(10);
-                    //AnswerLabel.Text = $"{oneStepData.TotalQuestionsAttempted} , {oneStepData.TotalQuestionsCorrect}";
-                    AnswerLabel.Text = $"wrong";
+                    AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                    //AnswerLabel.Text = $"wrong";
                 }
                 
             }

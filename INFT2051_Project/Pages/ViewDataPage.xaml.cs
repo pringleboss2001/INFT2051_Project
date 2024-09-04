@@ -11,6 +11,5 @@ public partial class ViewDataPage : ContentPage
     public ViewDataPage()
 	{
 		InitializeComponent();
-        
     }
 }

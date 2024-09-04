@@ -31,14 +31,27 @@ namespace INFT2051_Project.ViewModels
 
         public void SaveData(TopicData data)
         {
-            if (data.Id > 0)
+
+            var topicData = new TopicData()
             {
-                connection.Update(data);
+                Id = data.Id,
+                TopicName = data.TopicName,
+                TotalQuestionsAttempted = data.TotalQuestionsAttempted,
+                TotalQuestionsCorrect = data.TotalQuestionsCorrect
+            };
+
+            if (Data.Any(x => x.Id == topicData.Id))
+            {
+                if (Data.Any(x => x.TotalQuestionsAttempted == 0) && Data.Any(x => x.TotalQuestionsCorrect == 0))
+                {
+                    
+                }
             }
             else
             {
-                connection.Insert(data);
+                connection.Insert(topicData);
             }
+
         }
 
         public void DeleteData(TopicData data)
@@ -51,12 +64,33 @@ namespace INFT2051_Project.ViewModels
 
         public void UpdateData(TopicData data)
         {
-            connection.Update(data);
+            var topicData = new TopicData()
+            { 
+                Id = data.Id,
+                TopicName = data.TopicName,
+                TotalQuestionsAttempted = data.TotalQuestionsAttempted,
+                TotalQuestionsCorrect = data.TotalQuestionsCorrect
+            };
+
+            connection.Update(topicData);
         }
 
         public void InsertData(TopicData data)
         {
             connection.Insert(data);
+        }
+
+        public TopicData getTopicData(TopicData topicData)
+        {
+            var data = new TopicData()
+            {
+                Id = topicData.Id,
+                TopicName = Data[topicData.Id - 1].TopicName,
+                TotalQuestionsAttempted = Data[topicData.Id - 1].TotalQuestionsAttempted,
+                TotalQuestionsCorrect = Data[topicData.Id - 1].TotalQuestionsCorrect,
+
+            };
+            return data;
         }
     }
 }
