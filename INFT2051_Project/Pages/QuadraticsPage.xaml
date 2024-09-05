@@ -111,35 +111,39 @@
 
             </StackLayout>
         </ScrollView>
+        
         <Label
-            x:Name="AnswerLabel"
-            FontFamily="CambriaMath"
-            FontSize="20"
-            HorizontalOptions="Center"
-            Text="" />
+             x:Name="AnswerLabel"
+             FontFamily="CambriaMath"
+             FontSize="20"
+             HorizontalOptions="Center"
+             Text="" />
+        <HorizontalStackLayout Padding="10" Spacing="5">
+            
 
-        <HorizontalStackLayout Padding="10,0" Spacing="10">
             <Entry
                 x:Name="AnswerInput1"
                 HorizontalTextAlignment="Center"
                 Keyboard="Default"
-                Placeholder="Enter the first answer"
+                Placeholder="Enter Answer One"
                 Text=""
-                WidthRequest="125" />
+                WidthRequest="150" />
+            
             <Entry
                 x:Name="AnswerInput2"
                 HorizontalTextAlignment="Center"
                 Keyboard="Default"
-                Placeholder="Enter the second answer"
+                Placeholder="Enter Answer Two"
                 Text=""
-                WidthRequest="125" />
-            <Button
-                x:Name="SubmitAnswer"
-                Grid.Column="2"
-                Clicked="OnButtonClicked"
-                Text="Submit" />
+                WidthRequest="150" />
 
         </HorizontalStackLayout>
+        <Button
+            Grid.Row="0"
+            Grid.Column="2"
+            x:Name="SubmitAnswer"
+            Clicked="OnButtonClicked"
+            Text="Submit" />
         <Button
             x:Name="NextQuestion"
             Clicked="OnButtonClicked"

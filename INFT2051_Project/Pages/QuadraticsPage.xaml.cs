@@ -47,6 +47,8 @@ public partial class QuadraticsPage : ContentPage
             await Navigation.PushAsync(new MainPage());
         else if (btn == NextQuestion)
         {
+            AnswerInput1.Text = "";
+            AnswerInput2.Text = "";
             questionAttempted = false;
             questionCorrect = false;
             WorkingArea.IsVisible = false;
@@ -301,7 +303,7 @@ public partial class QuadraticsPage : ContentPage
                 Working4.IsVisible = true;
                 Working5.IsVisible = true;
                 Working1.Text = $" + {question_a + question_b}x - {-1 * a * b} = 0";
-                Working2.Text = $"a + b = -{question_a + question_b} and a × b = {a * b}";
+                Working2.Text = $"a + b = {question_a + question_b} and a × b = {a * b}";
                 Working3.Text = $"{question_a} + {question_b} = {question_a + question_b} and {question_a} × {question_b} = {a * b}";
                 Working4.Text = $"FACTORISE ->> (x + {question_a})(x - {b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
@@ -369,7 +371,7 @@ public partial class QuadraticsPage : ContentPage
                 Working5.IsVisible = true;
                 Working1.Text = $" + {(question_b + question_a)}x - {-1 * a * b} = 0";
                 Working2.Text = $"a + b = {(question_b + question_a)} and a × b = {question_b * question_a}";
-                Working3.Text = $"{question_a} + {question_b} = {-1*(question_b + question_a)} and {question_a} × {question_b} = {question_b * question_a}";
+                Working3.Text = $"{question_a} + {question_b} = {(question_b + question_a)} and {question_a} × {question_b} = {question_b * question_a}";
                 Working4.Text = $"FACTORISE ->> (x - {a})(x + {question_b}) = 0";
                 Working5.Text = $"Therefore, x = {a} or x = {b}";
             }

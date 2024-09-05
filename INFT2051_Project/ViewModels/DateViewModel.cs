@@ -59,7 +59,6 @@ namespace INFT2051_Project.ViewModels
         //Function to get the data from the database, based on the attributes of the passed topic data.
         public UserActivity getDateData(UserActivity data)
         {
-
             var result = Dates.Where(x => x.Date == data.Date);
             var date = result.FirstOrDefault();
             data = date;

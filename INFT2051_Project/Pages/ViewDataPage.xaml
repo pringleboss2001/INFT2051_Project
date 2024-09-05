@@ -21,6 +21,9 @@
                                     <Label Text="Total Questions Correct: "/>
                                     <Label Text="{Binding TotalQuestionsCorrect}"/>
                                 </HorizontalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Label Text="Percentage of Correct Answers: "/>
+                                </HorizontalStackLayout>
                             </VerticalStackLayout>
                         </ViewCell>
                     </DataTemplate>
@@ -28,7 +31,21 @@
             </ListView>
 
             <cal:Calendar
-                Padding="5"/>
+                x:Name="dataCalender"
+                SelectedDateColor="black"
+                SelectedDayBackgroundColor="black"
+                Padding="5"
+                Events="{Binding UserActivity}"
+                EventIndicatorColor="Black">
+                <cal:Calendar.EventTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label Text="Question Correct Today: "/>
+                            <Label Text="{Binding answeredQuestion}"/>
+                        </VerticalStackLayout>
+                </DataTemplate>
+                </cal:Calendar.EventTemplate>
+             </cal:Calendar>
 
         </VerticalStackLayout>
         
