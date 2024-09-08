@@ -12,14 +12,17 @@ public partial class ViewDataPage : ContentPage
     DataViewModel viewModel;
     DateViewModel dateViewModel;
     List<TopicData> data = new List<TopicData>();
+    List<UserActivity> dates = new List<UserActivity>();
     public ViewDataPage()
 	{
 		BindingContext = viewModel = new DataViewModel();
         BindingContext = dateViewModel = new DateViewModel();
         InitializeComponent();
         data = DataViewModel.Current.Data;
+        dates = DateViewModel.Current.Dates;
 
         listView.ItemsSource = data;
+        listViewActivity.ItemsSource = dates;
         
     }
 

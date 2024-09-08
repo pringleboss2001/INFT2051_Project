@@ -30,7 +30,7 @@ public partial class OneStep : ContentPage
     UserActivity todaysDate = new UserActivity()
     {
         Id = 0,
-        Date = DateTime.Today.ToString(),
+        Date = DateTime.Today.ToString("dd/MM/yyyy"),
         answeredQuestion = false
     };
 

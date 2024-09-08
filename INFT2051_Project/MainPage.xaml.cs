@@ -33,7 +33,7 @@ namespace INFT2051_Project
             DataViewModel.Current.SaveData(decimalData);
             DataViewModel.Current.SaveData(percentageData);
 
-            DateViewModel.Current.SaveData(new UserActivity() { Date=DateTime.Today.ToString(), answeredQuestion=false});
+            DateViewModel.Current.SaveData(new UserActivity() { Date=DateTime.Today.ToString("dd/MM/yyyy"), answeredQuestion=false});
         }
 
         public async void OnButtonClicked(object sender, EventArgs e)
