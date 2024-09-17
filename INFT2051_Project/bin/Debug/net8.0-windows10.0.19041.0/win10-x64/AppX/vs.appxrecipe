@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-17T00:38:25.790</Modified>
+      <Modified>2024-09-17T00:51:27.423</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\INFT2051_Project.dll">
       <PackagePath>INFT2051_Project.dll</PackagePath>
-      <Modified>2024-09-17T00:38:24.128</Modified>
+      <Modified>2024-09-17T00:51:24.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>INFT2051_Project.exe</PackagePath>
-      <Modified>2024-09-17T00:38:24.134</Modified>
+      <Modified>2024-09-17T00:51:25.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
