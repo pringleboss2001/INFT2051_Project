@@ -4,9 +4,23 @@
              x:Class="INFT2051_Project.Pages.ViewActivityData"
              Title="ViewActivityData">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Active Days:"/>
+            <ListView x:Name="listViewActivity" Background="AliceBlue">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <VerticalStackLayout 
+                                Padding="10">
+                                <Label Text="{Binding Date}" FontAttributes="Bold" FontSize="20" TextDecorations="Underline"/>
+                                <HorizontalStackLayout>
+                                    <Label Text="Question Attempted: "/>
+                                    <Label Text="{Binding answeredQuestion}"/>
+                                </HorizontalStackLayout>
+
+                            </VerticalStackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
     </VerticalStackLayout>
 </ContentPage>

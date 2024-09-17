@@ -53,8 +53,8 @@ namespace INFT2051_Project
                 await Navigation.PushAsync(new PercentagesPage());
             else if (btn == UserData)
                 await Navigation.PushAsync(new ViewDataPage());
-            else if (btn == HowToUse)
-                await Navigation.PushAsync(new HowToUse());
+            else if (btn == ActivityData)
+                await Navigation.PushAsync(new ViewActivityData());
 
         }
     }

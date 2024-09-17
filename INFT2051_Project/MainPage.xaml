@@ -65,9 +65,9 @@
                 HorizontalOptions="Fill" />
 
             <Button
-                x:Name="HowToUse"
-                Text="How To Use" 
-                SemanticProperties.Hint="HowToUse"
+                x:Name="ActivityData"
+                Text="User Activity" 
+                SemanticProperties.Hint="ActivityData"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 
