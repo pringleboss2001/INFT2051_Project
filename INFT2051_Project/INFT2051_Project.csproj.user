@@ -29,6 +29,9 @@
     <MauiXaml Update="Pages\QuadraticsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\ViewActivityData.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\ViewDataPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
