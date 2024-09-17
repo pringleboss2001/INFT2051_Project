@@ -82,18 +82,17 @@ public partial class OneStep : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect=true;
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                         DateViewModel.Current.SaveData(todaysDate);
                     }
                     else
                     {
-                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
-                        //AnswerLabel.Text = $"correct";
+                        AnswerLabel.Text = $"Correct!";
                     }
                 }
                 else
@@ -104,19 +103,17 @@ public partial class OneStep : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect = true;
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
-                        //AnswerLabel.Text = $"correct";
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                         DateViewModel.Current.SaveData(todaysDate);
                     }
                     else
                     {
-                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
-                        //AnswerLabel.Text = $"correct";
+                        AnswerLabel.Text = $"Correct!";
                     }
                 }
                 
@@ -130,15 +127,13 @@ public partial class OneStep : ContentPage
                     //Vibration.Default.Vibrate(10);
                     questionAttempted = true;
                     topicData.TotalQuestionsAttempted++;
-                    AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
-                    //AnswerLabel.Text = $"wrong";
+                    AnswerLabel.Text = $"Incorrect, try again!";
                     DataViewModel.Current.UpdateData(topicData);
                 }
                 else
                 {
-                    //Vibration.Default.Vibrate(10);
-                    AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
-                    //AnswerLabel.Text = $"wrong";
+                    Vibration.Default.Vibrate(10);
+                    AnswerLabel.Text = $"Incorrect, try again!";
                 }
                 
             }

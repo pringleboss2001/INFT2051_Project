@@ -2,16 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="INFT2051_Project.Pages.ViewDataPage"
-             xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              Title="ViewDataPage">
     <ScrollView>
         <VerticalStackLayout>
-            <ListView x:Name="listView" Background="AliceBlue">
+            <ListView x:Name="listView" BackgroundColor="AliceBlue" RowHeight="100">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <VerticalStackLayout 
-                                Padding="10">
+                            <VerticalStackLayout>
                                 <Label Text="{Binding TopicName}" FontAttributes="Bold" FontSize="20" TextDecorations="Underline"/>
                                 <HorizontalStackLayout>
                                     <Label Text="Total Questions Attempted: "/>

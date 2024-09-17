@@ -1,3 +1,6 @@
+using INFT2051_Project.ViewModels;
+using INFT2051_Project.Models;
+
 namespace INFT2051_Project;
 
 public partial class DecimalsPage : ContentPage
@@ -7,10 +10,41 @@ public partial class DecimalsPage : ContentPage
     float percentageAnswer = 0;
     int FracPerc = 0;
 
+    bool questionAttempted;
+    bool questionCorrect;
+
+    DataViewModel viewModel;
+    DateViewModel dateViewModel;
+
+    TopicData topicData = new TopicData()
+    {
+        Id = 5,
+        TopicName = "Converting to Decimals",
+        TotalQuestionsAttempted = 0,
+        TotalQuestionsCorrect = 0,
+    };
+
+    UserActivity todaysDate = new UserActivity()
+    {
+        Id = 0,
+        Date = DateTime.Today.ToString("dd/MM/yyyy"),
+        answeredQuestion = false
+    };
+
     public DecimalsPage()
 	{
-		InitializeComponent();
+        BindingContext = viewModel = new DataViewModel();
+        BindingContext = dateViewModel = new DateViewModel();
+        InitializeComponent();
 	}
+
+    protected override void OnAppearing()
+    {
+        viewModel.OnPropertyChanged("Topics");
+        dateViewModel.OnPropertyChanged("Dates");
+        topicData = DataViewModel.Current.getTopicData(topicData);
+        todaysDate = DateViewModel.Current.getDateData(todaysDate);
+    }
 
     public async void OnButtonClicked(object sender, EventArgs e)
     {
@@ -21,6 +55,8 @@ public partial class DecimalsPage : ContentPage
         else if (btn == NextQuestion)
         {
             //display question function
+            questionAttempted = false;
+            questionCorrect = false;
             WorkingGrid.IsVisible = false;
             Random numberGenerator = new Random();
             denominator = numberGenerator.Next(2, 11);
@@ -88,11 +124,68 @@ public partial class DecimalsPage : ContentPage
         {
             if (answerInput == fractionAnswer.ToString())
             {
-                AnswerLabel.Text = $"Correct";
+                if (questionAttempted == false)
+                {
+                    if (questionCorrect == false)
+                    {
+                        topicData.TotalQuestionsAttempted++;
+                        topicData.TotalQuestionsCorrect++;
+                        todaysDate.answeredQuestion = true;
+                        questionAttempted = true;
+                        questionCorrect = true;
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"Correct!";
+                        DataViewModel.Current.UpdateData(topicData);
+                        DateViewModel.Current.SaveData(todaysDate);
+                    }
+                    else
+                    {
+                        AnswerLabel.Text = $"Correct!";
+                    }
+                }
+                else
+                {
+                    if (questionCorrect == false)
+                    {
+                        topicData.TotalQuestionsCorrect++;
+                        todaysDate.answeredQuestion = true;
+                        questionAttempted = true;
+                        questionCorrect = true;
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"Correct!";
+                        DataViewModel.Current.UpdateData(topicData);
+                        DateViewModel.Current.SaveData(todaysDate);
+                    }
+                    else
+                    {
+                        AnswerLabel.Text = $"Correct!";
+                    }
+                }
+
             }
             else
             {
-                AnswerLabel.Text = "Wrong";
+                if (questionAttempted == false)   //checking if they have already attempted the question to maintain consistent data
+
+                {
+                    Vibration.Default.Vibrate(10);
+                    questionAttempted = true;
+                    topicData.TotalQuestionsAttempted++;
+                    AnswerLabel.Text = $"Incorrect, try again!";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
+                else
+                {
+                    Vibration.Default.Vibrate(10);
+                    AnswerLabel.Text = $"Incorrect, try again!";
+                }
+
             }
         }
         else
@@ -100,11 +193,68 @@ public partial class DecimalsPage : ContentPage
             float answer = percentageAnswer / 100;
             if (answerInput == answer.ToString())
             {
-                AnswerLabel.Text = "correct";
+
+                if (questionAttempted == false)
+                {
+                    if (questionCorrect == false)
+                    {
+                        topicData.TotalQuestionsAttempted++;
+                        topicData.TotalQuestionsCorrect++;
+                        todaysDate.answeredQuestion = true;
+                        questionAttempted = true;
+                        questionCorrect = true;
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"Correct!";
+                        DataViewModel.Current.UpdateData(topicData);
+                        DateViewModel.Current.SaveData(todaysDate);
+                    }
+                    else
+                    {
+                        AnswerLabel.Text = $"Correct!";
+                    }
+                }
+                else
+                {
+                    if (questionCorrect == false)
+                    {
+                        topicData.TotalQuestionsCorrect++;
+                        todaysDate.answeredQuestion = true;
+                        questionAttempted = true;
+                        questionCorrect = true;
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(2);
+                        AnswerLabel.Text = $"Correct!";
+                        DataViewModel.Current.UpdateData(topicData);
+                        DateViewModel.Current.SaveData(todaysDate);
+                    }
+                    else
+                    {
+                        AnswerLabel.Text = $"Correct!";
+                    }
+                }
+
             }
             else
             {
-                AnswerLabel.Text = "Wrong";
+                if (questionAttempted == false)   //checking if they have already attempted the question to maintain consistent data
+
+                {
+                    Vibration.Default.Vibrate(10);
+                    questionAttempted = true;
+                    topicData.TotalQuestionsAttempted++;
+                    AnswerLabel.Text = $"Incorrect, try again!";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
+                else
+                {
+                    Vibration.Default.Vibrate(10);
+                    AnswerLabel.Text = $"Incorrect, try again!";
+                }
             }
         }
     }
