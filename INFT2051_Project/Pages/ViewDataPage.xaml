@@ -29,9 +29,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
-            
         </VerticalStackLayout>
-        
     </ScrollView>
 </ContentPage>
