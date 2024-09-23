@@ -94,20 +94,57 @@ public partial class QuadraticsPage : ContentPage
         {
             if (questionAttempted == false)
             {
-                questionAttempted = true;
-                questionCorrect = true;
-                topicData.TotalQuestionsCorrect++;
-                topicData.TotalQuestionsAttempted++;
-                AnswerLabel.Text = "Both are correct";
-                DataViewModel.Current.UpdateData(topicData);
+                if (questionCorrect == false)
+                {
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    questionAttempted = true;
+                    questionCorrect = true;
+                    topicData.TotalQuestionsCorrect++;
+                    topicData.TotalQuestionsAttempted++;
+                    AnswerLabel.Text = "Both are correct";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
+                else
+                { 
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    questionAttempted = true;
+                    questionCorrect = true;
+                    AnswerLabel.Text = "Both are correct";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
+                
             }
             else
             {
-                topicData.TotalQuestionsCorrect++;
-                questionAttempted = true;
-                questionCorrect = true;
-                AnswerLabel.Text = "Both are correct";
-                DataViewModel.Current.UpdateData(topicData);
+                if (questionCorrect == false)
+                {
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    topicData.TotalQuestionsCorrect++;
+                    questionAttempted = true;
+                    questionCorrect = true;
+                    AnswerLabel.Text = "Both are correct";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
+                else
+                {
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    questionAttempted = true;
+                    questionCorrect = true;
+                    AnswerLabel.Text = "Both are correct";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
             }
         }
 
@@ -115,20 +152,57 @@ public partial class QuadraticsPage : ContentPage
         {
             if (questionAttempted == false)
             {
-                questionAttempted = true;
-                questionCorrect = true;
-                topicData.TotalQuestionsCorrect++;
-                topicData.TotalQuestionsAttempted++;
-                AnswerLabel.Text = "Both are correct";
-                DataViewModel.Current.UpdateData(topicData);
+                if (questionCorrect == false)
+                {
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    questionAttempted = true;
+                    questionCorrect = true;
+                    topicData.TotalQuestionsCorrect++;
+                    topicData.TotalQuestionsAttempted++;
+                    AnswerLabel.Text = "Both are correct";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
+                else
+                {
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    questionAttempted = true;
+                    questionCorrect = true;
+                    AnswerLabel.Text = "Both are correct";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
+
             }
             else
             {
-                topicData.TotalQuestionsCorrect++;
-                questionAttempted = true;
-                questionCorrect = true;
-                AnswerLabel.Text = "Both are correct";
-                DataViewModel.Current.UpdateData(topicData);
+                if (questionCorrect == false)
+                {
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    topicData.TotalQuestionsCorrect++;
+                    questionAttempted = true;
+                    questionCorrect = true;
+                    AnswerLabel.Text = "Both are correct";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
+                else
+                {
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                    questionAttempted = true;
+                    questionCorrect = true;
+                    AnswerLabel.Text = "Both are correct";
+                    DataViewModel.Current.UpdateData(topicData);
+                }
             }
         }
 
@@ -136,6 +210,8 @@ public partial class QuadraticsPage : ContentPage
         {
             if (questionAttempted == false)
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                 questionAttempted = true;
                 topicData.TotalQuestionsAttempted++;
                 DataViewModel.Current.UpdateData(topicData);
@@ -143,6 +219,8 @@ public partial class QuadraticsPage : ContentPage
             }
             else
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                 AnswerLabel.Text = $"{a} is correct";
             }
         }
@@ -151,6 +229,8 @@ public partial class QuadraticsPage : ContentPage
         {
             if (questionAttempted == false)
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                 questionAttempted = true;
                 topicData.TotalQuestionsAttempted++;
                 DataViewModel.Current.UpdateData(topicData);
@@ -158,6 +238,8 @@ public partial class QuadraticsPage : ContentPage
             }
             else
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                 AnswerLabel.Text = $"{b} is correct";
             }
         }
@@ -166,6 +248,8 @@ public partial class QuadraticsPage : ContentPage
         {
             if (questionAttempted == false)
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                 questionAttempted = true;
                 topicData.TotalQuestionsAttempted++;
                 DataViewModel.Current.UpdateData(topicData);
@@ -173,6 +257,8 @@ public partial class QuadraticsPage : ContentPage
             }
             else
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                 AnswerLabel.Text = $"{b} is correct";
             }
         }
@@ -181,6 +267,8 @@ public partial class QuadraticsPage : ContentPage
         {
             if (questionAttempted == false)
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                 questionAttempted = true;
                 topicData.TotalQuestionsAttempted++;
                 DataViewModel.Current.UpdateData(topicData);
@@ -188,6 +276,8 @@ public partial class QuadraticsPage : ContentPage
             }
             else
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                 AnswerLabel.Text = $"{a} is correct";
             }
         }
@@ -196,13 +286,16 @@ public partial class QuadraticsPage : ContentPage
         {
             if (questionAttempted == false)
             {
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
+
                 questionAttempted = true;
                 topicData.TotalQuestionsAttempted++;
                 AnswerLabel.Text = $"Neither {input_a} or {input_b} are correct";
                 DataViewModel.Current.UpdateData(topicData);
             }
             else
-            {
+            {                
+                Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
                 AnswerLabel.Text = $"Neither {input_a} or {input_b} are correct";
             }
                 

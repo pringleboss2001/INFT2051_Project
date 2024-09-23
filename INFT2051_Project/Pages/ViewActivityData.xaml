@@ -5,7 +5,7 @@
              Title="ViewActivityData">
     <VerticalStackLayout>
         <Label Text="Active Days:"/>
-            <ListView x:Name="listViewActivity" Background="AliceBlue" RowHeight="75">
+            <ListView x:Name="listViewActivity" RowHeight="75">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

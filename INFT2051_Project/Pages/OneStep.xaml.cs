@@ -82,10 +82,10 @@ public partial class OneStep : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect=true;
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                         DateViewModel.Current.SaveData(todaysDate);
@@ -103,10 +103,10 @@ public partial class OneStep : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect = true;
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                         DateViewModel.Current.SaveData(todaysDate);
@@ -124,7 +124,7 @@ public partial class OneStep : ContentPage
                 if (questionAttempted==false)   //checking if they have already attempted the question to maintain consistent data
 
                 {
-                    //Vibration.Default.Vibrate(10);
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
                     questionAttempted = true;
                     topicData.TotalQuestionsAttempted++;
                     AnswerLabel.Text = $"Incorrect, try again!";
@@ -132,7 +132,7 @@ public partial class OneStep : ContentPage
                 }
                 else
                 {
-                    Vibration.Default.Vibrate(10);
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
                     AnswerLabel.Text = $"Incorrect, try again!";
                 }
                 

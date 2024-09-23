@@ -5,7 +5,7 @@
              Title="ViewDataPage">
     <ScrollView>
         <VerticalStackLayout>
-            <ListView x:Name="listView" BackgroundColor="AliceBlue" RowHeight="100">
+            <ListView x:Name="listView" RowHeight="100">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

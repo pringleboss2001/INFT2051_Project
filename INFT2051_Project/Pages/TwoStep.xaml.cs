@@ -76,16 +76,20 @@ public partial class TwoStep : ContentPage
                         topicData.TotalQuestionsCorrect++;
                         questionAttempted = true;
                         questionCorrect = true;
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                     }
                     else
                     {
-                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                     }
                 }
@@ -96,16 +100,20 @@ public partial class TwoStep : ContentPage
                         topicData.TotalQuestionsCorrect++;
                         questionAttempted = true;
                         questionCorrect = true;
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        //Vibration.Default.Vibrate(2);
-                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                     }
                     else
                     {
-                        AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                     }
                 }
@@ -117,16 +125,16 @@ public partial class TwoStep : ContentPage
                 if (questionAttempted == false)   //checking if they have already attempted the question to maintain consistent data
 
                 {
-                    //Vibration.Default.Vibrate(10);
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
                     questionAttempted = true;
                     topicData.TotalQuestionsAttempted++;
-                    AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                    AnswerLabel.Text = $"Incorrect, try again!";
                     DataViewModel.Current.UpdateData(topicData);
                 }
                 else
                 {
-                    //Vibration.Default.Vibrate(10);
-                    AnswerLabel.Text = $"{topicData.TotalQuestionsAttempted} , {topicData.TotalQuestionsCorrect}";
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
+                    AnswerLabel.Text = $"Incorrect, try again!";
                     DataViewModel.Current.UpdateData(topicData);
                 }
 

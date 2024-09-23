@@ -36,7 +36,13 @@ public partial class DecimalsPage : ContentPage
         BindingContext = viewModel = new DataViewModel();
         BindingContext = dateViewModel = new DateViewModel();
         InitializeComponent();
-	}
+        Random numberGenerator = new Random();
+        denominator = numberGenerator.Next(2, 11);
+        numerator = numberGenerator.Next(1, denominator);
+        percentageAnswer = numberGenerator.Next(1, 100);
+        FracPerc = numberGenerator.Next(1, 3);
+        createQuestion(numerator, denominator, percentageAnswer, FracPerc);
+    }
 
     protected override void OnAppearing()
     {
@@ -133,10 +139,10 @@ public partial class DecimalsPage : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect = true;
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                         DateViewModel.Current.SaveData(todaysDate);
@@ -154,10 +160,10 @@ public partial class DecimalsPage : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect = true;
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                         DateViewModel.Current.SaveData(todaysDate);
@@ -174,7 +180,7 @@ public partial class DecimalsPage : ContentPage
                 if (questionAttempted == false)   //checking if they have already attempted the question to maintain consistent data
 
                 {
-                    Vibration.Default.Vibrate(10);
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
                     questionAttempted = true;
                     topicData.TotalQuestionsAttempted++;
                     AnswerLabel.Text = $"Incorrect, try again!";
@@ -182,7 +188,7 @@ public partial class DecimalsPage : ContentPage
                 }
                 else
                 {
-                    Vibration.Default.Vibrate(10);
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
                     AnswerLabel.Text = $"Incorrect, try again!";
                 }
 
@@ -203,10 +209,10 @@ public partial class DecimalsPage : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect = true;
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                         DateViewModel.Current.SaveData(todaysDate);
@@ -224,10 +230,10 @@ public partial class DecimalsPage : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect = true;
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
-                        Vibration.Default.Vibrate(2);
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
+                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                         DateViewModel.Current.SaveData(todaysDate);
@@ -244,7 +250,7 @@ public partial class DecimalsPage : ContentPage
                 if (questionAttempted == false)   //checking if they have already attempted the question to maintain consistent data
 
                 {
-                    Vibration.Default.Vibrate(10);
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
                     questionAttempted = true;
                     topicData.TotalQuestionsAttempted++;
                     AnswerLabel.Text = $"Incorrect, try again!";
@@ -252,7 +258,7 @@ public partial class DecimalsPage : ContentPage
                 }
                 else
                 {
-                    Vibration.Default.Vibrate(10);
+                    Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(500));
                     AnswerLabel.Text = $"Incorrect, try again!";
                 }
             }
