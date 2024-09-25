@@ -6,7 +6,8 @@
     Title="OneStep"
     BackgroundColor="{StaticResource BackgroundLight}">
 
-    <VerticalStackLayout Padding="30,0" Spacing="5">
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="5">
 
         <StackLayout>
             
@@ -23,7 +24,6 @@
             </Frame>
         </StackLayout>
 
-        <ScrollView>
             <Grid
                 x:Name="WorkingGrid"
                 ColumnSpacing="2"
@@ -83,9 +83,8 @@
                     Text="Line of Working" />
 
             </Grid>
-        </ScrollView>
 
-        <Label
+            <Label
             Style="{StaticResource QuestionTextStyle}"
             x:Name="AnswerLabel"
             IsVisible="False"
@@ -102,6 +101,9 @@
                 Keyboard="Default"
                 Placeholder="Enter the answer"
                 Text=""
+                PlaceholderColor="Grey"
+                BackgroundColor="White"
+                TextColor="Black"
                 WidthRequest="200"
                 HeightRequest="50"/>
 
@@ -135,5 +137,5 @@
             SemanticProperties.Hint="Back"
             Text="Back" />
     </VerticalStackLayout>
-
+        </ScrollView>
 </ContentPage>

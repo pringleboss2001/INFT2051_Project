@@ -92,7 +92,11 @@
                     Keyboard="Default"
                     Placeholder="Enter the answer"
                     Text=""
-                    WidthRequest="200" />
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    PlaceholderColor="Grey"
+                    BackgroundColor="White"
+                    TextColor="Black"/>
 
                 <Button
                     Style="{StaticResource AnswerButtonStyle}"

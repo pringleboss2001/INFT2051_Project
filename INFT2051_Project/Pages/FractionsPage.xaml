@@ -4,26 +4,20 @@
              x:Class="INFT2051_Project.FractionsPage"
              Title="FractionsPage"
              BackgroundColor="{StaticResource BackgroundLight}">
+    <ScrollView>
     <VerticalStackLayout 
-    Padding="30,0" Spacing="10">
+        Padding="30,0" Spacing="10">
+        <Label Text="Converting to Fractions" Style="{StaticResource TitleStyle}"/>
+            <Frame Style="{StaticResource CardStyle}">
+            <Label
+                Style="{StaticResource QuestionTextStyle}"
+                x:Name="QuestionLabel"
+                FontFamily="RomanMath"
+                FontSize="20"
+                Text=""/>
+            </Frame>
 
-        <StackLayout>
-            <HorizontalStackLayout
-        HorizontalOptions="Center">
-                <Label 
-                    Text="Convert " 
-                    FontFamily="RomanMath"
-                    FontSize="20"/>
-
-                <Label
-                    x:Name="QuestionLabel"
-                    FontFamily="RomanMath"
-                    FontSize="20"
-                    Text=""/>
-            </HorizontalStackLayout>
-        </StackLayout>
-
-        <ScrollView>
+                
             <Grid
                 x:Name="WorkingGrid"
                 ColumnSpacing="2"
@@ -41,41 +35,49 @@
                 </Grid.ColumnDefinitions>
 
                 <Label
+                    FontAttributes="Bold"
                     Grid.Row="0"
                     Grid.Column="0"
                     Text="Step 1:" />
 
                 <Label
+                    Style="{StaticResource WorkingOutFont}"
                     x:Name="Working1"
                     Grid.Row="0"
                     Grid.Column="1"
                     Text="Line of Working" />
 
                 <Label
+                    FontAttributes="Bold"
                     Grid.Row="1"
                     Grid.Column="0"
                     Text="Step 2:" />
 
                 <Label
+                    Style="{StaticResource WorkingOutFont}"
                     x:Name="Working2"
                     Grid.Row="1"
                     Grid.Column="1"
                     Text="Line of working" />
 
                 <Label
+                    FontAttributes="Bold"
                     Grid.Row="2"
                     Grid.Column="0"
                     Text="Step 3:" />
 
                 <Label
+                    Style="{StaticResource WorkingOutFont}"
                     x:Name="Working3"
                     Grid.Row="2"
                     Grid.Column="1"
                     Text="Line of Working" />
 
             </Grid>
-        </ScrollView>
+        
         <Label
+            Style="{StaticResource QuestionTextStyle}"
+            IsVisible="False"
             x:Name="AnswerLabel"
             FontFamily="CambriaMath"
             FontSize="20"
@@ -83,19 +85,22 @@
             Text="Answer Label"
             VerticalOptions="Center" />
 
-        <HorizontalStackLayout Padding="5,0" Spacing="25">
-
-
-            <Entry
-                x:Name="AnswerInput"
-                Grid.Column="0"
-                HorizontalTextAlignment="Center"
-                Keyboard="Default"
-                Placeholder="Enter the answer"
-                Text=""
-                WidthRequest="200" />
+            <HorizontalStackLayout Padding="5,0" Spacing="25">
+                <Entry
+                    x:Name="AnswerInput"
+                    Grid.Column="0"
+                    HorizontalTextAlignment="Center"
+                    Keyboard="Default"
+                    Placeholder="Enter the answer"
+                    Text=""
+                    HeightRequest="50"
+                    WidthRequest="200" 
+                    PlaceholderColor="Grey"
+                    BackgroundColor="White"
+                    TextColor="Black"/>
 
             <Button
+                Style="{StaticResource AnswerButtonStyle}"
                 x:Name="SubmitAnswer"
                 Grid.Column="2"
                 Clicked="OnButtonClicked"
@@ -104,21 +109,25 @@
         </HorizontalStackLayout>
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="NextQuestion"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Next Question"
             Text="Next Question" />
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="ShowWorking"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Show Working"
             Text="Show Working" />
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="Back"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Back"
             Text="Back" />
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

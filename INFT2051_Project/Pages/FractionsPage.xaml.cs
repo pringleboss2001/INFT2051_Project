@@ -61,6 +61,7 @@ public partial class FractionsPage : ContentPage
             questionCorrect = false;
             questionAttempted = false;
             WorkingGrid.IsVisible = false;
+            AnswerLabel.IsVisible = false;  
             Random numberGenerator = new Random();
             decimalAnswer = numberGenerator.Next(1, 100);
             percentageAnswer = numberGenerator.Next(1, 100);
@@ -71,6 +72,7 @@ public partial class FractionsPage : ContentPage
         {
             //Display solution + answer
             string answerInput = AnswerInput.Text;
+            AnswerLabel.IsVisible = true;
             checkAnswer(percentageAnswer, decimalAnswer, PercDec, answerInput);
         }
         else if (btn == ShowWorking)
@@ -84,12 +86,12 @@ public partial class FractionsPage : ContentPage
     {
         if (PercDec == 1)
         {
-            QuestionLabel.Text = $" {percentageAnswer}% to a fraction.";
+            QuestionLabel.Text = $"Convert {percentageAnswer}% to a fraction.";
         }
         else
         {
             decimal dec = Convert.ToDecimal(decimalAnswer) / 100;
-            QuestionLabel.Text = $" {dec} to a fraction.";
+            QuestionLabel.Text = $"Convert {dec} to a fraction.";
         }
     }
 
@@ -116,6 +118,7 @@ public partial class FractionsPage : ContentPage
     {
         if (PercDec == 1)
         {
+            AnswerLabel.IsVisible = true;
             Fraction fractionFromPerc = new Fraction(percentageAnswer, 100);
             if (answerInput == fractionFromPerc.ToString())
             {

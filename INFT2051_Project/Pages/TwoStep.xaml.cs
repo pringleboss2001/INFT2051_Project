@@ -51,7 +51,7 @@ public partial class TwoStep : ContentPage
         {
             questionAttempted = false;
             questionCorrect = false;
-            WorkingArea.IsVisible = false;
+            WorkingGrid.IsVisible = false;
             AnswerInput.Text = "";
             NextQuestion.Text = "Next Question";
             a = getInteger();
@@ -145,7 +145,7 @@ public partial class TwoStep : ContentPage
 
         if (btn == ShowWorking)
         {
-            WorkingArea.IsVisible = true;
+            WorkingGrid.IsVisible = true;
             showWorking(a, b, c, MulDiv, AddSub);
         }
 

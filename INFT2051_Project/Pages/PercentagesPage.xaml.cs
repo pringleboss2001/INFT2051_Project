@@ -64,6 +64,7 @@ public partial class PercentagesPage : ContentPage
             questionAttempted = false;
             WorkingGrid.IsVisible = false;
             Working3.IsVisible = true;
+            AnswerLabel.IsVisible = false;
             //display question function
             Random numberGenerator = new Random();
             denominator = numberGenerator.Next(2, 11);
@@ -76,6 +77,7 @@ public partial class PercentagesPage : ContentPage
         {
             //Display solution + answer
             string answerInput = AnswerInput.Text;
+            AnswerLabel.IsVisible = true;
             checkAnswer(numerator, denominator, decimalAnswer, FracDec, answerInput);
         }
         else if (btn == ShowWorking)

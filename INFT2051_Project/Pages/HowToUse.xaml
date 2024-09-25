@@ -14,7 +14,7 @@
             <Label
                 FontAttributes="Bold"
                 Text="How To Use"
-                Style="{StaticResource Headline}"
+                Style="{StaticResource TitleStyle}"
                 SemanticProperties.HeadingLevel="Level1" />
             
             <Label 

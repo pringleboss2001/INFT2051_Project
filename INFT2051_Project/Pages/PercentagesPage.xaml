@@ -92,7 +92,10 @@
                 Placeholder="Enter the answer"
                 Text=""
                 HeightRequest="50"
-                WidthRequest="200" />
+                WidthRequest="200"
+                PlaceholderColor="Grey"
+                BackgroundColor="White"
+                TextColor="Black"/>
 
             <Button
                 Style="{StaticResource AnswerButtonStyle}"

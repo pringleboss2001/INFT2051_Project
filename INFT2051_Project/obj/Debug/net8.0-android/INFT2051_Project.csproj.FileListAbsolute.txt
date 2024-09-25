@@ -533,7 +533,6 @@ C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Projec
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\assets\zh-Hant\Microsoft.Maui.Controls.resources.dll
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\assets\zh-HK\Microsoft.Maui.Controls.resources.dll
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\assets\_Microsoft.Android.Resource.Designer.dll
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\typemaps.x86_64.ll
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\AndroidManifest.xml
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\AndroidManifest.xml
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\src\mono\MonoRuntimeProvider.java
@@ -543,7 +542,6 @@ C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Projec
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\static.flag
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\__environment__.txt
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\buildid.txt
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\environment.x86_64.ll
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\src\androidx\activity\ktx\R.java
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\src\androidx\activity\R.java
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\src\androidx\annotation\experimental\R.java
@@ -1041,13 +1039,6 @@ C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Projec
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\bin\packaged_resources
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\src\com\companyname\inft2051project\R.java
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\_CompileJava.FileList.txt
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.ll
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\typemaps.x86_64.o
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\environment.x86_64.o
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.o
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
-C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\bin\classes.dex
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\bin\classes2.dex
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\stamp\_CleanIntermediateIfNeeded.stamp
@@ -1059,3 +1050,12 @@ C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Projec
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\typemaps.x86_64.ll
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\environment.x86_64.ll
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.ll
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\typemaps.x86_64.o
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\environment.x86_64.o
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.o
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
