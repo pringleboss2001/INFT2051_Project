@@ -3,9 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="INFT2051_Project.Pages.HowToUse"
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
-             Title="HowToUse">
-    <VerticalStackLayout>
+             Title="HowToUse"
+             BackgroundColor="{StaticResource BackgroundLight}">
 
-        <cal:Calendar/>
-    </VerticalStackLayout>
+    <ScrollView>
+        
+        <VerticalStackLayout
+            Padding="10"
+            Spacing="10">
+            <Label
+                FontAttributes="Bold"
+                Text="How To Use"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            
+            <Label 
+                Text="Navigation"
+                FontAttributes="Bold"
+                FontSize="18"/>
+            <Label>
+                <Label.Text>
+                    Press the buttons on the home page to navigate to the desired page.
+                </Label.Text>
+            </Label>
+
+            <Label 
+                Text="Answering Questions"
+                FontAttributes="Bold"
+                FontSize="18"/>
+            <Label>
+                <Label.Text>
+                    In a topic page, type in your answer into the text box, and click submit to check your answer. Fraction and decimal answers are accepted, but you do not need to the percentage sign when submitting a percentage answer.
+                </Label.Text>
+            </Label>
+
+            <Label 
+                Text="Show Working"
+                FontAttributes="Bold"
+                FontSize="18"/>
+            <Label>
+                <Label.Text>
+                    In each topic area there is a show working button, clicking this will show all the steps to solving that question.
+                </Label.Text>
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

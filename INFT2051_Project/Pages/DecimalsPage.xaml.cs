@@ -60,7 +60,9 @@ public partial class DecimalsPage : ContentPage
             await Navigation.PushAsync(new MainPage());
         else if (btn == NextQuestion)
         {
+            AnswerLabel.IsVisible = false;
             //display question function
+            AnswerInput.Text = "";
             questionAttempted = false;
             questionCorrect = false;
             WorkingGrid.IsVisible = false;
@@ -75,7 +77,7 @@ public partial class DecimalsPage : ContentPage
         {
             //Display solution + answer
             string answerInput = AnswerInput.Text;
-            
+            AnswerLabel.IsVisible = true;
             checkAnswer(numerator, denominator, percentageAnswer, FracPerc, answerInput);
         }
         else if (btn == ShowWorking)
@@ -90,11 +92,11 @@ public partial class DecimalsPage : ContentPage
     {
         if (FracDec == 1)   //if the question is Fraction --> Percentage
         {
-            QuestionLabel.Text = $" {numerator}/{denominator} to a decimal.";
+            QuestionLabel.Text = $"Convert {numerator}/{denominator} to a decimal.";
         }
         else   //if the quesiton is Decimal --> Percentage
         {
-            QuestionLabel.Text = $" {percentageAnswer.ToString()}% to a decimal.";
+            QuestionLabel.Text = $"Convert {percentageAnswer.ToString()}% to a decimal.";
         }
     }
 
@@ -109,9 +111,11 @@ public partial class DecimalsPage : ContentPage
             {
                 answer = Math.Round(answer, 0);
             }
+            Working1.IsVisible = true;
+            Working2.IsVisible = true;
+            Working3.IsVisible= true;
             Working1.Text = $"{numerator} \u00F7 {denominator} = {Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 3)}";
             Working2.Text = $"{numerator}/{denominator} = {working}";
-            Working3.Text = $"{numerator}/{denominator} = {answer}";
         }
         else   //if the quesiton is Percentage --> decimal
         {
@@ -125,7 +129,7 @@ public partial class DecimalsPage : ContentPage
     public void checkAnswer(int numerator, int denominator, float percentageAnswer, int FracPerc, string answerInput)
     {
         decimal fractionAnswer = Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 3);
-
+        AnswerInput.IsVisible = true;
         if (FracPerc == 1)
         {
             if (answerInput == fractionAnswer.ToString())

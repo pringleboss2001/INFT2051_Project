@@ -2,34 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pages="clr-namespace:INFT2051_Project.Pages"
-             x:Class="INFT2051_Project.MainPage">
+             x:Class="INFT2051_Project.MainPage"
+             BackgroundColor="{StaticResource BackgroundLight}">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="10">
 
             <Label
                 Text="MathMaster NSW"
-                Style="{StaticResource Headline}"
+                Style="{StaticResource TitleStyle}"
                 SemanticProperties.HeadingLevel="Level1" />
             
             <Label
                 Text="Please select the desired Focus Area"
-                Style="{StaticResource Headline}"
                 FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="Black"
                 SemanticProperties.HeadingLevel="Level2" />
 
 
             <Button
-                Grid.Column="1"
+                Style="{StaticResource NavigationButtonStyle}"
                 x:Name="OneStepButton"
                 Text="One Step Equations" 
                 SemanticProperties.Hint="Navigates to the one step equations page"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Fill" />
+                Clicked="OnButtonClicked"/>
 
             <Button
+                Style="{StaticResource NavigationButtonStyle}"
                 x:Name="TwoStepButton"
                 Text="Two Step Equations" 
                 SemanticProperties.Hint="Navigates to the two step equations page"
@@ -37,6 +39,7 @@
                 HorizontalOptions="Fill" />
 
             <Button
+                Style="{StaticResource NavigationButtonStyle}"
                 x:Name="QuadraticEquationsButton"
                 Text="Quadratic Equations" 
                 SemanticProperties.Hint="Navigates to the quadratic equations"
@@ -44,6 +47,7 @@
                 HorizontalOptions="Fill" />
 
             <Button
+                Style="{StaticResource NavigationButtonStyle}"
                 x:Name="Fractions"
                 Text="Fractions" 
                 SemanticProperties.Hint="Fraction"
@@ -51,6 +55,7 @@
                 HorizontalOptions="Fill" />
 
             <Button
+                Style="{StaticResource NavigationButtonStyle}"
                 x:Name="Decimals"
                 Text="Decimals" 
                 SemanticProperties.Hint="Decimals"
@@ -58,6 +63,7 @@
                 HorizontalOptions="Fill" />
 
             <Button
+                Style="{StaticResource NavigationButtonStyle}"
                 x:Name="Percentages"
                 Text="Percentages" 
                 SemanticProperties.Hint="Percentages"
@@ -65,6 +71,7 @@
                 HorizontalOptions="Fill" />
 
             <Button
+                Style="{StaticResource NavigationButtonStyle}"
                 x:Name="ActivityData"
                 Text="User Activity" 
                 SemanticProperties.Hint="ActivityData"
@@ -72,9 +79,18 @@
                 HorizontalOptions="Fill" />
 
             <Button
+                Style="{StaticResource NavigationButtonStyle}"
                 x:Name="UserData"
                 Text="User Data" 
                 SemanticProperties.Hint="UserData"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Fill" />
+            
+            <Button
+                Style="{StaticResource NavigationButtonStyle}"
+                x:Name="HowToUse"
+                Text="How To Use" 
+                SemanticProperties.Hint="HowToUse"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
 

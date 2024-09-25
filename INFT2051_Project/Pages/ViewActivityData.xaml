@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="INFT2051_Project.Pages.ViewActivityData"
-             Title="ViewActivityData">
+             Title="ViewActivityData"
+             BackgroundColor="{StaticResource BackgroundLight}">
     <VerticalStackLayout>
+        <Label Text="User Activity" Style="{StaticResource TitleStyle}"/>
         <Label Text="Active Days:"/>
             <ListView x:Name="listViewActivity" RowHeight="75">
                 <ListView.ItemTemplate>

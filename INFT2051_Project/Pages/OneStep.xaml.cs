@@ -57,6 +57,8 @@ public partial class OneStep : ContentPage
 
         else if (btn == NextQuestion)
         {
+            AnswerLabel.IsVisible = false;
+            AnswerInput.Text = "";
             questionAttempted = false;
             questionCorrect = false;
             WorkingGrid.IsVisible = false;
@@ -69,6 +71,7 @@ public partial class OneStep : ContentPage
 
         else if (btn == SubmitAnswer)
         {
+            AnswerLabel.IsVisible = true;
             string input = AnswerInput.Text;
             var answer = getAnswer(a, b, op);
             if (input == answer)

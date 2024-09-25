@@ -3,34 +3,25 @@
     x:Class="INFT2051_Project.QuadraticsPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="QuadraticsPage">
+    Title="QuadraticsPage"
+    BackgroundColor="{StaticResource BackgroundLight}">
 
-    <VerticalStackLayout Padding="30,0" Spacing="10">
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="10">
 
-        <StackLayout>
-            <HorizontalStackLayout
-                HorizontalOptions="Center"
-                VerticalOptions="Center">
-
-                <Label 
-                    Text="solve for x when,  x&#x00B2;"
-                    TextType="Html"
-                    FontFamily="RomanMath"
-                    FontSize="24"/>
-
-                <Label
-                    HorizontalOptions="Fill"
+            <StackLayout>
+                <Label Text="Quadratic Equations" Style="{StaticResource TitleStyle}"/>
+                <Frame Style="{StaticResource CardStyle}">
+                    <Label
+                    Style="{StaticResource QuestionTextStyle}"
                     x:Name="QuestionLabel"
-                    TextType="Html"
-                    Padding="2"
                     FontFamily="RomanMath"
-                    FontSize="22"
                     Text=""/>
-            </HorizontalStackLayout>
-        </StackLayout>
+                </Frame>
+            </StackLayout>
 
-        <ScrollView>
-            <StackLayout x:Name="WorkingArea" IsVisible="False" Spacing="10">
+
+            <StackLayout x:Name="WorkingArea" IsVisible="False" Spacing="5">
                 <HorizontalStackLayout
                     VerticalOptions="Center">
                     <Label
@@ -38,11 +29,6 @@
                         FontFamily="RomanMath"
                         FontAttributes="Bold"
                         Text="Step 1 : "/>
-                    
-                    <Label
-                        Text=" x&#x00B2;"
-                        FontSize="18"
-                        FontFamily="RomanMath"/>
 
                     <Label
                         x:Name="Working1"
@@ -108,28 +94,28 @@
                         FontFamily="RomanMath">
                     </Label>
                 </HorizontalStackLayout>
-
             </StackLayout>
-        </ScrollView>
-        
-        <Label
+
+            <Label
+            Style="{StaticResource QuestionTextStyle}"
              x:Name="AnswerLabel"
              FontFamily="CambriaMath"
+             IsVisible="False"
              FontSize="20"
              HorizontalOptions="Center"
              Text="" />
-        <HorizontalStackLayout Padding="10" Spacing="5">
-            
 
-            <Entry
-                x:Name="AnswerInput1"
-                HorizontalTextAlignment="Center"
-                Keyboard="Default"
-                Placeholder="Enter Answer One"
-                Text=""
-                WidthRequest="150" />
-            
-            <Entry
+            <HorizontalStackLayout Padding="10" Spacing="5">
+                <Entry
+                    x:Name="AnswerInput1"
+                    HorizontalTextAlignment="Center"
+                    Keyboard="Default"
+                    Placeholder="Enter Answer One"
+                    Text=""
+                    HeightRequest="50"
+                    WidthRequest="150" />
+
+                <Entry
                 x:Name="AnswerInput2"
                 HorizontalTextAlignment="Center"
                 Keyboard="Default"
@@ -137,30 +123,33 @@
                 Text=""
                 WidthRequest="150" />
 
-        </HorizontalStackLayout>
-        <Button
-            Grid.Row="0"
-            Grid.Column="2"
+            </HorizontalStackLayout>
+            <Button
+            Style="{StaticResource AnswerButtonStyle}"
             x:Name="SubmitAnswer"
             Clicked="OnButtonClicked"
+            WidthRequest="200"
             Text="Submit" />
-        <Button
-            x:Name="NextQuestion"
-            Clicked="OnButtonClicked"
-            SemanticProperties.Hint="Next Question"
-            Text="Next Question" />
+            <Button
+                Style="{StaticResource NavigationButtonStyle}"
+                x:Name="NextQuestion"
+                Clicked="OnButtonClicked"
+                SemanticProperties.Hint="Next Question"
+                Text="Next Question" />
 
-        <Button
-            x:Name="ShowWorking"
-            Clicked="OnButtonClicked"
-            SemanticProperties.Hint="Show Working"
-            Text="Show Working" />
+            <Button
+                Style="{StaticResource NavigationButtonStyle}"
+                x:Name="ShowWorking"
+                Clicked="OnButtonClicked"
+                SemanticProperties.Hint="Show Working"
+                Text="Show Working" />
 
-        <Button
-            x:Name="Back"
-            Clicked="OnButtonClicked"
-            SemanticProperties.Hint="Back"
-            Text="Back" />
-    </VerticalStackLayout>
-
+            <Button
+                Style="{StaticResource NavigationButtonStyle}"
+                x:Name="Back"
+                Clicked="OnButtonClicked"
+                SemanticProperties.Hint="Back"
+                Text="Back" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

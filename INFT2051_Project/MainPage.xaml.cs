@@ -55,6 +55,8 @@ namespace INFT2051_Project
                 await Navigation.PushAsync(new ViewDataPage());
             else if (btn == ActivityData)
                 await Navigation.PushAsync(new ViewActivityData());
+            else if (btn == HowToUse)
+                await Navigation.PushAsync(new HowToUse());
 
         }
     }

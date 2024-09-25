@@ -52,6 +52,7 @@ public partial class TwoStep : ContentPage
             questionAttempted = false;
             questionCorrect = false;
             WorkingArea.IsVisible = false;
+            AnswerInput.Text = "";
             NextQuestion.Text = "Next Question";
             a = getInteger();
             b = getInteger();

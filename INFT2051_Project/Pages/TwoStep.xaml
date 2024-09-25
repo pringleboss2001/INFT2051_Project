@@ -3,24 +3,21 @@
     x:Class="INFT2051_Project.TwoStep"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="TwoStep">
+    Title="TwoStep"
+    BackgroundColor="{StaticResource BackgroundLight}">
 
-    <VerticalStackLayout Padding="30,0" Spacing="10">
-
+    <VerticalStackLayout Padding="30,0" Spacing="5">
+        
         <StackLayout>
-            <HorizontalStackLayout
-                HorizontalOptions="Center">
-                <Label 
-                    Text="Solve for x when, " 
-                    FontFamily="RomanMath"
-                    FontSize="20"/>
-
+                <Label Text="Two Step Equations" Style="{StaticResource TitleStyle}"/>
+            <Frame Style="{StaticResource CardStyle}">
                 <Label
+                    Style="{StaticResource QuestionTextStyle}"
                     x:Name="QuestionLabel"
                     FontFamily="RomanMath"
                     FontSize="20"
                     Text=""/>
-            </HorizontalStackLayout>
+            </Frame>
         </StackLayout>
         
         <ScrollView>
@@ -31,6 +28,7 @@
                         Text="Step 1 : ">
                     </Label>
                     <Label
+                        Style="{StaticResource WorkingOutFont}"
                         x:Name="Working1"
                         Text="Line of Working">
                     </Label>
@@ -41,6 +39,7 @@
                         Text="Step 2 : ">
                     </Label>
                     <Label
+                        Style="{StaticResource WorkingOutFont}"
                         x:Name="Working2"
                         Text="Line of Working">
                     </Label>
@@ -51,6 +50,7 @@
                         Text="Step 3 : ">
                     </Label>
                     <Label
+                        Style="{StaticResource WorkingOutFont}"
                         x:Name="Working3"
                         Text="Line of Working">
                     </Label>
@@ -61,6 +61,7 @@
                         Text="Step 4 : ">
                     </Label>
                     <Label
+                        Style="{StaticResource WorkingOutFont}"
                         x:Name="Working4"
                         Text="Line of Working">
                     </Label>
@@ -71,6 +72,7 @@
                         Text="Step 5 : ">
                     </Label>
                     <Label
+                        Style="{StaticResource WorkingOutFont}"
                         x:Name="Working5"
                         Text="Line of Working">
                     </Label>
@@ -79,6 +81,7 @@
             </StackLayout>
         </ScrollView>
         <Label
+            Style="{StaticResource QuestionTextStyle}"
             x:Name="AnswerLabel"
             FontFamily="CambriaMath"
             FontSize="20"
@@ -96,6 +99,7 @@
                 WidthRequest="200" />
 
             <Button
+                Style="{StaticResource AnswerButtonStyle}"
                 x:Name="SubmitAnswer"
                 Grid.Column="2"
                 Clicked="OnButtonClicked"
@@ -104,18 +108,21 @@
         </HorizontalStackLayout>
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="NextQuestion"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Next Question"
             Text="Next Question" />
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="ShowWorking"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Show Working"
             Text="Show Working" />
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="Back"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Back"

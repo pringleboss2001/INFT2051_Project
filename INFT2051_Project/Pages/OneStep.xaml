@@ -3,24 +3,24 @@
     x:Class="INFT2051_Project.OneStep"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="OneStep">
+    Title="OneStep"
+    BackgroundColor="{StaticResource BackgroundLight}">
 
-    <VerticalStackLayout Padding="30,0" Spacing="10">
+    <VerticalStackLayout Padding="30,0" Spacing="5">
 
         <StackLayout>
-            <HorizontalStackLayout
-                HorizontalOptions="Center">
-                <Label 
-                    Text="Solve for x when, " 
-                    FontFamily="RomanMath"
-                    FontSize="20"/>
+            
+                <Label Text="One Step Equations" Style="{StaticResource TitleStyle}"/>
+
+            <Frame Style="{StaticResource CardStyle}">
 
                 <Label
-                    x:Name="QuestionLabel"
-                    FontFamily="RomanMath"
-                    FontSize="20"
-                    Text=""/>
-            </HorizontalStackLayout>
+                        Style="{StaticResource QuestionTextStyle}"
+                        x:Name="QuestionLabel"
+                        FontFamily="RomanMath"
+                        FontSize="20"
+                        Text=""/>
+            </Frame>
         </StackLayout>
 
         <ScrollView>
@@ -36,38 +36,47 @@
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
                 <Label
+                    TextColor="Black"
+                    FontAttributes="Bold"
                     Grid.Row="0"
                     Grid.Column="0"
                     Text="Step 1:" />
 
                 <Label
+                    Style="{StaticResource WorkingOutFont}"
                     x:Name="Working1"
                     Grid.Row="0"
                     Grid.Column="1"
                     Text="Line of Working" />
 
                 <Label
+                    TextColor="Black"
+                    FontAttributes="Bold"
                     Grid.Row="1"
                     Grid.Column="0"
                     Text="Step 2:" />
 
                 <Label
+                    Style="{StaticResource WorkingOutFont}"
                     x:Name="Working2"
                     Grid.Row="1"
                     Grid.Column="1"
                     Text="Line of working" />
 
                 <Label
+                    TextColor="Black"
+                    FontAttributes="Bold"
                     Grid.Row="2"
                     Grid.Column="0"
                     Text="Step 3:" />
 
                 <Label
+                    Style="{StaticResource WorkingOutFont}"
                     x:Name="Working3"
                     Grid.Row="2"
                     Grid.Column="1"
@@ -75,9 +84,11 @@
 
             </Grid>
         </ScrollView>
+
         <Label
+            Style="{StaticResource QuestionTextStyle}"
             x:Name="AnswerLabel"
-            FontFamily="CambriaMath"
+            IsVisible="False"
             FontSize="20"
             HorizontalOptions="Center"
             Text="Answer Label"
@@ -85,17 +96,17 @@
 
         <HorizontalStackLayout Padding="5,0" Spacing="25">
 
-
             <Entry
                 x:Name="AnswerInput"
-                Grid.Column="0"
                 HorizontalTextAlignment="Center"
                 Keyboard="Default"
                 Placeholder="Enter the answer"
                 Text=""
-                WidthRequest="200" />
+                WidthRequest="200"
+                HeightRequest="50"/>
 
             <Button
+                Style="{StaticResource AnswerButtonStyle}"
                 x:Name="SubmitAnswer"
                 Grid.Column="2"
                 Clicked="OnButtonClicked"
@@ -104,18 +115,21 @@
         </HorizontalStackLayout>
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="NextQuestion"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Next Question"
             Text="Next Question" />
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="ShowWorking"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Show Working"
             Text="Show Working" />
 
         <Button
+            Style="{StaticResource NavigationButtonStyle}"
             x:Name="Back"
             Clicked="OnButtonClicked"
             SemanticProperties.Hint="Back"

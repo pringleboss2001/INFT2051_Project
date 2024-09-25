@@ -57,7 +57,7 @@ public partial class FractionsPage : ContentPage
             await Navigation.PushAsync(new MainPage());
         else if (btn == NextQuestion)
         {
-            //display question function
+            AnswerInput.Text = "";
             questionCorrect = false;
             questionAttempted = false;
             WorkingGrid.IsVisible = false;

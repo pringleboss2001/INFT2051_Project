@@ -59,9 +59,11 @@ public partial class PercentagesPage : ContentPage
             await Navigation.PushAsync(new MainPage());
         else if (btn == NextQuestion)
         {
+            AnswerInput.Text = "";
             questionCorrect = false;
             questionAttempted = false;
             WorkingGrid.IsVisible = false;
+            Working3.IsVisible = true;
             //display question function
             Random numberGenerator = new Random();
             denominator = numberGenerator.Next(2, 11);
@@ -87,12 +89,12 @@ public partial class PercentagesPage : ContentPage
     {
         if (FracDec == 1)   //if the question is Fraction --> Percentage
         {
-            QuestionLabel.Text = $" {numerator}/{denominator} to a percentage.";
+            QuestionLabel.Text = $"Convert {numerator}/{denominator} to a percentage.";
         }
         else   //if the quesiton is Decimal --> Percentage
         {    
             float dec = decimalAnswer / 100;
-            QuestionLabel.Text = $" {dec.ToString()} to a percentage.";
+            QuestionLabel.Text = $"Convert {dec.ToString()} to a percentage.";
         }
     }
 
