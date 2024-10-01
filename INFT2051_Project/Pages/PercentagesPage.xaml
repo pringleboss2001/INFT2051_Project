@@ -15,7 +15,9 @@
                 x:Name="QuestionLabel"
                 FontFamily="RomanMath"
                 FontSize="18"
-                Text=""/>
+                Text=""
+                HorizontalTextAlignment="Center"
+                WidthRequest="200"/>
         </Frame>
 
             <Grid

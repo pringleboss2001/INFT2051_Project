@@ -52,6 +52,7 @@ public partial class QuadraticsPage : ContentPage
             questionAttempted = false;
             questionCorrect = false;
             WorkingArea.IsVisible = false;
+            AnswerLabel.IsVisible = false;
             a = getInteger();
             b = getInteger();
             createQuestion(a, b);
@@ -61,6 +62,7 @@ public partial class QuadraticsPage : ContentPage
         {
             string input_1 = AnswerInput1.Text;
             string input_2 = AnswerInput2.Text;
+            AnswerLabel.IsVisible = true;
             checkAnswer(a, b, input_1, input_2);
         }
 

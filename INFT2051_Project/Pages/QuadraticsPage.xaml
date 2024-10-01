@@ -13,11 +13,13 @@
                 <Label Text="Quadratic Equations" Style="{StaticResource TitleStyle}"/>
                 <Frame Style="{StaticResource CardStyle}">
                     <Label
-                    Style="{StaticResource QuestionTextStyle}"
-                    x:Name="QuestionLabel"
-                    FontFamily="RomanMath"
-                    Text=""/>
-                </Frame>
+                        Style="{StaticResource QuestionTextStyle}"
+                        x:Name="QuestionLabel"
+                        FontFamily="RomanMath"
+                        Text=""
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="225"/>
+                    </Frame>
             </StackLayout>
 
 
@@ -97,13 +99,15 @@
             </StackLayout>
 
             <Label
-            Style="{StaticResource QuestionTextStyle}"
-             x:Name="AnswerLabel"
-             FontFamily="CambriaMath"
-             IsVisible="False"
-             FontSize="20"
-             HorizontalOptions="Center"
-             Text="" />
+                Style="{StaticResource QuestionTextStyle}"
+                x:Name="AnswerLabel"
+                FontFamily="CambriaMath"
+                IsVisible="False"
+                FontSize="20"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                HeightRequest="70"
+                Text="" />
 
             <HorizontalStackLayout Padding="10" Spacing="5">
                 <Entry
