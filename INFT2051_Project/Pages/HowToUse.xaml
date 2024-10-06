@@ -33,7 +33,7 @@
                 FontSize="18"/>
             <Label>
                 <Label.Text>
-                    In a topic page, type in your answer into the text box, and click submit to check your answer. Fraction and decimal answers are accepted, but you do not need to the percentage sign when submitting a percentage answer.
+                    In a topic page, type in your answer into the text box, and click submit to check your answer. Fraction and decimal answers are accepted, but you do not need to the percentage sign when submitting a percentage answer. When submitting a decimal answer that is longer than 3 decimal places, submit the answer as 3 decimal places. I.e. 5/6 = 0.833 .
                 </Label.Text>
             </Label>
 

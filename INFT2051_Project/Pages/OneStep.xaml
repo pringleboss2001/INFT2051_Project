@@ -9,21 +9,20 @@
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="5">
 
-        <StackLayout>
-            
+            <StackLayout>
                 <Label Text="One Step Equations" Style="{StaticResource TitleStyle}"/>
 
-            <Frame Style="{StaticResource CardStyle}">
+                <Frame Style="{StaticResource CardStyle}">
 
-                <Label
-                    Style="{StaticResource QuestionTextStyle}"
-                    x:Name="QuestionLabel"
-                    FontFamily="RomanMath"
-                    FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    WidthRequest="200"
-                    Text=""/>
-            </Frame>
+                    <Label
+                        Style="{StaticResource QuestionTextStyle}"
+                        x:Name="QuestionLabel"
+                        FontFamily="RomanMath"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
+                        WidthRequest="200"
+                        Text=""/>
+                </Frame>
         </StackLayout>
 
             <Grid
@@ -87,13 +86,13 @@
             </Grid>
 
             <Label
-            Style="{StaticResource QuestionTextStyle}"
-            x:Name="AnswerLabel"
-            IsVisible="False"
-            FontSize="20"
-            HorizontalOptions="Center"
-            Text="Answer Label"
-            VerticalOptions="Center" />
+                Style="{StaticResource QuestionTextStyle}"
+                x:Name="AnswerLabel"
+                IsVisible="False"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="Answer Label"
+                VerticalOptions="Center" />
 
         <HorizontalStackLayout Padding="5,0" Spacing="25">
 
