@@ -61,6 +61,7 @@
         <Setter Property="BackgroundColor" Value="{StaticResource WrongAnswerRed}" />
     </Style>
 
+    <!--Navigation Button Style -->
     <Style x:Key="NavigationButtonStyle" TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource PrimaryDarkBlue}" />
         <Setter Property="TextColor" Value="{StaticResource PrimaryText}" />

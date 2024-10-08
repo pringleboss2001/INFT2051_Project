@@ -1,2 +1,2 @@
-AdbTarget=-s RFCT916WATZ
+AdbTarget=-s emulator-5554
 AdbOptions=

@@ -112,31 +112,35 @@
                 Style="{StaticResource AnswerButtonStyle}"
                 x:Name="SubmitAnswer"
                 Grid.Column="2"
-                Clicked="OnButtonClicked"
-                Text="Submit" />
+                Pressed="OnButtonPressed"
+                Released="OnButtonReleased"
+                Text="Submit"/>
 
         </HorizontalStackLayout>
 
         <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="NextQuestion"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Next Question"
-            Text="Next Question" />
+            Text="Next Question"/>
 
         <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="ShowWorking"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Show Working"
-            Text="Show Working" />
+            Text="Show Working"/>
 
         <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="Back"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Back"
-            Text="Back" />
-    </VerticalStackLayout>
-        </ScrollView>
+            Text="Back"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -4,6 +4,7 @@ using INFT2051_Project.ViewModels;
 using Mehroz;
 using SQLite;
 using System.Data;
+using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 
 namespace INFT2051_Project;
@@ -49,14 +50,23 @@ public partial class OneStep : ContentPage
         todaysDate = DateViewModel.Current.getDateData(todaysDate);
     }
 
-    public async void OnButtonClicked(object sender, EventArgs e)
+
+
+    public async void OnButtonPressed(object sender, EventArgs e)
     {
         Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
-        if (btn == Back)
-            await Navigation.PushAsync(new MainPage());
 
+        if (btn == Back)
+        {
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
+            btn.Scale = 0.95;
+            await Navigation.PushAsync(new MainPage());
+        }
+            
         else if (btn == NextQuestion)
         {
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
+            btn.Scale = 0.95;
             AnswerLabel.IsVisible = false;
             AnswerInput.Text = "";
             questionAttempted = false;
@@ -71,6 +81,8 @@ public partial class OneStep : ContentPage
 
         else if (btn == SubmitAnswer)
         {
+            btn.BackgroundColor = Color.FromArgb("#2563eb");
+            btn.Scale = 0.95; // Shrink the button slightly on press
             AnswerLabel.IsVisible = true;
             string input = AnswerInput.Text;
             var answer = getAnswer(a, b, op);
@@ -85,9 +97,6 @@ public partial class OneStep : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect=true;
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
@@ -106,9 +115,6 @@ public partial class OneStep : ContentPage
                         todaysDate.answeredQuestion = true;
                         questionAttempted = true;
                         questionCorrect = true;
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
@@ -145,11 +151,30 @@ public partial class OneStep : ContentPage
 
         else if (btn == ShowWorking)
         {
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
+            btn.Scale = 0.95;
             WorkingGrid.IsVisible = true;
             showWorking(a, b, op);
         }
     }
 
+    private void OnButtonReleased(object sender, EventArgs e)
+    {
+        Button btn = (Button)sender;
+
+        // Reset the button to its original background color
+        if (btn == SubmitAnswer)
+        {
+            btn.BackgroundColor = Color.FromArgb("#3b82f6"); // Original light blue for Submit button
+        }
+        else
+        {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+        }
+
+        // Reset the scale to normal
+        btn.Scale = 1.0;
+    }
     public int getOperator()
     {
         int operatorSelect=0;   //initialise operatorSelect

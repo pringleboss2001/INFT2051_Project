@@ -14,10 +14,13 @@ namespace INFT2051_Project
             BindingContext = viewModel = new DataViewModel();
             BindingContext = dateViewModel = new DateViewModel();
             InitializeComponent();
+            
         }
 
         protected override void OnAppearing()
         {
+            SetInitialStyles();
+
             //Creating the rows in the database table. So that the indexing is predetermined
             TopicData oneStepData   = new TopicData() { Id = 1, TopicName = "One Step Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
             TopicData twoStepData   = new TopicData() { Id = 2, TopicName = "Two Step Equations", TotalQuestionsAttempted = 0, TotalQuestionsCorrect = 0 };
@@ -36,9 +39,27 @@ namespace INFT2051_Project
             DateViewModel.Current.SaveData(new UserActivity() { Date=DateTime.Today.ToString("dd/MM/yyyy"), answeredQuestion=false});
         }
 
-        public async void OnButtonClicked(object sender, EventArgs e)
+        private void SetInitialStyles()
+        {
+            foreach (var view in MainLayout.Children)
+            {
+                if (view is Button btn)
+                {
+                    btn.BackgroundColor = Color.FromArgb("#1E3A8A");
+                    btn.TextColor = Colors.White;
+                    btn.CornerRadius = 8;
+                    btn.FontSize = 18;
+                    btn.Padding = new Thickness(15, 10);
+                }
+                
+            }
+        }
+        private async void OnButtonPressed(object sender, EventArgs e)
         {
             Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
+            btn.Scale = 0.95; // Shrink the button slightly
+           
             if (btn == OneStepButton)
                 await Navigation.PushAsync(new OneStep());
             else if (btn == TwoStepButton)
@@ -58,6 +79,12 @@ namespace INFT2051_Project
             else if (btn == HowToUse)
                 await Navigation.PushAsync(new HowToUse());
 
+        }
+        private void OnButtonReleased(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Return to original color
+            btn.Scale = 1.0; // Return to normal size
         }
     }
 
