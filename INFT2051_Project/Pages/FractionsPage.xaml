@@ -14,7 +14,7 @@
                 Aspect="Fill"
                 Opacity="0.35"/>
             <VerticalStackLayout 
-        Padding="30,0" Spacing="10" Margin="5">
+                Padding="30,0" Spacing="10" Margin="5">
                 <Label Text="Converting to Fractions" Style="{StaticResource TitleStyle}"/>
                 <Frame Style="{StaticResource CardStyle}">
                     <Label
@@ -84,56 +84,60 @@
                 </Grid>
 
                 <Label
-            Style="{StaticResource QuestionTextStyle}"
-            IsVisible="False"
-            x:Name="AnswerLabel"
-            FontFamily="CambriaMath"
-            FontSize="20"
-            HorizontalOptions="Center"
-            Text="Answer Label"
-            VerticalOptions="Center" />
+                    Style="{StaticResource QuestionTextStyle}"
+                    IsVisible="False"
+                    x:Name="AnswerLabel"
+                    FontFamily="CambriaMath"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Answer Label"
+                    VerticalOptions="Center" />
 
                 <HorizontalStackLayout Padding="5,0" Spacing="25">
                     <Entry
-                    x:Name="AnswerInput"
-                    Grid.Column="0"
-                    HorizontalTextAlignment="Center"
-                    Keyboard="Default"
-                    Placeholder="Enter the answer"
-                    Text=""
-                    HeightRequest="50"
-                    WidthRequest="200" 
-                    PlaceholderColor="Grey"
-                    BackgroundColor="White"
-                    TextColor="Black"/>
+                        x:Name="AnswerInput"
+                        Grid.Column="0"
+                        HorizontalTextAlignment="Center"
+                        Keyboard="Default"
+                        Placeholder="Enter the answer"
+                        Text=""
+                        HeightRequest="50"
+                        WidthRequest="200" 
+                        PlaceholderColor="Grey"
+                        BackgroundColor="White"
+                        TextColor="Black"/>
 
                     <Button
-                Style="{StaticResource AnswerButtonStyle}"
-                x:Name="SubmitAnswer"
-                Grid.Column="2"
-                Clicked="OnButtonClicked"
-                Text="Submit" />
+                        Style="{StaticResource AnswerButtonStyle}"
+                        x:Name="SubmitAnswer"
+                        Grid.Column="2"
+                        Pressed="OnButtonPressed"
+                        Released="OnButtonReleased"
+                        Text="Submit" />
 
                 </HorizontalStackLayout>
 
                 <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="NextQuestion"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Next Question"
             Text="Next Question" />
 
                 <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="ShowWorking"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Show Working"
             Text="Show Working" />
 
                 <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="Back"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Back"
             Text="Back" />
             </VerticalStackLayout>

@@ -36,7 +36,6 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50" />
                         <RowDefinition Height="50" />
-                        <RowDefinition Height="50" />
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
@@ -68,75 +67,65 @@
                     Grid.Column="1"
                     Text="Line of working" />
 
-                    <Label
-                    Grid.Row="2"
-                    Grid.Column="0"
-                    Text="Step 3:" />
-
-                    <Label
-                    Style="{StaticResource WorkingOutFont}"
-                    x:Name="Working3"
-                    Grid.Row="2"
-                    Grid.Column="1"
-                    Text="Line of Working" />
-
                 </Grid>
 
                 <Label
-                Style="{StaticResource QuestionTextStyle}"
-                x:Name="AnswerLabel"
-                FontFamily="CambriaMath"
-                FontSize="20"
-                HorizontalOptions="Center"
-                Text="Answer Label"
-                IsVisible="False"
-                VerticalOptions="Center" />
+                    Style="{StaticResource QuestionTextStyle}"
+                    x:Name="AnswerLabel"
+                    FontFamily="CambriaMath"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Answer Label"
+                    IsVisible="False"
+                    VerticalOptions="Center" />
 
                 <HorizontalStackLayout Padding="5,0" Spacing="15">
-
-
                     <Entry
-                    x:Name="AnswerInput"
-                    Grid.Column="0"
-                    HorizontalTextAlignment="Center"
-                    Keyboard="Default"
-                    Placeholder="Enter the answer"
-                    Text=""
-                    WidthRequest="200"
-                    HeightRequest="50"
-                    PlaceholderColor="Grey"
-                    BackgroundColor="White"
-                    TextColor="Black"/>
+                        x:Name="AnswerInput"
+                        Grid.Column="0"
+                        HorizontalTextAlignment="Center"
+                        Keyboard="Default"
+                        Placeholder="Enter the answer"
+                        Text=""
+                        WidthRequest="200"
+                        HeightRequest="50"
+                        PlaceholderColor="Grey"
+                        BackgroundColor="White"
+                        TextColor="Black"/>
 
                     <Button
-                    Style="{StaticResource AnswerButtonStyle}"
-                    x:Name="SubmitAnswer"
-                    Grid.Column="2"
-                    Clicked="OnButtonClicked"
-                    Text="Submit" />
+                        Style="{StaticResource AnswerButtonStyle}"
+                        x:Name="SubmitAnswer"
+                        Grid.Column="2"
+                        Pressed="OnButtonPressed"
+                        Released="OnButtonReleased"
+                        Text="Submit" />
 
                 </HorizontalStackLayout>
 
                 <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="NextQuestion"
-                Clicked="OnButtonClicked"
-                SemanticProperties.Hint="Next Question"
-                Text="Next Question" />
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="NextQuestion"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    SemanticProperties.Hint="Next Question"
+                    Text="Next Question" />
 
                 <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="ShowWorking"
-                Clicked="OnButtonClicked"
-                SemanticProperties.Hint="Show Working"
-                Text="Show Working" />
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="ShowWorking"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    SemanticProperties.Hint="Show Working"
+                    Text="Show Working" />
 
                 <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="Back"
-                Clicked="OnButtonClicked"
-                SemanticProperties.Hint="Back"
-                Text="Back" />
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="Back"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    SemanticProperties.Hint="Back"
+                    Text="Back" />
             </VerticalStackLayout>
         </Grid>
     </ScrollView>

@@ -51,14 +51,21 @@ public partial class PercentagesPage : ContentPage
         todaysDate = DateViewModel.Current.getDateData(todaysDate);
     }
 
-    public async void OnButtonClicked(object sender, EventArgs e)
+    public async void OnButtonReleased(object sender, EventArgs e)
     {
 
         Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
         if (btn == Back)
+        {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             await Navigation.PushAsync(new MainPage());
+        }
+            
         else if (btn == NextQuestion)
         {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             AnswerInput.Text = "";
             questionCorrect = false;
             questionAttempted = false;
@@ -75,6 +82,8 @@ public partial class PercentagesPage : ContentPage
         }
         else if (btn == SubmitAnswer)
         {
+            btn.BackgroundColor = Color.FromArgb("#3b82f6"); // Original light blue for Submit button
+            btn.Scale = 1;
             //Display solution + answer
             string answerInput = AnswerInput.Text;
             AnswerLabel.IsVisible = true;
@@ -82,11 +91,27 @@ public partial class PercentagesPage : ContentPage
         }
         else if (btn == ShowWorking)
         {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             WorkingGrid.IsVisible = true;
             showWorking(numerator, denominator, decimalAnswer, FracDec);
         }
     }
 
+    private void OnButtonPressed(object sender, EventArgs e)
+    {
+        Button btn = (Button)sender;
+
+        if (btn == SubmitAnswer)
+        {
+            btn.BackgroundColor = Color.FromArgb("#2563eb");
+        }
+        else
+        {
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
+        }
+        btn.Scale = 0.95;
+    }
     public void createQuestion(int numerator, int denominator, float decimalAnswer, int FracDec)
     {
         if (FracDec == 1)   //if the question is Fraction --> Percentage

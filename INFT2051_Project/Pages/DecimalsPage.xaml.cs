@@ -52,14 +52,21 @@ public partial class DecimalsPage : ContentPage
         todaysDate = DateViewModel.Current.getDateData(todaysDate);
     }
 
-    public async void OnButtonClicked(object sender, EventArgs e)
+    public async void OnButtonReleased(object sender, EventArgs e)
     {
 
         Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
         if (btn == Back)
+        {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             await Navigation.PushAsync(new MainPage());
+        }
+            
         else if (btn == NextQuestion)
         {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             AnswerLabel.IsVisible = false;
             //display question function
             AnswerInput.Text = "";
@@ -75,6 +82,8 @@ public partial class DecimalsPage : ContentPage
         }
         else if (btn == SubmitAnswer)
         {
+            btn.BackgroundColor = Color.FromArgb("#3b82f6"); // Original light blue for Submit button
+            btn.Scale = 1;
             //Display solution + answer
             string answerInput = AnswerInput.Text;
             AnswerLabel.IsVisible = true;
@@ -82,11 +91,28 @@ public partial class DecimalsPage : ContentPage
         }
         else if (btn == ShowWorking)
         {
-            Working3.IsVisible = false;
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             WorkingGrid.IsVisible = true;
             showWorking(numerator, denominator, percentageAnswer, FracPerc);
         }
     }
+
+    private void OnButtonPressed(object sender, EventArgs e)
+    {
+        Button btn = (Button)sender;
+
+        if (btn == SubmitAnswer)
+        {
+            btn.BackgroundColor = Color.FromArgb("#2563eb");
+        }
+        else
+        {
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
+        }
+        btn.Scale = 0.95;
+    }
+
 
     public void createQuestion(int numerator, int denominator, float percentageAnswer, int FracDec)
     {
@@ -113,7 +139,6 @@ public partial class DecimalsPage : ContentPage
             }
             Working1.IsVisible = true;
             Working2.IsVisible = true;
-            Working3.IsVisible= true;
             Working1.Text = $"{numerator} \u00F7 {denominator} = {Math.Round((Convert.ToDecimal(numerator) / Convert.ToDecimal(denominator)), 3)}";
             Working2.Text = $"{numerator}/{denominator} = {working}";
         }

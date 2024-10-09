@@ -144,31 +144,35 @@
 
                 </HorizontalStackLayout>
                 <Button
-            Style="{StaticResource AnswerButtonStyle}"
-            x:Name="SubmitAnswer"
-            Clicked="OnButtonClicked"
-            WidthRequest="200"
-            Text="Submit" />
+                    Style="{StaticResource AnswerButtonStyle}"
+                    x:Name="SubmitAnswer"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    WidthRequest="200"
+                    Text="Submit" />
                 <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="NextQuestion"
-                Clicked="OnButtonClicked"
-                SemanticProperties.Hint="Next Question"
-                Text="Next Question" />
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="NextQuestion"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    SemanticProperties.Hint="Next Question"
+                    Text="Next Question" />
 
                 <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="ShowWorking"
-                Clicked="OnButtonClicked"
-                SemanticProperties.Hint="Show Working"
-                Text="Show Working" />
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="ShowWorking"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    SemanticProperties.Hint="Show Working"
+                    Text="Show Working" />
 
                 <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="Back"
-                Clicked="OnButtonClicked"
-                SemanticProperties.Hint="Back"
-                Text="Back" />
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="Back"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    SemanticProperties.Hint="Back"
+                    Text="Back" />
             </VerticalStackLayout>
         </Grid>
     </ScrollView>
