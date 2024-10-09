@@ -15,6 +15,7 @@ public partial class QuadraticsPage : ContentPage
     bool questionCorrect;
 
     DataViewModel viewModel;
+    DateViewModel dateViewModel;
 
     TopicData topicData = new TopicData()
     {
@@ -24,10 +25,17 @@ public partial class QuadraticsPage : ContentPage
         TotalQuestionsCorrect = 0,
     };
 
+    UserActivity todaysDate = new UserActivity()
+    {
+        Id = 0,
+        Date = DateTime.Today,
+        answeredQuestion = false
+    };
 
     public QuadraticsPage()
     {
         BindingContext = viewModel = new DataViewModel();
+        BindingContext = dateViewModel = new DateViewModel();
         InitializeComponent();
         a = getInteger();
         b = getInteger();
@@ -38,6 +46,7 @@ public partial class QuadraticsPage : ContentPage
     {
         viewModel.OnPropertyChanged("Topics");
         topicData = DataViewModel.Current.getTopicData(topicData);
+        todaysDate = DateViewModel.Current.getDateData(todaysDate);
     }
 
     public async void OnButtonReleased(object sender, EventArgs e)
@@ -68,6 +77,8 @@ public partial class QuadraticsPage : ContentPage
 
         else if (btn == SubmitAnswer)
         {
+            todaysDate.answeredQuestion = true;
+            DateViewModel.Current.SaveData(todaysDate);
             btn.BackgroundColor = Color.FromArgb("#3b82f6"); // Original light blue for Submit button
             btn.Scale = 1;
             string input_1 = AnswerInput1.Text;

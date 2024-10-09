@@ -26,7 +26,7 @@ public partial class FractionsPage : ContentPage
     UserActivity todaysDate = new UserActivity()
     {
         Id = 0,
-        Date = DateTime.Today.ToString("dd/MM/yyyy"),
+        Date = DateTime.Today,
         answeredQuestion = false
     };
     public FractionsPage()

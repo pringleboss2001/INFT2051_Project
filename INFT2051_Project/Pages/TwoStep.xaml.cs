@@ -17,6 +17,7 @@ public partial class TwoStep : ContentPage
     bool questionCorrect;
 
     DataViewModel viewModel;
+    DateViewModel dateViewModel;
 
     TopicData topicData = new TopicData()
     {
@@ -26,9 +27,17 @@ public partial class TwoStep : ContentPage
         TotalQuestionsCorrect = 0,
     };
 
+    UserActivity todaysDate = new UserActivity()
+    {
+        Id = 0,
+        Date = DateTime.Today,
+        answeredQuestion = false
+    };
+
     public TwoStep()
 	{
         BindingContext = viewModel = new DataViewModel();
+        BindingContext = dateViewModel = new DateViewModel();
         InitializeComponent();
         a = getInteger();
         b = getInteger();
@@ -42,6 +51,7 @@ public partial class TwoStep : ContentPage
     {
         viewModel.OnPropertyChanged("Topics");
         topicData = DataViewModel.Current.getTopicData(topicData);
+        todaysDate = DateViewModel.Current.getDateData(todaysDate);
     }
 
     public async void OnButtonReleased(object sender, EventArgs e)
@@ -69,6 +79,8 @@ public partial class TwoStep : ContentPage
 
         else if (btn == SubmitAnswer)
         {
+            todaysDate.answeredQuestion = true;
+            DateViewModel.Current.SaveData(todaysDate);
             btn.BackgroundColor = Color.FromArgb("#3b82f6"); // Original light blue for Submit button
             btn.Scale = 1;
             AnswerLabel.IsVisible = true;

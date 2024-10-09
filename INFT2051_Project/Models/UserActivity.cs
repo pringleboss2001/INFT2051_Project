@@ -13,7 +13,7 @@ namespace INFT2051_Project.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
-        public string Date {  get; set; }
+        public DateTime Date {  get; set; }
 
         public bool answeredQuestion { get; set; }
     }
