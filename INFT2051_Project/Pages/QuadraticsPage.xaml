@@ -7,12 +7,20 @@
     BackgroundColor="{StaticResource BackgroundLight}">
 
     <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="10">
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource BackgroundLight}"/>
+            </Grid.Background>
+            <Image
+                Source="papergrid.jpg"
+                Aspect="Fill"
+                Opacity="0.35"/>
+            <VerticalStackLayout Padding="30,0" Spacing="10" Margin="5">
 
-            <StackLayout>
-                <Label Text="Quadratic Equations" Style="{StaticResource TitleStyle}"/>
-                <Frame Style="{StaticResource CardStyle}">
-                    <Label
+                <StackLayout>
+                    <Label Text="Quadratic Equations" Style="{StaticResource TitleStyle}"/>
+                    <Frame Style="{StaticResource CardStyle}">
+                        <Label
                         Style="{StaticResource QuestionTextStyle}"
                         x:Name="QuestionLabel"
                         FontFamily="RomanMath"
@@ -20,85 +28,85 @@
                         HorizontalTextAlignment="Center"
                         WidthRequest="225"/>
                     </Frame>
-            </StackLayout>
+                </StackLayout>
 
 
-            <StackLayout x:Name="WorkingArea" IsVisible="False" Spacing="5">
-                <HorizontalStackLayout
+                <StackLayout x:Name="WorkingArea" IsVisible="False" Spacing="5">
+                    <HorizontalStackLayout
                     VerticalOptions="Center">
-                    <Label
+                        <Label
                         FontSize="18"
                         FontFamily="RomanMath"
                         FontAttributes="Bold"
                         Text="Step 1 : "/>
 
-                    <Label
+                        <Label
                         x:Name="Working1"
                         FontSize="18"
                         FontFamily="RomanMath"
                         Text="Line of Working"
                         Padding="2">
-                    </Label>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Label
+                        </Label>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
                         FontAttributes="Bold"
                         Text="Step 2 : "
                         FontSize="18"
                         FontFamily="RomanMath"/>
 
-                    <Label
+                        <Label
                         x:Name="Working2"
                         FontFamily="RomanMath"
                         Text="Line of Working"
                         FontSize="18">
-                    </Label>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Label
+                        </Label>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
                         FontAttributes="Bold"
                         Text="Step 3 : "
                         FontSize="18"
                         FontFamily="RomanMath">
-                    </Label>
-                    <Label
+                        </Label>
+                        <Label
                         x:Name="Working3"
                         FontFamily="RomanMath"
                         Text="Line of Working"
                         FontSize="18">
-                    </Label>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Label
+                        </Label>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
                         FontAttributes="Bold"
                         Text="Step 4 : "
                         FontSize="18"
                         FontFamily="RomanMath">
-                    </Label>
-                    <Label
+                        </Label>
+                        <Label
                         x:Name="Working4"
                         Text="Line of Working"
                         FontSize="18"
                         FontFamily="RomanMath">
-                    </Label>
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Label
+                        </Label>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
                         FontAttributes="Bold"
                         Text="Step 5 : "
                         FontSize="18"
                         FontFamily="RomanMath">
-                    </Label>
-                    <Label
+                        </Label>
+                        <Label
                         x:Name="Working5"
                         Text="Line of Working"
                         FontSize="18"
                         FontFamily="RomanMath">
-                    </Label>
-                </HorizontalStackLayout>
-            </StackLayout>
+                        </Label>
+                    </HorizontalStackLayout>
+                </StackLayout>
 
-            <Label
+                <Label
                 Style="{StaticResource QuestionTextStyle}"
                 x:Name="AnswerLabel"
                 FontFamily="CambriaMath"
@@ -109,8 +117,8 @@
                 HeightRequest="70"
                 Text="" />
 
-            <HorizontalStackLayout Padding="10" Spacing="5">
-                <Entry
+                <HorizontalStackLayout Padding="10" Spacing="5">
+                    <Entry
                     x:Name="AnswerInput1"
                     HorizontalTextAlignment="Center"
                     Keyboard="Default"
@@ -122,7 +130,7 @@
                     BackgroundColor="White"
                     TextColor="Black"/>
 
-                <Entry
+                    <Entry
                     x:Name="AnswerInput2"
                     HorizontalTextAlignment="Center"
                     Keyboard="Default"
@@ -134,33 +142,34 @@
                     BackgroundColor="White"
                     TextColor="Black"/>
 
-            </HorizontalStackLayout>
-            <Button
+                </HorizontalStackLayout>
+                <Button
             Style="{StaticResource AnswerButtonStyle}"
             x:Name="SubmitAnswer"
             Clicked="OnButtonClicked"
             WidthRequest="200"
             Text="Submit" />
-            <Button
+                <Button
                 Style="{StaticResource NavigationButtonStyle}"
                 x:Name="NextQuestion"
                 Clicked="OnButtonClicked"
                 SemanticProperties.Hint="Next Question"
                 Text="Next Question" />
 
-            <Button
+                <Button
                 Style="{StaticResource NavigationButtonStyle}"
                 x:Name="ShowWorking"
                 Clicked="OnButtonClicked"
                 SemanticProperties.Hint="Show Working"
                 Text="Show Working" />
 
-            <Button
+                <Button
                 Style="{StaticResource NavigationButtonStyle}"
                 x:Name="Back"
                 Clicked="OnButtonClicked"
                 SemanticProperties.Hint="Back"
                 Text="Back" />
-        </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>

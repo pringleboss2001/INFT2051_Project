@@ -1,4 +1,5 @@
 using INFT2051_Project.Models;
+using INFT2051_Project.Pages;
 using INFT2051_Project.Services;
 using INFT2051_Project.ViewModels;
 using Mehroz;
@@ -44,7 +45,7 @@ public partial class QuadraticsPage : ContentPage
 
         Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
         if (btn == Back)
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new EquationsPage());
         else if (btn == NextQuestion)
         {
             AnswerInput1.Text = "";

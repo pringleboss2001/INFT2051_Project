@@ -4,8 +4,17 @@
              x:Class="INFT2051_Project.Pages.EquationsPage"
              Title="EquationsPage"
              BackgroundColor="{StaticResource BackgroundLight}">
-    <VerticalStackLayout
-        x:Name="MainLayout">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{StaticResource BackgroundLight}"/>
+        </Grid.Background>
+        <Image
+            Source="papergrid.jpg"
+            Aspect="Fill"
+            Opacity="0.35"/>
+        <VerticalStackLayout
+            x:Name="MainLayout"
+            Margin="5">
         <Label 
             Style="{StaticResource TitleStyle}"
             Text="Equations Topics"
@@ -40,4 +49,5 @@
             Pressed="OnButtonPressed"
             Released="OnButtonReleased"/>
     </VerticalStackLayout>
+        </Grid>
 </ContentPage>

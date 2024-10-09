@@ -7,7 +7,15 @@
     BackgroundColor="{StaticResource BackgroundLight}">
 
     <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="5">
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource BackgroundLight}"/>
+            </Grid.Background>
+            <Image
+                Source="papergrid.jpg"
+                Aspect="Fill"
+                Opacity="0.35"/>
+            <VerticalStackLayout Padding="30,0" Spacing="5" Margin="5">
 
             <StackLayout>
                 <Label Text="One Step Equations" Style="{StaticResource TitleStyle}"/>
@@ -142,5 +150,6 @@
             SemanticProperties.Hint="Back"
             Text="Back"/>
         </VerticalStackLayout>
+            </Grid>
     </ScrollView>
 </ContentPage>

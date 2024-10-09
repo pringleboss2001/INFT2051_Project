@@ -6,11 +6,19 @@
              BackgroundColor="{StaticResource BackgroundLight}">
     
     <ScrollView>
-        <VerticalStackLayout 
-        Padding="30,0" Spacing="10">
-            <Label Text="Converting to Decimals" Style="{StaticResource TitleStyle}" FontSize="18"/>
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource BackgroundLight}"/>
+            </Grid.Background>
+            <Image
+                Source="papergrid.jpg"
+                Aspect="Fill"
+                Opacity="0.35"/>
+            <VerticalStackLayout 
+        Padding="30,0" Spacing="10" Margin="5">
+                <Label Text="Converting to Decimals" Style="{StaticResource TitleStyle}" FontSize="18"/>
                 <Frame Style="{StaticResource CardStyle}">
-                <Label
+                    <Label
                     Style="{StaticResource QuestionTextStyle}"
                     x:Name="QuestionLabel"
                     FontFamily="RomanMath"
@@ -18,63 +26,63 @@
                     Text=""
                     HorizontalTextAlignment="Center"
                     WidthRequest="200"/>
-            </Frame>
+                </Frame>
 
-            <Grid
+                <Grid
                 x:Name="WorkingGrid"
                 ColumnSpacing="2"
                 IsVisible="False"
                 RowSpacing="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
-                    <RowDefinition Height="50" />
-                    <RowDefinition Height="50" />
-                </Grid.RowDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
 
-                <Label
+                    <Label
                     Grid.Row="0"
                     Grid.Column="0"
                     Text="Step 1:" />
 
-                <Label
+                    <Label
                     Style="{StaticResource WorkingOutFont}"
                     x:Name="Working1"
                     Grid.Row="0"
                     Grid.Column="1"
                     Text="Line of Working" />
 
-                <Label
+                    <Label
                     Grid.Row="1"
                     Grid.Column="0"
                     Text="Step 2:" />
 
-                <Label
+                    <Label
                     Style="{StaticResource WorkingOutFont}"
                     x:Name="Working2"
                     Grid.Row="1"
                     Grid.Column="1"
                     Text="Line of working" />
 
-                <Label
+                    <Label
                     Grid.Row="2"
                     Grid.Column="0"
                     Text="Step 3:" />
 
-                <Label
+                    <Label
                     Style="{StaticResource WorkingOutFont}"
                     x:Name="Working3"
                     Grid.Row="2"
                     Grid.Column="1"
                     Text="Line of Working" />
 
-            </Grid>
+                </Grid>
 
-            <Label
+                <Label
                 Style="{StaticResource QuestionTextStyle}"
                 x:Name="AnswerLabel"
                 FontFamily="CambriaMath"
@@ -84,10 +92,10 @@
                 IsVisible="False"
                 VerticalOptions="Center" />
 
-            <HorizontalStackLayout Padding="5,0" Spacing="15">
+                <HorizontalStackLayout Padding="5,0" Spacing="15">
 
 
-                <Entry
+                    <Entry
                     x:Name="AnswerInput"
                     Grid.Column="0"
                     HorizontalTextAlignment="Center"
@@ -100,35 +108,36 @@
                     BackgroundColor="White"
                     TextColor="Black"/>
 
-                <Button
+                    <Button
                     Style="{StaticResource AnswerButtonStyle}"
                     x:Name="SubmitAnswer"
                     Grid.Column="2"
                     Clicked="OnButtonClicked"
                     Text="Submit" />
 
-            </HorizontalStackLayout>
+                </HorizontalStackLayout>
 
-            <Button
+                <Button
                 Style="{StaticResource NavigationButtonStyle}"
                 x:Name="NextQuestion"
                 Clicked="OnButtonClicked"
                 SemanticProperties.Hint="Next Question"
                 Text="Next Question" />
 
-            <Button
+                <Button
                 Style="{StaticResource NavigationButtonStyle}"
                 x:Name="ShowWorking"
                 Clicked="OnButtonClicked"
                 SemanticProperties.Hint="Show Working"
                 Text="Show Working" />
 
-            <Button
+                <Button
                 Style="{StaticResource NavigationButtonStyle}"
                 x:Name="Back"
                 Clicked="OnButtonClicked"
                 SemanticProperties.Hint="Back"
                 Text="Back" />
-        </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>

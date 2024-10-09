@@ -1,6 +1,7 @@
 using INFT2051_Project.Models;
 using INFT2051_Project.Services;
 using INFT2051_Project.ViewModels;
+using INFT2051_Project.Pages;
 using Mehroz;
 using SQLite;
 using System.Data;
@@ -52,21 +53,21 @@ public partial class OneStep : ContentPage
 
 
 
-    public async void OnButtonPressed(object sender, EventArgs e)
+    public async void OnButtonReleased(object sender, EventArgs e)
     {
         Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
 
         if (btn == Back)
         {
-            btn.BackgroundColor = Color.FromArgb("#0f172a");
-            btn.Scale = 0.95;
-            await Navigation.PushAsync(new MainPage());
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
+            await Navigation.PushAsync(new EquationsPage());
         }
             
         else if (btn == NextQuestion)
         {
-            btn.BackgroundColor = Color.FromArgb("#0f172a");
-            btn.Scale = 0.95;
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             AnswerLabel.IsVisible = false;
             AnswerInput.Text = "";
             questionAttempted = false;
@@ -82,7 +83,7 @@ public partial class OneStep : ContentPage
         else if (btn == SubmitAnswer)
         {
             btn.BackgroundColor = Color.FromArgb("#2563eb");
-            btn.Scale = 0.95; // Shrink the button slightly on press
+            btn.Scale = 1; // Shrink the button slightly on press
             AnswerLabel.IsVisible = true;
             string input = AnswerInput.Text;
             var answer = getAnswer(a, b, op);
@@ -151,30 +152,27 @@ public partial class OneStep : ContentPage
 
         else if (btn == ShowWorking)
         {
-            btn.BackgroundColor = Color.FromArgb("#0f172a");
-            btn.Scale = 0.95;
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             WorkingGrid.IsVisible = true;
             showWorking(a, b, op);
         }
     }
-
-    private void OnButtonReleased(object sender, EventArgs e)
+    private void OnButtonPressed(object sender, EventArgs e)
     {
         Button btn = (Button)sender;
 
-        // Reset the button to its original background color
         if (btn == SubmitAnswer)
         {
-            btn.BackgroundColor = Color.FromArgb("#3b82f6"); // Original light blue for Submit button
+            btn.BackgroundColor = Color.FromArgb("#2563eb");
         }
         else
         {
-            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
         }
-
-        // Reset the scale to normal
-        btn.Scale = 1.0;
+        btn.Scale = 0.95;
     }
+
     public int getOperator()
     {
         int operatorSelect=0;   //initialise operatorSelect

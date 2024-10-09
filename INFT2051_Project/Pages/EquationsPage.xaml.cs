@@ -27,12 +27,12 @@ public partial class EquationsPage : ContentPage
         }
     }
 
-    private async void OnButtonPressed(object sender, EventArgs e)
+    private async void OnButtonReleased(object sender, EventArgs e)
     {
         Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
-        btn.BackgroundColor = Color.FromArgb("#0f172a");
-        btn.Scale = 0.95; // Shrink the button slightly
 
+        btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Return to original color
+        btn.Scale = 1.0; // Return to normal size
         if (btn == OneStepButton)
             await Navigation.PushAsync(new OneStep());
         else if (btn == TwoStepButton)
@@ -43,10 +43,11 @@ public partial class EquationsPage : ContentPage
             await Navigation.PushAsync(new MainPage());
     }
 
-    private void OnButtonReleased(object sender, EventArgs e)
+    private void OnButtonPressed(object sender, EventArgs e)
     {
         Button btn = (Button)sender;
-        btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Return to original color
-        btn.Scale = 1.0; // Return to normal size
+        btn.BackgroundColor = Color.FromArgb("#0f172a");
+        btn.Scale = 0.95; // Shrink the button slightly
+        
     }
 }

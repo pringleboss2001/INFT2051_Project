@@ -6,7 +6,15 @@
     Title="TwoStep"
     BackgroundColor="{StaticResource BackgroundLight}">
     <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="5">
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource BackgroundLight}"/>
+            </Grid.Background>
+            <Image
+                Source="papergrid.jpg"
+                Aspect="Fill"
+                Opacity="0.35"/>
+            <VerticalStackLayout Padding="30,0" Spacing="5" Margin="5">
 
             <StackLayout>
                 <Label Text="Two Step Equations" Style="{StaticResource TitleStyle}"/>
@@ -107,7 +115,9 @@
                 x:Name="AnswerLabel"
                 FontFamily="CambriaMath"
                 FontSize="20"
+                Margin="0"
                 HorizontalOptions="Center"
+                VerticalOptions="Center"
                 Text=""
                 IsVisible="false"/>
 
@@ -129,7 +139,8 @@
                 Style="{StaticResource AnswerButtonStyle}"
                 x:Name="SubmitAnswer"
                 Grid.Column="2"
-                Clicked="OnButtonClicked"
+                Pressed="OnButtonPressed"
+                Released="OnButtonReleased"
                 Text="Submit" />
 
         </HorizontalStackLayout>
@@ -137,23 +148,27 @@
         <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="NextQuestion"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Next Question"
             Text="Next Question" />
 
         <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="ShowWorking"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Show Working"
             Text="Show Working" />
 
         <Button
             Style="{StaticResource NavigationButtonStyle}"
             x:Name="Back"
-            Clicked="OnButtonClicked"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"
             SemanticProperties.Hint="Back"
             Text="Back" />
     </VerticalStackLayout>
+            </Grid>
     </ScrollView>
 </ContentPage>

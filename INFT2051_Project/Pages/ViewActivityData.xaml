@@ -4,25 +4,35 @@
              x:Class="INFT2051_Project.Pages.ViewActivityData"
              Title="ViewActivityData"
              BackgroundColor="{StaticResource BackgroundLight}">
-    <VerticalStackLayout>
-        <Label Text="User Activity" Style="{StaticResource TitleStyle}"/>
-        <Label Text="Active Days:"/>
-            <ListView x:Name="listViewActivity" RowHeight="75">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <VerticalStackLayout 
+    <ScrollView>
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource BackgroundLight}"/>
+            </Grid.Background>
+            <Image
+                Source="papergrid.jpg"
+                Aspect="Fill"
+                Opacity="0.35"/>
+            <VerticalStackLayout Margin="5">
+                <Label Text="User Activity" Style="{StaticResource TitleStyle}"/>
+                <ListView x:Name="listViewActivity" RowHeight="75">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <VerticalStackLayout 
                                 Padding="10">
-                                <Label Text="{Binding Date}" FontAttributes="Bold" FontSize="20" TextDecorations="Underline"/>
-                                <HorizontalStackLayout>
-                                    <Label Text="Question Attempted: "/>
-                                    <Label Text="{Binding answeredQuestion}"/>
-                                </HorizontalStackLayout>
+                                    <Label Text="{Binding Date}" FontAttributes="Bold" FontSize="20" TextDecorations="Underline"/>
+                                    <HorizontalStackLayout>
+                                        <Label Text="Question Attempted: "/>
+                                        <Label Text="{Binding answeredQuestion}"/>
+                                    </HorizontalStackLayout>
 
-                            </VerticalStackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-    </VerticalStackLayout>
+                                </VerticalStackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
 </ContentPage>

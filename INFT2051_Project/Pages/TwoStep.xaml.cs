@@ -3,6 +3,7 @@ using INFT2051_Project.ViewModels;
 using Mehroz;
 using SQLite;
 using INFT2051_Project.Models;
+using INFT2051_Project.Pages;
 namespace INFT2051_Project;
 
 public partial class TwoStep : ContentPage
@@ -43,12 +44,14 @@ public partial class TwoStep : ContentPage
         topicData = DataViewModel.Current.getTopicData(topicData);
     }
 
-    public async void OnButtonClicked(object sender, EventArgs e)
+    public async void OnButtonReleased(object sender, EventArgs e)
     {
         Button btn = (Button)sender;
          
         if (btn == NextQuestion)
         {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             questionAttempted = false;
             questionCorrect = false;
             WorkingGrid.IsVisible = false;
@@ -66,6 +69,8 @@ public partial class TwoStep : ContentPage
 
         else if (btn == SubmitAnswer)
         {
+            btn.BackgroundColor = Color.FromArgb("#3b82f6"); // Original light blue for Submit button
+            btn.Scale = 1;
             AnswerLabel.IsVisible = true;
             string input = AnswerInput.Text;
             var answer = getAnswer(a, b, c, MulDiv, AddSub); ;
@@ -135,14 +140,35 @@ public partial class TwoStep : ContentPage
 
         else if (btn == ShowWorking)
         {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
             WorkingGrid.IsVisible = true;
             showWorking(a, b, c, MulDiv, AddSub);
         }
 
         else if (btn == Back)
-            await Navigation.PushAsync(new MainPage());
+        {
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
+            btn.Scale = 1;
+            await Navigation.PushAsync(new EquationsPage());
+        }
+            
     }
 
+    private void OnButtonPressed(object sender, EventArgs e)
+    {
+        Button btn = (Button)sender;
+
+        if (btn == SubmitAnswer)
+        {
+            btn.BackgroundColor = Color.FromArgb("#2563eb");
+        }
+        else
+        {
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
+        }
+        btn.Scale = 0.95;
+    }
     public int getInteger()
     {
         Random numberGenerator = new Random();

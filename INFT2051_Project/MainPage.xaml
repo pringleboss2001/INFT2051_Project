@@ -6,69 +6,80 @@
              BackgroundColor="{StaticResource BackgroundLight}">
 
     <ScrollView>
-        <VerticalStackLayout
-            x:Name="MainLayout"
-            Padding="30,0"
-            Spacing="10">
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource BackgroundLight}"/>
+            </Grid.Background>
 
-            <Label
-                Text="MathMaster NSW"
-                Style="{StaticResource TitleStyle}"
-                SemanticProperties.HeadingLevel="Level1" />
+            <Image
+                Source="papergrid.jpg"
+                Aspect="Fill"
+                Opacity="0.35"/>
+            <VerticalStackLayout
+                x:Name="MainLayout"
+                Padding="30,0"
+                Spacing="10"
+                Margin="5">
+
+                <Label
+                    Text="MathMaster NSW"
+                    Style="{StaticResource TitleStyle}"
+                    SemanticProperties.HeadingLevel="Level1" />
             
-            <Label
-                Text="Please select the Topic Area"
-                FontSize="18"
-                HorizontalOptions="Center"
-                TextColor="Black"
-                SemanticProperties.HeadingLevel="Level2" />
+                <Label
+                    Text="Please select the Topic Area"
+                    FontSize="18"
+                    HorizontalOptions="Center"
+                    TextColor="Black"
+                    SemanticProperties.HeadingLevel="Level2" />
 
 
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="EquationsButton"
-                Text="Equations" 
-                SemanticProperties.Hint="Navigates to the equations page"
-                Pressed="OnButtonPressed"
-                Released="OnButtonReleased"/>
+                <Button
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="EquationsButton"
+                    Text="Equations" 
+                    SemanticProperties.Hint="Navigates to the equations page"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"/>
 
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="NumbersButton"
-                Text="Numbers" 
-                SemanticProperties.Hint="Numbers"
-                Pressed="OnButtonPressed"
-                Released="OnButtonReleased"
-                HorizontalOptions="Fill" />
+                <Button
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="NumbersButton"
+                    Text="Numbers" 
+                    SemanticProperties.Hint="Numbers"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    HorizontalOptions="Fill" />
 
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="ActivityData"
-                Text="User Activity" 
-                SemanticProperties.Hint="ActivityData"
-                Pressed="OnButtonPressed"
-                Released="OnButtonReleased"
-                HorizontalOptions="Fill" />
+                <Button
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="ActivityData"
+                    Text="User Activity" 
+                    SemanticProperties.Hint="ActivityData"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    HorizontalOptions="Fill" />
 
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="UserData"
-                Text="User Data" 
-                SemanticProperties.Hint="UserData"
-                Pressed="OnButtonPressed"
-                Released="OnButtonReleased"
-                HorizontalOptions="Fill" />
+                <Button
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="UserData"
+                    Text="User Data" 
+                    SemanticProperties.Hint="UserData"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    HorizontalOptions="Fill" />
             
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="HowToUse"
-                Text="How To Use" 
-                SemanticProperties.Hint="HowToUse"
-                Pressed="OnButtonPressed"
-                Released="OnButtonReleased"
-                HorizontalOptions="Fill" />
+                <Button
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="HowToUse"
+                    Text="How To Use" 
+                    SemanticProperties.Hint="HowToUse"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"
+                    HorizontalOptions="Fill" />
 
-        </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 
 </ContentPage>

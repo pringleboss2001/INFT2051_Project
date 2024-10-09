@@ -5,49 +5,74 @@
              Title="ViewDataPage"
              xmlns:local="clr-namespace:INFT2051_Project"
              BackgroundColor="{StaticResource BackgroundLight}">
+
     <ScrollView>
-        <VerticalStackLayout>
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource BackgroundLight}"/>
+            </Grid.Background>
+
+            <Image
+                Source="papergrid.jpg"
+                Aspect="Fill"
+                Opacity="0.35"/>
+            <VerticalStackLayout
+                x:Name="MainLayout"
+                Margin="5">
             <Label 
                 Style="{StaticResource TitleStyle}"
                 Text="User Data"/>
-            <ListView x:Name="listView" RowHeight="100">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <VerticalStackLayout>
-                                <Label Text="{Binding TopicName}" FontAttributes="Bold" FontSize="20" TextDecorations="Underline"/>
-                                <HorizontalStackLayout>
-                                    <Label Text="Total Questions Attempted: "/>
-                                    <Label Text="{Binding TotalQuestionsAttempted}"/>
-                                </HorizontalStackLayout>
-                                <HorizontalStackLayout>
-                                    <Label Text="Total Questions Correct: "/>
-                                    <Label Text="{Binding TotalQuestionsCorrect}"/>
-                                </HorizontalStackLayout>
+                
+                    <ListView x:Name="listView" RowHeight="125">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                <Frame 
+                                    Style="{StaticResource CardStyle}"
+                                    Padding="0"
+                                    HeightRequest="110">
+                                    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label Text="{Binding TopicName}" FontAttributes="Bold" FontSize="20" TextDecorations="Underline"/>
+                                        <HorizontalStackLayout>
+                                            <Label Text="Total Questions Attempted: "/>
+                                            <Label Text="{Binding TotalQuestionsAttempted}"/>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout>
+                                            <Label Text="Total Questions Correct: "/>
+                                            <Label Text="{Binding TotalQuestionsCorrect}"/>
+                                        </HorizontalStackLayout>
 
-                                <Label>
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span Text="Percentage of Correct Answers: "/>
-                                        <Span>
-                                            <Span.Text>
-                                                <MultiBinding Converter="{local:PercentageMultiBinding}">
-                                                    <Binding Path="TotalQuestionsAttempted"/>
-                                                    <Binding Path="TotalQuestionsCorrect"/>
-                                                </MultiBinding>
-                                            </Span.Text>
-                                            
-                                        </Span>
-                                        <Span Text="%"/>
-                                    </FormattedString>
-                                </Label.FormattedText>
-                                </Label>
-                                
-                            </VerticalStackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </VerticalStackLayout>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Percentage of Correct Answers: "/>
+                                                    <Span>
+                                                        <Span.Text>
+                                                            <MultiBinding Converter="{local:PercentageMultiBinding}">
+                                                                <Binding Path="TotalQuestionsAttempted"/>
+                                                                <Binding Path="TotalQuestionsCorrect"/>
+                                                            </MultiBinding>
+                                                        </Span.Text>
+
+                                                    </Span>
+                                                    <Span Text="%"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                <Button
+                    Style="{StaticResource NavigationButtonStyle}"
+                    x:Name="BackButton"
+                    Text="Back"
+                    Pressed="OnButtonPressed"
+                    Released="OnButtonReleased"/>
+            </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>
