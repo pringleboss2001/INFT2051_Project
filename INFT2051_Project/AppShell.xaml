@@ -28,6 +28,26 @@
             ContentTemplate="{DataTemplate local:TwoStep}"
             Route="TwoStep"/>
 
+        <ShellContent
+            Title="Quadratic Equations"
+            ContentTemplate="{DataTemplate local:QuadraticsPage}"
+            Route="QuadraticsPage"/>
+
+        <ShellContent
+            Title="Fractions"
+            ContentTemplate="{DataTemplate local:FractionsPage}"
+            Route="FractionsPage"/>
+
+        <ShellContent
+            Title="Decimals"
+            ContentTemplate="{DataTemplate local:DecimalsPage}"
+            Route="DecimalsPage"/>
+
+        <ShellContent
+            Title="Percentages"
+            ContentTemplate="{DataTemplate local:PercentagesPage}"
+            Route="PercentagesPage"/>
+
     </FlyoutItem>
 
 </Shell>

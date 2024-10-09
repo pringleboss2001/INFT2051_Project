@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\pages\\onestep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\pages\\onestep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\pages\\viewdatapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\pages\\viewdatapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\pages\\onestep.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\pages\\onestep.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\percentagemultibinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\percentagemultibinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\inft2051_project.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\inft2051_project.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\ethan pringle\\desktop\\inft2051_project\\inft2051_project\\inft2051_project\\pages\\twostep.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\pages\\twostep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\pages\\twostep.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|c:\\users\\eprin\\documents\\github\\inft2051_project\\inft2051_project\\pages\\twostep.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{255FC8B0-333D-4C50-88E3-350CB5164734}|INFT2051_Project\\INFT2051_Project.csproj|solutionrelative:inft2051_project\\pages\\twostep.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -38,69 +42,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OneStep.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Pages\\OneStep.xaml.cs",
-              "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\OneStep.xaml.cs",
-              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Pages\\OneStep.xaml.cs",
-              "RelativeToolTip": "INFT2051_Project\\Pages\\OneStep.xaml.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAqwGMAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T22:15:47.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OneStep.xaml",
-              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Pages\\OneStep.xaml",
-              "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\OneStep.xaml",
-              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Pages\\OneStep.xaml",
-              "RelativeToolTip": "INFT2051_Project\\Pages\\OneStep.xaml",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAAAIQAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-08T22:13:14.284Z",
+              "Title": "PercentageMultiBinding.cs",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\PercentageMultiBinding.cs",
+              "RelativeDocumentMoniker": "INFT2051_Project\\PercentageMultiBinding.cs",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\PercentageMultiBinding.cs",
+              "RelativeToolTip": "INFT2051_Project\\PercentageMultiBinding.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T02:54:07.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Styles.xaml",
-              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Resources\\Styles\\Styles.xaml",
-              "RelativeDocumentMoniker": "INFT2051_Project\\Resources\\Styles\\Styles.xaml",
-              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Resources\\Styles\\Styles.xaml",
-              "RelativeToolTip": "INFT2051_Project\\Resources\\Styles\\Styles.xaml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEEAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-08T21:54:07.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Colors.xaml",
-              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Resources\\Styles\\Colors.xaml",
-              "RelativeDocumentMoniker": "INFT2051_Project\\Resources\\Styles\\Colors.xaml",
-              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Resources\\Styles\\Colors.xaml",
-              "RelativeToolTip": "INFT2051_Project\\Resources\\Styles\\Colors.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-08T21:35:08.666Z",
+              "Title": "INFT2051_Project",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project.csproj",
+              "RelativeDocumentMoniker": "INFT2051_Project\\INFT2051_Project.csproj",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project.csproj",
+              "RelativeToolTip": "INFT2051_Project\\INFT2051_Project.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-09T02:49:00.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "INFT2051_Project\\Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "INFT2051_Project\\Resources\\Styles\\Styles.xaml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-09T02:46:17.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewDataPage.xaml",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\ViewDataPage.xaml",
+              "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\ViewDataPage.xaml",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\ViewDataPage.xaml",
+              "RelativeToolTip": "INFT2051_Project\\Pages\\ViewDataPage.xaml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAABkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-09T02:40:41.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TwoStep.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\TwoStep.xaml.cs",
+              "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\TwoStep.xaml.cs",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\TwoStep.xaml.cs",
+              "RelativeToolTip": "INFT2051_Project\\Pages\\TwoStep.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T02:22:48.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TwoStep.xaml",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\TwoStep.xaml",
+              "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\TwoStep.xaml",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\Pages\\TwoStep.xaml",
+              "RelativeToolTip": "INFT2051_Project\\Pages\\TwoStep.xaml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAABkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-06T22:46:18.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml",
               "RelativeDocumentMoniker": "INFT2051_Project\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml",
               "RelativeToolTip": "INFT2051_Project\\MainPage.xaml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAAQAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAEMAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-08T21:27:01.017Z",
               "EditorCaption": ""
@@ -109,26 +138,13 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "INFT2051_Project\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\eprin\\Documents\\GitHub\\INFT2051_Project\\INFT2051_Project\\MainPage.xaml.cs",
               "RelativeToolTip": "INFT2051_Project\\MainPage.xaml.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAADMAAAA4AAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwEEAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T21:33:55.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TwoStep.xaml",
-              "DocumentMoniker": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Pages\\TwoStep.xaml",
-              "RelativeDocumentMoniker": "INFT2051_Project\\Pages\\TwoStep.xaml",
-              "ToolTip": "C:\\Users\\Ethan Pringle\\Desktop\\INFT2051_Project\\INFT2051_Project\\INFT2051_Project\\Pages\\TwoStep.xaml",
-              "RelativeToolTip": "INFT2051_Project\\Pages\\TwoStep.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHIAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-06T22:46:18.652Z",
               "EditorCaption": ""
             }
           ]

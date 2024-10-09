@@ -17,7 +17,7 @@
                 SemanticProperties.HeadingLevel="Level1" />
             
             <Label
-                Text="Please select the desired Focus Area"
+                Text="Please select the Topic Area"
                 FontSize="18"
                 HorizontalOptions="Center"
                 TextColor="Black"
@@ -26,50 +26,19 @@
 
             <Button
                 Style="{StaticResource NavigationButtonStyle}"
-                x:Name="OneStepButton"
-                Text="One Step Equations" 
-                SemanticProperties.Hint="Navigates to the one step equations page"
+                x:Name="EquationsButton"
+                Text="Equations" 
+                SemanticProperties.Hint="Navigates to the equations page"
                 Pressed="OnButtonPressed"
                 Released="OnButtonReleased"/>
 
             <Button
                 Style="{StaticResource NavigationButtonStyle}"
-                x:Name="TwoStepButton"
-                Text="Two Step Equations" 
-                SemanticProperties.Hint="Navigates to the two step equations page"
+                x:Name="NumbersButton"
+                Text="Numbers" 
+                SemanticProperties.Hint="Numbers"
                 Pressed="OnButtonPressed"
-                HorizontalOptions="Fill" />
-
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="QuadraticEquationsButton"
-                Text="Quadratic Equations" 
-                SemanticProperties.Hint="Navigates to the quadratic equations"
-                Pressed="OnButtonPressed"
-                HorizontalOptions="Fill" />
-
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="Fractions"
-                Text="Fractions" 
-                SemanticProperties.Hint="Fraction"
-                Pressed="OnButtonPressed"
-                HorizontalOptions="Fill" />
-
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="Decimals"
-                Text="Decimals" 
-                SemanticProperties.Hint="Decimals"
-                Pressed="OnButtonPressed"
-                HorizontalOptions="Fill" />
-
-            <Button
-                Style="{StaticResource NavigationButtonStyle}"
-                x:Name="Percentages"
-                Text="Percentages" 
-                SemanticProperties.Hint="Percentages"
-                Pressed="OnButtonPressed"
+                Released="OnButtonReleased"
                 HorizontalOptions="Fill" />
 
             <Button
@@ -78,6 +47,7 @@
                 Text="User Activity" 
                 SemanticProperties.Hint="ActivityData"
                 Pressed="OnButtonPressed"
+                Released="OnButtonReleased"
                 HorizontalOptions="Fill" />
 
             <Button
@@ -86,6 +56,7 @@
                 Text="User Data" 
                 SemanticProperties.Hint="UserData"
                 Pressed="OnButtonPressed"
+                Released="OnButtonReleased"
                 HorizontalOptions="Fill" />
             
             <Button
@@ -94,6 +65,7 @@
                 Text="How To Use" 
                 SemanticProperties.Hint="HowToUse"
                 Pressed="OnButtonPressed"
+                Released="OnButtonReleased"
                 HorizontalOptions="Fill" />
 
         </VerticalStackLayout>

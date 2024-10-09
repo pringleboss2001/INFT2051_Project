@@ -111,6 +111,9 @@
 	  <Compile Update="Pages\DecimalsPage.xaml.cs">
 	    <DependentUpon>DecimalsPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Pages\EquationsPage.xaml.cs">
+	    <DependentUpon>EquationsPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Pages\FractionsPage.xaml.cs">
 	    <DependentUpon>FractionsPage.xaml</DependentUpon>
 	  </Compile>
@@ -132,6 +135,9 @@
 	  <MauiXaml Update="Pages\DecimalsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\EquationsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\FractionsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -142,6 +148,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\HowToUse.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\NumbersPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\OneStep.xaml">

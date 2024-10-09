@@ -54,24 +54,16 @@ namespace INFT2051_Project
                 
             }
         }
-        private async void OnButtonPressed(object sender, EventArgs e)
+        private async void OnButtonReleased(object sender, EventArgs e)
         {
             Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
-            btn.BackgroundColor = Color.FromArgb("#0f172a");
-            btn.Scale = 0.95; // Shrink the button slightly
-           
-            if (btn == OneStepButton)
-                await Navigation.PushAsync(new OneStep());
-            else if (btn == TwoStepButton)
-                await Navigation.PushAsync(new TwoStep());
-            else if (btn == QuadraticEquationsButton)
-                await Navigation.PushAsync(new QuadraticsPage());
-            else if (btn == Fractions)
-                await Navigation.PushAsync(new FractionsPage());
-            else if (btn == Decimals)
-                await Navigation.PushAsync(new DecimalsPage());
-            else if (btn == Percentages)
-                await Navigation.PushAsync(new PercentagesPage());
+            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Return to original color
+            btn.Scale = 1.0; // Return to normal size
+                       
+            if (btn == EquationsButton)
+                await Navigation.PushAsync(new EquationsPage());
+            else if (btn == NumbersButton)
+                await Navigation.PushAsync(new NumbersPage());
             else if (btn == UserData)
                 await Navigation.PushAsync(new ViewDataPage());
             else if (btn == ActivityData)
@@ -80,11 +72,11 @@ namespace INFT2051_Project
                 await Navigation.PushAsync(new HowToUse());
 
         }
-        private void OnButtonReleased(object sender, EventArgs e)
+        private void OnButtonPressed(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Return to original color
-            btn.Scale = 1.0; // Return to normal size
+            btn.BackgroundColor = Color.FromArgb("#0f172a");
+            btn.Scale = 0.95; // Shrink the button slightly
         }
     }
 

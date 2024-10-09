@@ -9,6 +9,7 @@
     <ScrollView>
         
         <VerticalStackLayout
+            x:Name="MainLayout"
             Padding="10"
             Spacing="10">
             <Label
@@ -46,7 +47,12 @@
                     In each topic area there is a show working button, clicking this will show all the steps to solving that question.
                 </Label.Text>
             </Label>
-
+            <Button
+                Style="{StaticResource NavigationButtonStyle}"
+                x:Name="BackButton"
+                Text="Back"
+                Pressed="OnButtonPressed"
+                Released="OnButtonReleased"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="INFT2051_Project.Pages.ViewDataPage"
              Title="ViewDataPage"
+             xmlns:local="clr-namespace:INFT2051_Project"
              BackgroundColor="{StaticResource BackgroundLight}">
     <ScrollView>
         <VerticalStackLayout>
@@ -23,9 +24,25 @@
                                     <Label Text="Total Questions Correct: "/>
                                     <Label Text="{Binding TotalQuestionsCorrect}"/>
                                 </HorizontalStackLayout>
-                                <HorizontalStackLayout>
-                                    <Label Text="Percentage of Correct Answers: "/>
-                                </HorizontalStackLayout>
+
+                                <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Percentage of Correct Answers: "/>
+                                        <Span>
+                                            <Span.Text>
+                                                <MultiBinding Converter="{local:PercentageMultiBinding}">
+                                                    <Binding Path="TotalQuestionsAttempted"/>
+                                                    <Binding Path="TotalQuestionsCorrect"/>
+                                                </MultiBinding>
+                                            </Span.Text>
+                                            
+                                        </Span>
+                                        <Span Text="%"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                                </Label>
+                                
                             </VerticalStackLayout>
                         </ViewCell>
                     </DataTemplate>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INFT2051_Project.Pages.NumbersPage"
+             Title="NumbersPage"
+             BackgroundColor="{StaticResource BackgroundLight}">
+    <VerticalStackLayout
+        x:Name="MainLayout">
+        <Label
+            Style="{StaticResource TitleStyle}"
+            Text="Numbers Topics"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label
+            Text="Select the focus area below."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Button
+            Style="{StaticResource NavigationButtonStyle}"
+            x:Name="Fractions"
+            Text="Fractions"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"/>
+        <Button
+            Style="{StaticResource NavigationButtonStyle}"
+            x:Name="Decimals"
+            Text="Decimals"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"/>
+        <Button
+            Style="{StaticResource NavigationButtonStyle}"
+            x:Name="Percentages"
+            Text="Percentages"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"/>
+        <Button
+            Style="{StaticResource NavigationButtonStyle}"
+            x:Name="BackButton"
+            Text="Back"
+            Pressed="OnButtonPressed"
+            Released="OnButtonReleased"/>
+    </VerticalStackLayout>
+</ContentPage>

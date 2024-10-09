@@ -22,12 +22,10 @@
                 </Frame>
             </StackLayout>
 
-
-
             <VerticalStackLayout
                 x:Name="WorkingGrid"
-                IsVisible="False">
-
+                IsVisible="False"
+                Spacing="5">
                 <HorizontalStackLayout>
                     <Label
                     TextColor="Black"
@@ -110,7 +108,8 @@
                 FontFamily="CambriaMath"
                 FontSize="20"
                 HorizontalOptions="Center"
-                Text="" />
+                Text=""
+                IsVisible="false"/>
 
         <HorizontalStackLayout Padding="5,0" Spacing="25">
             <Entry

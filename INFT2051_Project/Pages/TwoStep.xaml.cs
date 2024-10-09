@@ -52,6 +52,7 @@ public partial class TwoStep : ContentPage
             questionAttempted = false;
             questionCorrect = false;
             WorkingGrid.IsVisible = false;
+            AnswerLabel.IsVisible = false;
             AnswerInput.Text = "";
             NextQuestion.Text = "Next Question";
             a = getInteger();
@@ -63,8 +64,9 @@ public partial class TwoStep : ContentPage
             createQuestion(a, b, c, AddSub, MulDiv);
         }   
 
-        if (btn == SubmitAnswer)
+        else if (btn == SubmitAnswer)
         {
+            AnswerLabel.IsVisible = true;
             string input = AnswerInput.Text;
             var answer = getAnswer(a, b, c, MulDiv, AddSub); ;
             if (input == answer)
@@ -78,17 +80,11 @@ public partial class TwoStep : ContentPage
                         questionAttempted = true;
                         questionCorrect = true;
                         Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                     }
                     else
                     {
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
@@ -102,17 +98,11 @@ public partial class TwoStep : ContentPage
                         questionAttempted = true;
                         questionCorrect = true;
                         Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
                     }
                     else
                     {
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
-                        Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(200));
                         AnswerLabel.Text = $"Correct!";
                         DataViewModel.Current.UpdateData(topicData);
@@ -143,15 +133,14 @@ public partial class TwoStep : ContentPage
 
         }
 
-        if (btn == ShowWorking)
+        else if (btn == ShowWorking)
         {
             WorkingGrid.IsVisible = true;
             showWorking(a, b, c, MulDiv, AddSub);
         }
 
-        if (btn == Back)
+        else if (btn == Back)
             await Navigation.PushAsync(new MainPage());
-
     }
 
     public int getInteger()
