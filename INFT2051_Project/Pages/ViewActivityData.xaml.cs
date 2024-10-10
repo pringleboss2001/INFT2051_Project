@@ -12,6 +12,7 @@ public partial class ViewActivityData : ContentPage
         BindingContext = dateViewModel = new DateViewModel();
 		InitializeComponent();
         dates = DateViewModel.Current.Dates;
+        collViewActivity.ItemsSource = dates;
         listViewActivity.ItemsSource = dates;
         
     }
