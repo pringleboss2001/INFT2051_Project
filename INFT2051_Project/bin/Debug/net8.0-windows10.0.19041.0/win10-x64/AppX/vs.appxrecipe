@@ -19,7 +19,7 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>E320862F17013EEE6C7493A98C2886485BCEDE8063FE2F8A53F5712E3D6FB2F8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>50092355EFD87C8369EBCAF90C957994BB738C9D9065482B233F61B34E2687A4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.inft2051project_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.inft2051project_9zz4h110yvjzm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>com.companyname.inft2051project</RegisteredPackageID>
@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-09T03:19:47.794</Modified>
+      <Modified>2024-10-14T22:56:33.895</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-09T03:19:47.613</Modified>
+      <Modified>2024-10-14T22:56:33.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\INFT2051_Project.runtimeconfig.json">
       <PackagePath>INFT2051_Project.runtimeconfig.json</PackagePath>
-      <Modified>2024-10-09T03:19:47.520</Modified>
+      <Modified>2024-10-14T22:56:33.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\INFT2051_Project.dll">
       <PackagePath>INFT2051_Project.dll</PackagePath>
-      <Modified>2024-10-09T03:19:45.606</Modified>
+      <Modified>2024-10-14T22:56:30.309</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>INFT2051_Project.exe</PackagePath>
-      <Modified>2024-10-09T03:19:45.612</Modified>
+      <Modified>2024-10-14T22:56:30.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -56,23 +56,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:42.385</Modified>
+      <Modified>2024-10-14T22:56:24.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-10-09T03:19:42.402</Modified>
+      <Modified>2024-10-14T22:56:24.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-10-09T03:19:42.424</Modified>
+      <Modified>2024-10-14T22:56:24.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-10-09T03:19:42.464</Modified>
+      <Modified>2024-10-14T22:56:24.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-10-09T03:19:42.594</Modified>
+      <Modified>2024-10-14T22:56:24.523</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Cambria-Math.ttf">
       <PackagePath>Cambria-Math.ttf</PackagePath>
@@ -90,217 +90,221 @@
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2024-08-14T03:06:04.645</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\papergrid.scale-100.jpg">
+      <PackagePath>papergrid.scale-100.jpg</PackagePath>
+      <Modified>2024-10-14T22:56:27.408</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flyout_home_image.scale-100.png">
       <PackagePath>flyout_home_image.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.503</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.503</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.503</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.504</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.504</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.504</Modified>
+      <Modified>2024-10-14T22:56:27.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.504</Modified>
+      <Modified>2024-10-14T22:56:27.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.504</Modified>
+      <Modified>2024-10-14T22:56:27.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.506</Modified>
+      <Modified>2024-10-14T22:56:27.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.506</Modified>
+      <Modified>2024-10-14T22:56:27.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.506</Modified>
+      <Modified>2024-10-14T22:56:27.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.506</Modified>
+      <Modified>2024-10-14T22:56:27.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.506</Modified>
+      <Modified>2024-10-14T22:56:27.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.507</Modified>
+      <Modified>2024-10-14T22:56:27.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.507</Modified>
+      <Modified>2024-10-14T22:56:27.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.507</Modified>
+      <Modified>2024-10-14T22:56:27.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.507</Modified>
+      <Modified>2024-10-14T22:56:27.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.507</Modified>
+      <Modified>2024-10-14T22:56:27.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.508</Modified>
+      <Modified>2024-10-14T22:56:27.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.508</Modified>
+      <Modified>2024-10-14T22:56:27.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.508</Modified>
+      <Modified>2024-10-14T22:56:27.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.508</Modified>
+      <Modified>2024-10-14T22:56:27.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.508</Modified>
+      <Modified>2024-10-14T22:56:27.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.510</Modified>
+      <Modified>2024-10-14T22:56:27.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.510</Modified>
+      <Modified>2024-10-14T22:56:27.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.510</Modified>
+      <Modified>2024-10-14T22:56:27.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.510</Modified>
+      <Modified>2024-10-14T22:56:27.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.511</Modified>
+      <Modified>2024-10-14T22:56:27.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.511</Modified>
+      <Modified>2024-10-14T22:56:27.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.511</Modified>
+      <Modified>2024-10-14T22:56:27.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.511</Modified>
+      <Modified>2024-10-14T22:56:27.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.511</Modified>
+      <Modified>2024-10-14T22:56:27.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.512</Modified>
+      <Modified>2024-10-14T22:56:27.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.512</Modified>
+      <Modified>2024-10-14T22:56:27.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.512</Modified>
+      <Modified>2024-10-14T22:56:27.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.512</Modified>
+      <Modified>2024-10-14T22:56:27.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.514</Modified>
+      <Modified>2024-10-14T22:56:27.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.514</Modified>
+      <Modified>2024-10-14T22:56:27.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.514</Modified>
+      <Modified>2024-10-14T22:56:27.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.514</Modified>
+      <Modified>2024-10-14T22:56:27.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.514</Modified>
+      <Modified>2024-10-14T22:56:27.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.515</Modified>
+      <Modified>2024-10-14T22:56:27.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.515</Modified>
+      <Modified>2024-10-14T22:56:27.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.515</Modified>
+      <Modified>2024-10-14T22:56:27.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.515</Modified>
+      <Modified>2024-10-14T22:56:27.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.516</Modified>
+      <Modified>2024-10-14T22:56:27.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.516</Modified>
+      <Modified>2024-10-14T22:56:27.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.516</Modified>
+      <Modified>2024-10-14T22:56:27.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.516</Modified>
+      <Modified>2024-10-14T22:56:27.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.516</Modified>
+      <Modified>2024-10-14T22:56:27.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-10-09T03:19:44.516</Modified>
+      <Modified>2024-10-14T22:56:27.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-10-09T03:19:44.517</Modified>
+      <Modified>2024-10-14T22:56:27.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+      <Modified>2024-10-14T22:56:27.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+      <Modified>2024-10-14T22:56:27.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+      <Modified>2024-10-14T22:56:27.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+      <Modified>2024-10-14T22:56:27.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+      <Modified>2024-10-14T22:56:27.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\INFT2051_Project.deps.json">
       <PackagePath>INFT2051_Project.deps.json</PackagePath>
-      <Modified>2024-10-09T03:19:47.451</Modified>
+      <Modified>2024-10-14T22:56:32.902</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eprin\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

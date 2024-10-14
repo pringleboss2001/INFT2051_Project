@@ -13,7 +13,6 @@ public partial class ViewActivityData : ContentPage
 		InitializeComponent();
         dates = DateViewModel.Current.Dates;
         collViewActivity.ItemsSource = dates;
-        listViewActivity.ItemsSource = dates;
         
     }
 
