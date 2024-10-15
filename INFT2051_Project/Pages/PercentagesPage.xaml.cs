@@ -1,6 +1,7 @@
 using Mehroz;
 using INFT2051_Project.Models;
 using INFT2051_Project.ViewModels;
+using INFT2051_Project.Pages;
 namespace INFT2051_Project;
 
 public partial class PercentagesPage : ContentPage
@@ -59,7 +60,7 @@ public partial class PercentagesPage : ContentPage
         {
             btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
             btn.Scale = 1;
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new NumbersPage());
         }
             
         else if (btn == NextQuestion)
