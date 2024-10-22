@@ -2144,3 +2144,13 @@ C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\resizetizer\sp\drawable\splash.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\splash.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\splash.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\splash.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\splash.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\splash.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\assets\arm64-v8a\System.Private.CoreLib.dll
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\assets\armeabi-v7a\System.Private.CoreLib.dll
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\assets\x86\System.Private.CoreLib.dll
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-android\android\assets\x86_64\System.Private.CoreLib.dll

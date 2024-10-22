@@ -647,3 +647,7 @@ C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\INFT2051_Project.pdb
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\INFT2051_Project.genruntimeconfig.cache
 C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\ref\INFT2051_Project.dll
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_22BA3C98C97682FA2688A9E56C7746E8D137BB22C110D9C74B296F64D575F46C.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_22BA3C98C97682FA2688A9E56C7746E8D137BB22C110D9C74B296F64D575F46C@2x.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_22BA3C98C97682FA2688A9E56C7746E8D137BB22C110D9C74B296F64D575F46C@3x.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\papergrid.jpg
