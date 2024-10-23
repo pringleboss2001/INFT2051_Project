@@ -1,7 +1,7 @@
 -target net8.0
 -input 17.2
 -input 
--output "C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Generated Files\CsWinRT"
+-output "C:\Users\eprin\Documents\GitHub\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Generated Files\CsWinRT"
 
 -exclude Windows
 -exclude Microsoft
