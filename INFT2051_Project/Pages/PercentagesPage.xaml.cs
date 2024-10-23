@@ -60,7 +60,7 @@ public partial class PercentagesPage : ContentPage
         {
             btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
             btn.Scale = 1;
-            await Navigation.PushAsync(new NumbersPage());
+            await Navigation.PopAsync();
         }
             
         else if (btn == NextQuestion)

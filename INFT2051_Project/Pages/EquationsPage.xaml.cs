@@ -40,7 +40,7 @@ public partial class EquationsPage : ContentPage
         else if (btn == QuadraticEquationsButton)
             await Navigation.PushAsync(new QuadraticsPage());
         else if (btn == BackButton)
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PopAsync();
     }
 
     private void OnButtonPressed(object sender, EventArgs e)

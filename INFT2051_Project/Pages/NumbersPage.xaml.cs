@@ -40,7 +40,7 @@ public partial class NumbersPage : ContentPage
         else if (btn == Percentages)
             await Navigation.PushAsync(new PercentagesPage());
         else if (btn == BackButton)
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PopAsync();
     }
     private void OnButtonPressed(object sender, EventArgs e)
     {

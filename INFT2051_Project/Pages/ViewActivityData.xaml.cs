@@ -20,4 +20,20 @@ public partial class ViewActivityData : ContentPage
     {
         dateViewModel.OnPropertyChanged("Dates");
     }
+
+    private async void OnButtonReleased(object sender, EventArgs e)
+    {
+        Button btn = (Button)sender;    //This line reads which button was pressed. Allows for unique instances of button presses.
+        btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Return to original color
+        btn.Scale = 1.0; // Return to normal size
+
+        if (btn == BackButton)
+            await Navigation.PushAsync(new MainPage());
+    }
+    private void OnButtonPressed(object sender, EventArgs e)
+    {
+        Button btn = (Button)sender;
+        btn.BackgroundColor = Color.FromArgb("#0f172a");
+        btn.Scale = 0.95; // Shrink the button slightly
+    }
 }

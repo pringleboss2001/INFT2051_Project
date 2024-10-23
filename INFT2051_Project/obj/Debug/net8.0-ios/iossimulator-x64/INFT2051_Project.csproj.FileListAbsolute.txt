@@ -651,3 +651,6 @@ C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Projec
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_22BA3C98C97682FA2688A9E56C7746E8D137BB22C110D9C74B296F64D575F46C@2x.jpg
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_22BA3C98C97682FA2688A9E56C7746E8D137BB22C110D9C74B296F64D575F46C@3x.jpg
 C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\papergrid.jpg
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_220AE9A06C2F2CCE4F67AC9BF89949FBEA78B63C3190277F5310933E46564A9B.png
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_220AE9A06C2F2CCE4F67AC9BF89949FBEA78B63C3190277F5310933E46564A9B@2x.png
+C:\Users\Ethan Pringle\Desktop\INFT2051_Project\INFT2051_Project\INFT2051_Project\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_220AE9A06C2F2CCE4F67AC9BF89949FBEA78B63C3190277F5310933E46564A9B@3x.png

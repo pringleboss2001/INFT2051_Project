@@ -51,6 +51,12 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </VerticalStackLayout>
+            <Button
+                Style="{StaticResource NavigationButtonStyle}"
+                x:Name="BackButton"
+                Text="Back"
+                Pressed="OnButtonPressed"
+                Released="OnButtonReleased"/>
         </Grid>
     </ScrollView>
 </ContentPage>

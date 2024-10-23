@@ -162,7 +162,7 @@ public partial class TwoStep : ContentPage
         {
             btn.BackgroundColor = Color.FromArgb("#1e3a8a"); // Original dark blue for other buttons
             btn.Scale = 1;
-            await Navigation.PushAsync(new EquationsPage());
+            await Navigation.PopAsync();
         }
             
     }
